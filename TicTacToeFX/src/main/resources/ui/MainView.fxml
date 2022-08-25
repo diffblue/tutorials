@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.MainController">
+   <children>
+       <Button fx:id="startButton" layoutX="10.0" layoutY="366.0" maxHeight="-Infinity" minHeight="-Infinity" onAction="#onStartButton" prefHeight="22.0" text="Start a New Game" textFill="#1812bc" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="6.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets bottom="-2.0" left="1.0" right="1.0" top="-2.0" />
+         </padding></Button>
+   
+                <Label fx:id="message" layoutX="8.0" layoutY="13.0" text="message" visible="false" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="13.0">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Button fx:id="b0" disable="true" focusTraversable="false" layoutX="8.0" layoutY="50.0" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#onPressButton" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: transparent; -fx-opacity: 1;">
+         <font>
+            <Font size="70.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="-5.0" />
+         </padding>
+      </Button>
+      <Button fx:id="b1" disable="true" focusTraversable="false" layoutX="110.0" layoutY="50.0" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#onPressButton" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: transparent; -fx-opacity: 1;">
+         <font>
+            <Font size="70.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="-5.0" />
+         </padding>
+      </Button>
+      <Button fx:id="b2" disable="true" focusTraversable="false" layoutX="212.0" layoutY="50.0" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#onPressButton" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: transparent; -fx-opacity: 1;">
+         <font>
+            <Font size="70.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="-5.0" />
+         </padding>
+      </Button>
+      <Button fx:id="b3" disable="true" focusTraversable="false" layoutX="8.0" layoutY="152.0" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#onPressButton" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: transparent; -fx-opacity: 1;">
+         <font>
+            <Font size="70.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="-5.0" />
+         </padding>
+      </Button>
+      <Button fx:id="b4" disable="true" focusTraversable="false" layoutX="110.0" layoutY="152.0" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#onPressButton" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: transparent; -fx-opacity: 1;">
+         <font>
+            <Font size="70.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="-5.0" />
+         </padding>
+      </Button>
+      <Button fx:id="b5" disable="true" focusTraversable="false" layoutX="212.0" layoutY="152.0" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#onPressButton" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: transparent; -fx-opacity: 1;">
+         <font>
+            <Font size="70.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="-5.0" />
+         </padding>
+      </Button>
+      <Button fx:id="b6" disable="true" focusTraversable="false" layoutX="8.0" layoutY="254.0" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#onPressButton" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: transparent; -fx-opacity: 1;">
+         <font>
+            <Font size="70.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="-5.0" />
+         </padding>
+      </Button>
+      <Button fx:id="b7" disable="true" focusTraversable="false" layoutX="110.0" layoutY="254.0" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#onPressButton" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: transparent; -fx-opacity: 1;">
+         <font>
+            <Font size="70.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="-5.0" />
+         </padding>
+      </Button>
+      <Button fx:id="b8" disable="true" focusTraversable="false" layoutX="212.0" layoutY="254.0" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#onPressButton" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: transparent; -fx-opacity: 1;">
+         <font>
+            <Font size="70.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="-5.0" />
+         </padding>
+      </Button>
+      <Line endX="205.0" layoutX="108.0" layoutY="151.0" startX="-100.0" />
+      <Line endX="102.0" endY="321.0" layoutX="109.0" layoutY="34.0" startX="102.0" startY="15.0" />
+      <Line endX="102.0" endY="321.0" layoutX="7.0" layoutY="34.0" startX="102.0" startY="15.0" />
+      <Line endX="206.0" layoutX="107.0" layoutY="49.0" startX="-100.0" />
+      <Line endX="102.0" endY="321.0" layoutX="-95.0" layoutY="34.0" startX="102.0" startY="15.0" />
+      <Line endX="102.0" endY="321.0" layoutX="211.0" layoutY="34.0" startX="102.0" startY="15.0" />
+      <Line endX="205.0" layoutX="107.0" layoutY="253.0" startX="-100.0" />
+      <Line endX="205.0" layoutX="107.0" layoutY="355.0" startX="-100.0" />
+      <Line fx:id="l1Diag" endX="196.0" endY="325.0" layoutX="117.0" layoutY="30.0" startX="-110.0" startY="19.0" stroke="RED" strokeWidth="2.0" style="-fx-stroke-dash-array: 2 12 12 2; -fx-stroke-width: 3;" visible="false" />
+      <Line fx:id="l2Diag" endX="185.0" endY="10.0" layoutX="128.0" layoutY="39.0" startX="-121.0" startY="316.0" stroke="RED" strokeWidth="2.0" style="-fx-stroke-dash-array: 2 12 12 2; -fx-stroke-width: 3;" visible="false" />
+      <Line fx:id="l1Horiz" endX="206.0" layoutX="107.0" layoutY="100.0" startX="-100.0" stroke="RED" strokeWidth="2.0" style="-fx-stroke-dash-array: 2 12 12 2; -fx-stroke-width: 3;" visible="false" />
+      <Line fx:id="l2Horiz" endX="206.0" layoutX="107.0" layoutY="202.0" startX="-100.0" stroke="RED" strokeWidth="2.0" style="-fx-stroke-dash-array: 2 12 12 2; -fx-stroke-width: 3;" visible="false" />
+      <Line fx:id="l3Horiz" endX="206.0" layoutX="107.0" layoutY="304.0" startX="-100.0" stroke="RED" strokeWidth="2.0" style="-fx-stroke-dash-array: 2 12 12 2; -fx-stroke-width: 3;" visible="false" />
+      <Line fx:id="l1Vert" endX="-59.0" endY="246.0" layoutX="117.0" layoutY="109.0" startX="-59.0" startY="-60.0" stroke="RED" strokeWidth="2.0" style="-fx-stroke-dash-array: 2 12 12 2; -fx-stroke-width: 3;" visible="false" />
+      <Line fx:id="l2Vert" endX="-59.0" endY="246.0" layoutX="219.0" layoutY="109.0" startX="-59.0" startY="-60.0" stroke="RED" strokeWidth="2.0" style="-fx-stroke-dash-array: 2 12 12 2; -fx-stroke-width: 3;" visible="false" />
+      <Line fx:id="l3Vert" endX="-59.0" endY="246.0" layoutX="321.0" layoutY="109.0" startX="-59.0" startY="-60.0" stroke="RED" strokeWidth="2.0" style="-fx-stroke-dash-array: 2 12 12 2; -fx-stroke-width: 3;" visible="false" />
+      <Label layoutX="13.0" layoutY="125.0" text="0" textFill="#1100ff" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="125.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="125.0" text="1" textFill="#1100ff" AnchorPane.leftAnchor="116.0" AnchorPane.topAnchor="125.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="128.0" layoutY="135.0" text="2" textFill="#1100ff" AnchorPane.leftAnchor="217.0" AnchorPane.topAnchor="125.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="228.0" text="3" textFill="#1100ff" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="227.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="228.0" text="4" textFill="#1100ff" AnchorPane.leftAnchor="116.0" AnchorPane.topAnchor="227.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="218.0" layoutY="227.0" text="5" textFill="#1100ff" AnchorPane.leftAnchor="217.0" AnchorPane.topAnchor="227.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="329.0" text="6" textFill="#1100ff" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="329.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="119.0" layoutY="329.0" text="7" textFill="#1100ff" AnchorPane.leftAnchor="116.0" AnchorPane.topAnchor="329.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="217.0" layoutY="328.0" text="8" textFill="#1100ff" AnchorPane.leftAnchor="217.0" AnchorPane.topAnchor="329.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

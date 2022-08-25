@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Board.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">TicTacToeFX</a> &gt; <a href="index.source.html" class="el_package">logic</a> &gt; <span class="el_source">Board.java</span></div><h1>Board.java</h1><pre class="source lang-java linenums">package logic;
+
+import ui.Common;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Board implements Common {
+    private Map&lt;Integer, String&gt; map;
+<span class="fc" id="L9">    public Board(HashMap&lt;Integer, String&gt; map) {</span>
+<span class="fc" id="L10">        this.map = map; }</span>
+    public void getWinner() {
+<span class="nc" id="L12">        boolean winnerSet = false;</span>
+        // check any possible win combination
+<span class="nc bnc" id="L14" title="All 2 branches missed.">        if (checkLine(new int[]{0, 4, 8})) {</span>
+<span class="nc" id="L15">            shows[0].set(true); winnerSet = true; }</span>
+<span class="nc bnc" id="L16" title="All 2 branches missed.">        if (checkLine(new int[]{2, 4, 6})) {</span>
+<span class="nc" id="L17">            shows[1].set(true); winnerSet = true; }</span>
+<span class="nc bnc" id="L18" title="All 2 branches missed.">        if (checkLine(new int[]{0, 1, 2})) {</span>
+<span class="nc" id="L19">            shows[2].set(true); winnerSet = true; }</span>
+<span class="nc bnc" id="L20" title="All 2 branches missed.">        if (checkLine(new int[]{3, 4, 5})) {</span>
+<span class="nc" id="L21">            shows[3].set(true); winnerSet = true; }</span>
+<span class="nc bnc" id="L22" title="All 2 branches missed.">        if (checkLine(new int[]{6, 7, 8})) {</span>
+<span class="nc" id="L23">            shows[4].set(true); winnerSet = true; }</span>
+<span class="nc bnc" id="L24" title="All 2 branches missed.">        if (checkLine(new int[]{0, 3, 6})) {</span>
+<span class="nc" id="L25">            shows[5].set(true); winnerSet = true; }</span>
+<span class="nc bnc" id="L26" title="All 2 branches missed.">        if (checkLine(new int[]{1, 4, 7})) {</span>
+<span class="nc" id="L27">            shows[6].set(true); winnerSet = true; }</span>
+<span class="nc bnc" id="L28" title="All 2 branches missed.">        if (checkLine(new int[]{2, 5, 8})) {</span>
+<span class="nc" id="L29">            shows[7].set(true); winnerSet = true; }</span>
+<span class="nc bnc" id="L30" title="All 2 branches missed.">        if (winnerSet)</span>
+<span class="nc" id="L31">            gameEnd.set(true);</span>
+<span class="nc" id="L32">    }</span>
+    public boolean checkLine(int[] indices) {
+<span class="fc" id="L34">        boolean flag = false;</span>
+        String first, second, third;
+        try {
+            // fetch the symbols existing at the specified keys in the map
+<span class="fc" id="L38">                first  = map.get(indices[0]);</span>
+<span class="fc" id="L39">                second = map.get(indices[1]);</span>
+<span class="fc" id="L40">                third  = map.get(indices[2]);</span>
+<span class="pc bpc" id="L41" title="2 of 6 branches missed.">            if (!first.isEmpty() &amp;&amp; !second.isEmpty() &amp;&amp; !third.isEmpty())</span>
+                // only if all strings are valid
+<span class="pc bpc" id="L43" title="2 of 4 branches missed.">                if (first == second &amp;&amp; first == third)</span>
+<span class="fc" id="L44">                    flag = true;</span>
+        }
+<span class="fc" id="L46">        catch (NullPointerException ex) {</span>
+             // caught exception if the key does not exist in the map
+<span class="fc" id="L48">        }</span>
+<span class="fc" id="L49">        return flag;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

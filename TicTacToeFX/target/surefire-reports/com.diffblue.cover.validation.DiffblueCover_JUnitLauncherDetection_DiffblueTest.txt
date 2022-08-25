@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.diffblue.cover.validation.DiffblueCover_JUnitLauncherDetection_DiffblueTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in com.diffblue.cover.validation.DiffblueCover_JUnitLauncherDetection_DiffblueTest
