@@ -1,0 +1,8 @@
+#files.FileProcessorBest:
+#  - factory:
+#      method: files.FileProcessorBest.commentLinesRefactored(java/io/File;)files/FileProcessorBest;
+#      parameters: ["\\src\\main\\java\\files\\file.dat"]
+
+java.util.Properties:
+  - properties:
+      file: relative-file.properties

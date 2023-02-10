@@ -1,0 +1,8 @@
+float:
+  - immediate: 4f
+    parameter: height
+java.lang.String:
+  - immediate: "tulip"
+    parameter: flower
+  - immediate: "Magpie"
+    parameter: nameofBird
