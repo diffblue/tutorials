@@ -15,7 +15,19 @@ public class CollectionOfBirds {
         birds.put(id, b);
     }
 
+    public void addToMap (ID id, Bird b) {
+        birds.put(id.getId(), b);
+    }
+
     public Bird readFromMap (int id) {
         return birds.get(id);
+    }
+
+    public CollectionOfBirds(int id, Bird b) {
+        addToMap(id, b);
+    }
+
+    public CollectionOfBirds(ID id, Bird b) {
+        addToMap(id, b);
     }
 }

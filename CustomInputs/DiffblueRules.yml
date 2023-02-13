@@ -1,8 +1,23 @@
 float:
   - immediate: 4f
     parameter: height
+
 java.lang.String:
   - immediate: "tulip"
     parameter: flower
   - immediate: "Magpie"
     parameter: nameofBird
+
+java.util.Properties:
+  - properties:
+      file: MyProps.properties
+
+maps.Bird:
+  - factory:
+      method: maps.Bird.<init>:(Ljava/lang/String;)V
+      params: [ "Eagle" ]
+
+maps.ID:
+  - factory:
+      method: maps.ID.<init>:(I)V
+      params: [ 77 ]
