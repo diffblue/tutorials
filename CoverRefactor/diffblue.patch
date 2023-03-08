@@ -1,0 +1,14 @@
+diff --git a/src/main/java/math/Addition.java b/src/main/java/math/Addition.java
+index 5a8b85e..e2cc89f 100644
+--- a/src/main/java/math/Addition.java
++++ b/src/main/java/math/Addition.java
+@@ -17,5 +17,9 @@ public class Addition {
+             sum += d;
+         return sum;
+     }
++    /** For testing purposes only */
++    public List getList() {
++        return list;
++    }
+ 
+ }
