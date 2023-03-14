@@ -21,3 +21,10 @@ maps.ID:
   - factory:
       method: maps.ID.<init>:(I)V
       params: [ 77 ]
+
+serialization.Cheese: # Cheese type
+  - factory: # factory method 1
+      method: serialization.CheeseFactory.readSerializedCheese:()Lserialization/Cheese;
+  - factory: # factory method 2
+      method: serialization.CheeseFactory.readSerializedCheeseSignature:(Ljava/lang/String;)Lserialization/Cheese;
+      params: [ "cheese" ]
