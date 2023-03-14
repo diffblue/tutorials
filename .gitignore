@@ -1,7 +1,7 @@
 # Default ignored files
 # git add CoverOptimize/ CoverRefactor/ CoverReplay/ CustomInputs/ R006/ R013/ T005/ TicTacToeFX/
 
-CoverOptimize/.
+CoverOptimize/.git/
 CoverOptimize/.diffblue/
 CoverOptimize/.idea/
 CoverOptimize/target/
