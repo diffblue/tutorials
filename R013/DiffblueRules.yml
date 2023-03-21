@@ -1,8 +1,9 @@
-#files.FileProcessorBest:
-#  - factory:
-#      method: files.FileProcessorBest.commentLinesRefactored(java/io/File;)files/FileProcessorBest;
-#      parameters: ["\\src\\main\\java\\files\\file.dat"]
-
-java.util.Properties:
-  - properties:
-      file: relative-file.properties
+java.io.File:
+  - factory: # Diffblue rule 1
+      method: files.FileFactory.loadFile:(Ljava/lang/String;)Ljava/io/File
+      params: ["input.txt"]
+    method: readFile
+  - factory: # Diffblue rule 2
+      method: files.FileFactory.loadFile:(Ljava/lang/String;)Ljava/io/File
+      params: [ "another_input.txt" ]
+    method: readAnotherFile
