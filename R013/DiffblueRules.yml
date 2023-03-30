@@ -1,9 +1,17 @@
+# files package -------------------------------------------------
+
 java.io.File:
   - factory: # Diffblue rule 1
-      method: files.FileFactory.loadFile:(Ljava/lang/String;)Ljava/io/File
+      method: files.FileFactory.loadFile:(Ljava/lang/String;)Ljava/io/File;
       params: ["input.txt"]
     method: readFile
   - factory: # Diffblue rule 2
-      method: files.FileFactory.loadFile:(Ljava/lang/String;)Ljava/io/File
+      method: files.FileFactory.loadFile:(Ljava/lang/String;)Ljava/io/File;
       params: [ "another_input.txt" ]
     method: readAnotherFile
+
+# maps package -------------------------------------------------
+
+int:
+  - immediate: 11
+    parameter: "keyFromMap"

@@ -3,7 +3,7 @@ package maps;
 import java.util.HashMap;
 import java.util.Map;
 
-/* the float weight and String name method parameters ARE listed in the
+/* the float weight and String flower method parameters ARE listed in the
    DiffblueRules.yml so in the resulting test class FlowerDiffblueTest
    you have control on the values used.
 */

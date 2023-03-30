@@ -1,5 +1,5 @@
 # Default ignored files
-# git add CoverOptimize/ CoverRefactor/ CoverReplay/ CustomInputs/ R006/ R013/ T005/ TicTacToeFX/
+# git add CoverOptimize/ CoverRefactor/ CoverReplay/ CustomInputs/ R006/ R013/ T005/ TicTacToeFX/ CustomTestSetup/
 
 CoverOptimize/.git/
 CoverOptimize/.diffblue/
@@ -40,6 +40,16 @@ T005/.git/
 T005/.diffblue/
 T005/.idea/
 T005/target/
+
+TicTacToeFX/.git
+TicTacToeFX/.diffblue
+TicTacToeFX/.idea
+TicTacToeFX/target
+
+CustomTestSetup/.git
+CustomTestSetup/.diffblue
+CustomTestSetup/.idea
+CustomTestSetup/target
 
 
 
