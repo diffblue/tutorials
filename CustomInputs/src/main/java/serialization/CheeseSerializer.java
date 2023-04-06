@@ -10,7 +10,7 @@ public class CheeseSerializer {
         Cheese cheese = new Cheese();
         cheese.name = "Gouda";
         cheese.maturity = 2;
-        cheese.availability = false;
+        cheese.availability = true;
 
         try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("cheese.ser"))) {
             out.writeObject(cheese);

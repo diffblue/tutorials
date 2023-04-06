@@ -1,7 +1,13 @@
 package serialization;
 
 public class TestableClass {
-  public String getCheeseName(Cheese cheese) {
+    String getName(Cheese cheese) {
       return cheese.name;
-  }
+    }
+    int getMaturity(Cheese cheese) {
+        return cheese.maturity;
+    }
+    boolean getAvailability(Cheese cheese) {
+        return cheese.availability;
+    }
 }
