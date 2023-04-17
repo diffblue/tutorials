@@ -1,0 +1,4 @@
+org.example.model.Teacher:
+  - factory:
+      method: org.example.core.CoreUtils.createOffheap:(Ljava/lang/Class;)Ljava/lang/Object;
+      params: [ org.example.model.Teacher ]

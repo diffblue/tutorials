@@ -48,11 +48,10 @@ CustomTestSetup/.diffblue
 CustomTestSetup/.idea
 CustomTestSetup/target
 
-OffHeapCustomInputs/.git
-OffHeapCustomInputs/.diffblue
-OffHeapCustomInputs/.idea
-OffHeapCustomInputs/target
-
+OffHeapCustomInputs/business/target
+OffHeapCustomInputs/business/.diffblue
+OffHeapCustomInputs/core/target
+OffHeapCustomInputs/model/target
 
 
 

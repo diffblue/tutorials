@@ -1,7 +1,7 @@
-package logic;
+package org.example;
 
-import pattern.Message;
-import pattern.SchoolMember;
+import org.example.model.Message;
+import org.example.model.SchoolMember;
 
 public class Validator {
 

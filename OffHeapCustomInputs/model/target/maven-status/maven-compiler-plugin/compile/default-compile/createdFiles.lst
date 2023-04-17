@@ -1,4 +1,3 @@
-example\model\Message.class
-example\Main.class
-example\model\Teacher.class
-example\model\SchoolMember.class
+org\example\model\Teacher.class
+org\example\model\SchoolMember.class
+org\example\model\Message.class
