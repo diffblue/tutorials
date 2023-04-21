@@ -4,13 +4,12 @@ public class FieldProcessor {
 
     private String name;
 
-    public FieldProcessor(String name) {
-        this.name = name;
-    }
-
-    public boolean isNameABC() {
+    public boolean isABC() {
         return name.equals("ABC");
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
 
 }

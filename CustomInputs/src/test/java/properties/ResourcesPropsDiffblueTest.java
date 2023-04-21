@@ -7,7 +7,9 @@ import java.util.Properties;
 import org.junit.jupiter.api.Test;
 
 class ResourcesPropsDiffblueTest {
-
+  /**
+  * Method under test: {@link ResourcesProps#ResourcesProps(Properties)}
+  */
   @Test
   void testConstructor() throws IOException {
     // Arrange
@@ -15,10 +17,14 @@ class ResourcesPropsDiffblueTest {
     try (InputStream inStream = ResourcesProps.class.getResourceAsStream("/Resources.properties")) {
       properties.load(inStream);
     }
+
     // Act and Assert
     assertEquals("https://app.resources.com/", (new ResourcesProps(properties)).getBaseUri());
   }
 
+  /**
+   * Method under test: {@link ResourcesProps#getBaseUri()}
+   */
   @Test
   void testGetBaseUri() throws IOException {
     // Arrange
@@ -26,8 +32,9 @@ class ResourcesPropsDiffblueTest {
     try (InputStream inStream = ResourcesProps.class.getResourceAsStream("/Resources.properties")) {
       properties.load(inStream);
     }
+
     // Act and Assert
     assertEquals("https://app.resources.com/", (new ResourcesProps(properties)).getBaseUri());
   }
-
 }
+

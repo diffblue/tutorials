@@ -9,7 +9,9 @@ import java.util.Properties;
 import org.junit.jupiter.api.Test;
 
 class RootPropsDiffblueTest {
-
+  /**
+  * Method under test: {@link RootProps#RootProps(Properties)}
+  */
   @Test
   void testConstructor() throws IOException {
     // Arrange
@@ -17,10 +19,14 @@ class RootPropsDiffblueTest {
     try (BufferedReader reader = Files.newBufferedReader(Paths.get("Root.properties"))) {
       properties.load(reader);
     }
+
     // Act and Assert
     assertEquals("https://app.root.com/", (new RootProps(properties)).getBaseUri());
   }
 
+  /**
+   * Method under test: {@link RootProps#getBaseUri()}
+   */
   @Test
   void testGetBaseUri() throws IOException {
     // Arrange
@@ -28,9 +34,9 @@ class RootPropsDiffblueTest {
     try (BufferedReader reader = Files.newBufferedReader(Paths.get("Root.properties"))) {
       properties.load(reader);
     }
+
     // Act and Assert
     assertEquals("https://app.root.com/", (new RootProps(properties)).getBaseUri());
   }
-
 }
 

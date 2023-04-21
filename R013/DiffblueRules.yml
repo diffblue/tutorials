@@ -11,7 +11,7 @@ java.io.File:
     method: readAnotherFile
 
 # maps package -------------------------------------------------
-
-int:
-  - immediate: 11
-    parameter: "keyFromMap"
+#
+#int:
+#  - immediate: 1112
+#    parameter: keyFromMap

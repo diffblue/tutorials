@@ -1,3 +1,10 @@
+# bytecode package -----------
+
+java.lang.String:
+   - immediate: "Fuentes de Oñoro"
+     method: setStreetName
+     class: ByteString
+
 # strings package ------------
 
 #java.lang.String:
@@ -26,13 +33,13 @@
 
 # properties package -----------
 
-#java.util.Properties:
-#- class: RootProps
-#  properties:
-#    file: Root.properties
-#- class: ResourcesProps
-#  properties:
-#    resource: /Resources.properties
+java.util.Properties:
+- class: RootProps
+  properties:
+    file: Root.properties
+- class: ResourcesProps
+  properties:
+    resource: /Resources.properties
 
 # types package ----------------
 
