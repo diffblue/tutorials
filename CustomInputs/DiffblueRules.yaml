@@ -1,35 +1,29 @@
-# bytecode package -----------
-
-java.lang.String:
-   - immediate: "Fuentes de Oñoro"
-     method: setStreetName
-     class: ByteString
 
 # strings package ------------
 
-#java.lang.String:
-#   - immediate: "abc"
-#   - immediate: "John"
-#     parameter: name
-#     method: setName
-#     class: Employee
+java.lang.String:
+   - immediate: "abc"
+   - immediate: "John"
+     parameter: name
+     method: setName
+     class: Employee
 
 # primitives package ---------
 
-#int:
-#  - immediate: 1001
-#    method: add
-#  - immediate:  901
-#    method: sum
-#double[]:
-#  - immediate: [1, 2, 3, 4, 5]
-#float[]:
-#  - immediate: [1, 2]
-#    parameter: left
-#  - immediate: [3, 4]
-#    parameter: right
-#short[][]:
-#  - immediate: [[1, 2], [3, 4]]
+int:
+  - immediate: 1001
+    method: add
+  - immediate:  901
+    method: sum
+double[]:
+  - immediate: [1, 2, 3, 4, 5]
+float[]:
+  - immediate: [1, 2]
+    parameter: left
+  - immediate: [3, 4]
+    parameter: right
+short[][]:
+  - immediate: [[1, 2], [3, 4]]
 
 # properties package -----------
 
@@ -43,25 +37,25 @@ java.util.Properties:
 
 # types package ----------------
 
-#types.Bird:
-#  - factory:
-#      method: types.Bird.<init>:(Ljava/lang/String;)V
-#      params: [ "Eagle" ]
-#types.ID:
-#  - factory:
-#      method: types.ID.<init>:(J)V
-#      params: [ 77 ]
+types.Bird:
+  - factory:
+      method: types.Bird.<init>:(Ljava/lang/String;)V
+      params: [ "Eagle" ]
+types.ID:
+  - factory:
+      method: types.ID.<init>:(J)V
+      params: [ 77 ]
 
 # files package ----------------
 
-#java.io.File:
-#  - factory:
-#      method: files.FileFactory.load:(Ljava/lang/String;)Ljava/io/File;
-#      params: ["input.txt"]
-#    method: readFile
+java.io.File:
+  - factory:
+      method: files.FileFactory.load:(Ljava/lang/String;)Ljava/io/File;
+      params: ["input.txt"]
+    method: readFile
 
 # serialization package -------
 
-#serialization.Cheese:
-#  - factory: # factory method
-#      method: serialization.CheeseFactory.readSerializedCheese:()Lserialization/Cheese;
+serialization.Cheese:
+  - factory: # factory method
+      method: serialization.CheeseFactory.readSerializedCheese:()Lserialization/Cheese;
