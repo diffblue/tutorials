@@ -1,0 +1,62 @@
+buildscript {
+    repositories {
+        maven { url "https://maven.diffblue.com/release" }
+    }
+    dependencies {
+        // Add the Plugin's JAR; specify the version that corresponds with your installed version of Cover CLI
+        classpath 'com.diffblue.cover:com.diffblue.cover.gradle.plugin:2023.06.01'
+    }
+}
+
+plugins {
+    id 'java'
+}
+
+// Activate the Cover Plugin
+apply plugin: 'com.diffblue.cover'
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.2')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.mockito:mockito-core:4.11.0'
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {events "PASSED", "SKIPPED", "FAILED"}
+}
+
+// Define a Gradle property to control the execution of the optimizeTests task
+// This will be useful for running the tasks without optimization (e.g. -PskipTestOptimizer=true)
+def skipTestOptimizer = project.hasProperty('skipTestOptimizer') ? project.getProperty('skipTestOptimizer').toBoolean() : false
+
+// Configure the optimizeTests task with required fields
+optimizeTests {
+    skip = skipTestOptimizer
+    // REQUIRED: Calculate the runtime classpath used to execute tests
+    classpath = sourceSets.test.runtimeClasspath;
+}
+
+// Configure the updateTestFilter task to set the fields of any Test tasks
+task updateTestFilter() {
+    doLast {
+        if (!skipTestOptimizer && cover.allSelectedTests) {
+            tasks.withType(Test) {
+                // Set selected filters in the test task
+                filter.setIncludePatterns cover.allSelectedTests
+                // Specify that test tasks will not fail if the optimizer finds no tests to execute
+                filter.setFailOnNoMatchingTests false
+            }
+        }
+    }
+}
+
+// Specify dependencies to ensure the correct order of task execution; optimizeTests -> updateTestFilter -> test
+updateTestFilter.dependsOn optimizeTests
+test.dependsOn updateTestFilter

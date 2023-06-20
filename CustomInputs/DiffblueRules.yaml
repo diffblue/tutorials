@@ -1,20 +1,32 @@
+#java.lang.String:
+#  - immediate: "Main Street"
+#    parameter: street
+#    method: getAddressList
+#    class: HandleAddress
+#
+#int:
+#  - immediate: 101
+#    parameter: number
+#    method: getAddressList
+#    class: HandleAddress
+
 
 # strings package ------------
 
-java.lang.String:
-   - immediate: "abc"
-   - immediate: "John"
-     parameter: name
-     method: setName
-     class: Employee
+#java.lang.String:
+#   - immediate: "abc"
+#   - immediate: "John"
+#     parameter: name
+#     method: setName
+#     class: Employee
 
 # primitives package ---------
 
-int:
-  - immediate: 1001
-    method: add
-  - immediate:  901
-    method: sum
+#int:
+#  - immediate: 1001
+#    method: add
+#  - immediate:  901
+#    method: sum
 double[]:
   - immediate: [1, 2, 3, 4, 5]
 float[]:

@@ -1,7 +1,12 @@
-CoverOptimize/.git/
-CoverOptimize/.diffblue/
-CoverOptimize/.idea/
-CoverOptimize/target/
+CoverOptimizeGradle/.git/
+CoverOptimizeGradle/.diffblue/
+CoverOptimizeGradle/.idea/
+CoverOptimizeGradle/build/
+
+CoverOptimizeMaven/.git/
+CoverOptimizeMaven/.diffblue/
+CoverOptimizeMaven/.idea/
+CoverOptimizeMaven/target/
 
 CoverRefactor/.git/
 CoverRefactor/.diffblue/
