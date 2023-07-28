@@ -1,6 +1,10 @@
 package properties;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.net.URI;
+import java.nio.file.Path;
 import java.util.Properties;
 
 public class ResourcesProps {
@@ -13,4 +17,5 @@ public class ResourcesProps {
     public String getBaseUri() {
         return baseUri.toString();
     }
+
 }

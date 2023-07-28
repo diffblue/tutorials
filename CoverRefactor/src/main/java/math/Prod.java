@@ -1,17 +1,17 @@
 package math;
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 import java.util.List;
 
-public class Multiplication {
+public class Prod {
 
     private final List<Double> list;
 
-    public Multiplication(ArrayList<Double> arrayList) {
-        this.list = arrayList;
+    public Prod(List<Double> list) {
+        this.list = list;
     }
 
-    public double add() {
+    public double operate() {
         double sum = 0d;
         for (double d : list)
             sum *= d;

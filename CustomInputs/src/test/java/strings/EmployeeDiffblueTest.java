@@ -34,10 +34,10 @@ class EmployeeDiffblueTest {
     Employee employee = new Employee("Name", "Department");
 
     // Act
-    employee.setName("Name", 1);
+    employee.setName("John", 1);
 
     // Assert
-    assertEquals("Name", employee.getName());
+    assertEquals("John", employee.getName());
   }
 }
 

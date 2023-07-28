@@ -10,30 +10,47 @@
 #    method: getAddressList
 #    class: HandleAddress
 
+boolean:
+  - immediate: true
+#    parameter: flag
+
+char:
+  - immediate: 'X'
+    parameter: a
 
 # strings package ------------
 
 #java.lang.String:
 #   - immediate: "abc"
-#   - immediate: "John"
-#     parameter: name
-#     method: setName
-#     class: Employee
+#  - immediate: "John"
+#    parameter: name
+#    method: setName
+#    class: Employee
 
 # primitives package ---------
+#int:
+#  - immediate: -1
+#    parameter: x
 
 #int:
-#  - immediate: 1001
+# - immediate: 55
 #    method: add
 #  - immediate:  901
 #    method: sum
+
+java.lang.String[]:
+  - immediate: ["Camel", "Lion", "Wolf"]
+    parameter: array
+
 double[]:
   - immediate: [1, 2, 3, 4, 5]
+
 float[]:
   - immediate: [1, 2]
     parameter: left
   - immediate: [3, 4]
     parameter: right
+
 short[][]:
   - immediate: [[1, 2], [3, 4]]
 
@@ -71,3 +88,87 @@ java.io.File:
 serialization.Cheese:
   - factory: # factory method
       method: serialization.CheeseFactory.readSerializedCheese:()Lserialization/Cheese;
+
+# timing package -------------
+java.time.Duration:
+  - factory:
+      method: timing.DurationFactory.load:(Ljava/lang/String;Ljava/lang/String;)Ljava/time/Duration;
+      params: [ "2017-10-03T10:15:30.00Z", "2017-10-03T10:16:30.00Z" ]
+    method: command
+
+# conditions package -----------
+java.lang.String:
+  # Matches the first argument of the `concatenateStrings` method
+  - immediate: "Hello "
+    method: "concatenateStrings"
+    parameter: "str1"
+  # Matches the second argument of the `concatenateStrings` method
+  - immediate: "World!"
+    method: "concatenateStrings"
+    parameter: "str2"
+  # Matches arguments of methods whose name contains `String`
+  - immediate: "Hello"
+    method: "^.*String.*$"
+  # Matches all arguments of methods in the `NumberProcessor` class
+  - immediate: "800"
+    class: conditions.NumberProcessor
+  # Matches all arguments whose name starts with `str`
+  - immediate: "Hello World!"
+    parameter: "^str.*$"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

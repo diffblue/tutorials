@@ -1,14 +1,797 @@
-diff --git a/src/main/java/math/Addition.java b/src/main/java/math/Addition.java
-index 5a8b85e..e2cc89f 100644
---- a/src/main/java/math/Addition.java
-+++ b/src/main/java/math/Addition.java
-@@ -17,5 +17,9 @@ public class Addition {
-             sum += d;
-         return sum;
+diff --git a/CoverRefactor/diffblue.patch b/CoverRefactor/diffblue.patch
+index 826649f..e69de29 100644
+--- a/CoverRefactor/diffblue.patch
++++ b/CoverRefactor/diffblue.patch
+@@ -1,14 +0,0 @@
+-diff --git a/src/main/java/math/Addition.java b/src/main/java/math/Addition.java
+-index 5a8b85e..e2cc89f 100644
+---- a/src/main/java/math/Addition.java
+-+++ b/src/main/java/math/Addition.java
+-@@ -17,5 +17,9 @@ public class Addition {
+-             sum += d;
+-         return sum;
+-     }
+-+    /** For testing purposes only */
+-+    public List getList() {
+-+        return list;
+-+    }
+- 
+- }
+diff --git a/CoverRefactor/pom.xml b/CoverRefactor/pom.xml
+index edaf71d..11c2508 100644
+--- a/CoverRefactor/pom.xml
++++ b/CoverRefactor/pom.xml
+@@ -35,7 +35,7 @@
+             <plugin>
+                 <groupId>org.apache.maven.plugins</groupId>
+                 <artifactId>maven-surefire-plugin</artifactId>
+-                <version>3.0.0-M5</version>
++                <version>3.1.2</version>
+             </plugin>
+         </plugins>
+     </build>
+diff --git a/CoverRefactor/src/main/java/math/Addition.java b/CoverRefactor/src/main/java/math/Addition.java
+deleted file mode 100644
+index e2cc89f..0000000
+--- a/CoverRefactor/src/main/java/math/Addition.java
++++ /dev/null
+@@ -1,25 +0,0 @@
+-package math;
+-
+-import java.util.ArrayList;
+-import java.util.List;
+-
+-public class Addition {
+-
+-    private final List<Double> list;
+-
+-    public Addition(ArrayList<Double> arrayList) {
+-        this.list = arrayList;
+-    }
+-
+-    public double add() {
+-        double sum = 0d;
+-        for (double d : list)
+-            sum += d;
+-        return sum;
+-    }
+-    /** For testing purposes only */
+-    public List getList() {
+-        return list;
+-    }
+-
+-}
+diff --git a/CoverRefactor/src/main/java/math/Multiplication.java b/CoverRefactor/src/main/java/math/Multiplication.java
+deleted file mode 100644
+index 050417b..0000000
+--- a/CoverRefactor/src/main/java/math/Multiplication.java
++++ /dev/null
+@@ -1,25 +0,0 @@
+-package math;
+-
+-import java.util.ArrayList;
+-import java.util.List;
+-
+-public class Multiplication {
+-
+-    private final List<Double> list;
+-
+-    public Multiplication(ArrayList<Double> arrayList) {
+-        this.list = arrayList;
+-    }
+-
+-    public double add() {
+-        double sum = 0d;
+-        for (double d : list)
+-            sum *= d;
+-        return sum;
+-    }
+-
+-    public List getList() {
+-        return list;
+-    }
+-
+-}
+diff --git a/CoverRefactor/src/test/java/math/AdditionDiffblueTest.java b/CoverRefactor/src/test/java/math/AdditionDiffblueTest.java
+deleted file mode 100644
+index bf9f25b..0000000
+--- a/CoverRefactor/src/test/java/math/AdditionDiffblueTest.java
++++ /dev/null
+@@ -1,48 +0,0 @@
+-package math;
+-
+-import static org.junit.jupiter.api.Assertions.assertEquals;
+-import static org.junit.jupiter.api.Assertions.assertSame;
+-import java.util.ArrayList;
+-import org.junit.jupiter.api.Test;
+-
+-class AdditionDiffblueTest {
+-  /**
+-  * Methods under test: 
+-  * 
+-  * <ul>
+-  *   <li>{@link Addition#Addition(ArrayList)}
+-  *   <li>{@link Addition#getList()}
+-  * </ul>
+-  */
+-  @Test
+-  void testConstructor() {
+-    // Arrange
+-    ArrayList<Double> resultDoubleList = new ArrayList<>();
+-
+-    // Act and Assert
+-    assertSame(resultDoubleList, (new Addition(resultDoubleList)).getList());
+-  }
+-
+-  /**
+-   * Method under test: {@link Addition#add()}
+-   */
+-  @Test
+-  void testAdd() {
+-    // Arrange, Act and Assert
+-    assertEquals(0.0d, (new Addition(new ArrayList<>())).add());
+-  }
+-
+-  /**
+-   * Method under test: {@link Addition#add()}
+-   */
+-  @Test
+-  void testAdd2() {
+-    // Arrange
+-    ArrayList<Double> resultDoubleList = new ArrayList<>();
+-    resultDoubleList.add(10.0d);
+-
+-    // Act and Assert
+-    assertEquals(10.0d, (new Addition(resultDoubleList)).add());
+-  }
+-}
+-
+diff --git a/CoverRefactor/src/test/java/math/MultiplicationDiffblueTest.java b/CoverRefactor/src/test/java/math/MultiplicationDiffblueTest.java
+deleted file mode 100644
+index ca2b86e..0000000
+--- a/CoverRefactor/src/test/java/math/MultiplicationDiffblueTest.java
++++ /dev/null
+@@ -1,48 +0,0 @@
+-package math;
+-
+-import static org.junit.jupiter.api.Assertions.assertEquals;
+-import static org.junit.jupiter.api.Assertions.assertSame;
+-import java.util.ArrayList;
+-import org.junit.jupiter.api.Test;
+-
+-class MultiplicationDiffblueTest {
+-  /**
+-  * Methods under test: 
+-  * 
+-  * <ul>
+-  *   <li>{@link Multiplication#Multiplication(ArrayList)}
+-  *   <li>{@link Multiplication#getList()}
+-  * </ul>
+-  */
+-  @Test
+-  void testConstructor() {
+-    // Arrange
+-    ArrayList<Double> resultDoubleList = new ArrayList<>();
+-
+-    // Act and Assert
+-    assertSame(resultDoubleList, (new Multiplication(resultDoubleList)).getList());
+-  }
+-
+-  /**
+-   * Method under test: {@link Multiplication#add()}
+-   */
+-  @Test
+-  void testAdd() {
+-    // Arrange, Act and Assert
+-    assertEquals(0.0d, (new Multiplication(new ArrayList<>())).add());
+-  }
+-
+-  /**
+-   * Method under test: {@link Multiplication#add()}
+-   */
+-  @Test
+-  void testAdd2() {
+-    // Arrange
+-    ArrayList<Double> resultDoubleList = new ArrayList<>();
+-    resultDoubleList.add(10.0d);
+-
+-    // Act and Assert
+-    assertEquals(0.0d, (new Multiplication(resultDoubleList)).add());
+-  }
+-}
+-
+diff --git a/CustomInputs/DiffblueRules.yaml b/CustomInputs/DiffblueRules.yaml
+index 638e4c3..4b90911 100644
+--- a/CustomInputs/DiffblueRules.yaml
++++ b/CustomInputs/DiffblueRules.yaml
+@@ -10,30 +10,47 @@
+ #    method: getAddressList
+ #    class: HandleAddress
+ 
++boolean:
++  - immediate: true
++#    parameter: flag
++
++char:
++  - immediate: 'X'
++    parameter: a
+ 
+ # strings package ------------
+ 
+ #java.lang.String:
+ #   - immediate: "abc"
+-#   - immediate: "John"
+-#     parameter: name
+-#     method: setName
+-#     class: Employee
++#  - immediate: "John"
++#    parameter: name
++#    method: setName
++#    class: Employee
+ 
+ # primitives package ---------
++#int:
++#  - immediate: -1
++#    parameter: x
+ 
+ #int:
+-#  - immediate: 1001
++# - immediate: 55
+ #    method: add
+ #  - immediate:  901
+ #    method: sum
++
++java.lang.String[]:
++  - immediate: ["Camel", "Lion", "Wolf"]
++    parameter: array
++
+ double[]:
+   - immediate: [1, 2, 3, 4, 5]
++
+ float[]:
+   - immediate: [1, 2]
+     parameter: left
+   - immediate: [3, 4]
+     parameter: right
++
+ short[][]:
+   - immediate: [[1, 2], [3, 4]]
+ 
+diff --git a/CustomInputs/src/main/java/properties/ResourcesProps.java b/CustomInputs/src/main/java/properties/ResourcesProps.java
+index 38d8901..5ce5654 100644
+--- a/CustomInputs/src/main/java/properties/ResourcesProps.java
++++ b/CustomInputs/src/main/java/properties/ResourcesProps.java
+@@ -1,6 +1,10 @@
+ package properties;
+ 
++import java.io.FileInputStream;
++import java.io.FileNotFoundException;
++import java.io.IOException;
+ import java.net.URI;
++import java.nio.file.Path;
+ import java.util.Properties;
+ 
+ public class ResourcesProps {
+@@ -13,4 +17,5 @@ public class ResourcesProps {
+     public String getBaseUri() {
+         return baseUri.toString();
      }
-+    /** For testing purposes only */
++
+ }
+diff --git a/CustomInputs/src/test/java/primitives/ArrayProcessorDiffblueTest.java b/CustomInputs/src/test/java/primitives/ArrayProcessorDiffblueTest.java
+index cdbccb4..41cdfca 100644
+--- a/CustomInputs/src/test/java/primitives/ArrayProcessorDiffblueTest.java
++++ b/CustomInputs/src/test/java/primitives/ArrayProcessorDiffblueTest.java
+@@ -10,13 +10,10 @@ class ArrayProcessorDiffblueTest {
+   @Test
+   void testProcess() {
+     // Arrange, Act and Assert
+-    assertEquals(42.0d, (new ArrayProcessor()).process(new double[]{10.0d, 0.5d, 10.0d, 0.5d}));
++    assertEquals(30.0d, (new ArrayProcessor()).process(new double[]{1.0d, 2.0d, 3.0d, 4.0d, 5.0d}));
+     assertEquals(0.0d, (new ArrayProcessor()).process(new double[]{}));
+-    assertEquals(168.0f,
+-        (new ArrayProcessor()).process(new float[]{10.0f, 0.5f, 10.0f, 0.5f}, new float[]{10.0f, 0.5f, 10.0f, 0.5f}));
+-
+-    assertEquals(10.0f, (new ArrayProcessor())
+-            .process(new short[][]{new short[]{1, 2}, new short[]{3, 4}}));
++    assertEquals(20.0f, (new ArrayProcessor()).process(new float[]{1.0f, 2.0f}, new float[]{3.0f, 4.0f}));
++    assertEquals(10.0f, (new ArrayProcessor()).process(new short[][]{new short[]{1, 2}, new short[]{3, 4}}));
+   }
+ }
+ 
+diff --git a/CustomInputs/src/test/java/primitives/OperationsDiffblueTest.java b/CustomInputs/src/test/java/primitives/OperationsDiffblueTest.java
+index 278c6b5..229f934 100644
+--- a/CustomInputs/src/test/java/primitives/OperationsDiffblueTest.java
++++ b/CustomInputs/src/test/java/primitives/OperationsDiffblueTest.java
+@@ -10,7 +10,7 @@ class OperationsDiffblueTest {
+   @Test
+   void testAdd() {
+     // Arrange, Act and Assert
+-    assertEquals(1131, (new Operations()).add(1001, (byte) 'A', 'A'));
++    assertEquals(185, (new Operations()).add(55, (byte) 'A', 'A'));
+   }
+ 
+   /**
+@@ -19,9 +19,9 @@ class OperationsDiffblueTest {
+   @Test
+   void testSum() {
+     // Arrange, Act and Assert
+-    assertEquals(902, (new Operations()).sum(901, (short) 1));
+-    assertEquals(2, (new Operations()).sum(1, (short) 1));
++    assertEquals(56, (new Operations()).sum(55, (short) 1));
+     assertEquals(4, (new Operations()).sum(3, (short) 1));
++    assertEquals(2, (new Operations()).sum(1, (short) 1));
+     assertEquals(1, (new Operations()).sum(0, (short) 1));
+   }
+ }
+diff --git a/CustomInputs/src/test/java/properties/ResourcesPropsDiffblueTest.java b/CustomInputs/src/test/java/properties/ResourcesPropsDiffblueTest.java
+index 7015a15..60e6f15 100644
+--- a/CustomInputs/src/test/java/properties/ResourcesPropsDiffblueTest.java
++++ b/CustomInputs/src/test/java/properties/ResourcesPropsDiffblueTest.java
+@@ -14,8 +14,8 @@ class ResourcesPropsDiffblueTest {
+   void testConstructor() throws IOException {
+     // Arrange
+     Properties properties = new Properties();
+-    try (InputStream inStream = ResourcesProps.class.getResourceAsStream("/Resources.properties")) {
+-      properties.load(inStream);
++    try (InputStream resourceAsStream = ResourcesProps.class.getResourceAsStream("/Resources.properties")) {
++      properties.load(resourceAsStream);
+     }
+ 
+     // Act and Assert
+@@ -29,8 +29,8 @@ class ResourcesPropsDiffblueTest {
+   void testGetBaseUri() throws IOException {
+     // Arrange
+     Properties properties = new Properties();
+-    try (InputStream inStream = ResourcesProps.class.getResourceAsStream("/Resources.properties")) {
+-      properties.load(inStream);
++    try (InputStream resourceAsStream = ResourcesProps.class.getResourceAsStream("/Resources.properties")) {
++      properties.load(resourceAsStream);
+     }
+ 
+     // Act and Assert
+diff --git a/CustomInputs/src/test/java/properties/RootPropsDiffblueTest.java b/CustomInputs/src/test/java/properties/RootPropsDiffblueTest.java
+index 1da3425..b4b082c 100644
+--- a/CustomInputs/src/test/java/properties/RootPropsDiffblueTest.java
++++ b/CustomInputs/src/test/java/properties/RootPropsDiffblueTest.java
+@@ -16,8 +16,8 @@ class RootPropsDiffblueTest {
+   void testConstructor() throws IOException {
+     // Arrange
+     Properties properties = new Properties();
+-    try (BufferedReader reader = Files.newBufferedReader(Paths.get("Root.properties"))) {
+-      properties.load(reader);
++    try (BufferedReader newBufferedReaderResult = Files.newBufferedReader(Paths.get("Root.properties"))) {
++      properties.load(newBufferedReaderResult);
+     }
+ 
+     // Act and Assert
+@@ -31,8 +31,8 @@ class RootPropsDiffblueTest {
+   void testGetBaseUri() throws IOException {
+     // Arrange
+     Properties properties = new Properties();
+-    try (BufferedReader reader = Files.newBufferedReader(Paths.get("Root.properties"))) {
+-      properties.load(reader);
++    try (BufferedReader newBufferedReaderResult = Files.newBufferedReader(Paths.get("Root.properties"))) {
++      properties.load(newBufferedReaderResult);
+     }
+ 
+     // Act and Assert
+diff --git a/CustomInputs/src/test/java/strings/EmployeeDiffblueTest.java b/CustomInputs/src/test/java/strings/EmployeeDiffblueTest.java
+index 95f1d3a..12dda3d 100644
+--- a/CustomInputs/src/test/java/strings/EmployeeDiffblueTest.java
++++ b/CustomInputs/src/test/java/strings/EmployeeDiffblueTest.java
+@@ -34,10 +34,10 @@ class EmployeeDiffblueTest {
+     Employee employee = new Employee("Name", "Department");
+ 
+     // Act
+-    employee.setName("Name", 1);
++    employee.setName("John", 1);
+ 
+     // Assert
+-    assertEquals("Name", employee.getName());
++    assertEquals("John", employee.getName());
+   }
+ }
+ 
+diff --git a/CustomInputs/src/test/java/types/InventoryDiffblueTest.java b/CustomInputs/src/test/java/types/InventoryDiffblueTest.java
+index 61a6131..7b69345 100644
+--- a/CustomInputs/src/test/java/types/InventoryDiffblueTest.java
++++ b/CustomInputs/src/test/java/types/InventoryDiffblueTest.java
+@@ -5,27 +5,42 @@ import static org.junit.jupiter.api.Assertions.assertSame;
+ import org.junit.jupiter.api.Test;
+ 
+ class InventoryDiffblueTest {
+-
++  /**
++  * Methods under test: 
++  * 
++  * <ul>
++  *   <li>{@link Inventory#Inventory(ID, Bird)}
++  *   <li>{@link Inventory#getBird()}
++  *   <li>{@link Inventory#getId()}
++  * </ul>
++  */
+   @Test
+   void testConstructor() {
+     // Arrange
+     ID id = new ID(77L);
+     Bird b = new Bird("Eagle");
++
+     // Act
+     Inventory actualInventory = new Inventory(id, b);
++
+     // Assert
+     assertSame(b, actualInventory.getBird());
+     assertSame(id, actualInventory.getId());
+   }
+ 
++  /**
++   * Method under test: {@link Inventory#addToMap(ID, Bird)}
++   */
+   @Test
+   void testAddToMap() {
+     // Arrange
+     ID id = new ID(77L);
+     Inventory inventory = new Inventory(id, new Bird("Eagle"));
+     ID id2 = new ID(77L);
++
+     // Act
+     inventory.addToMap(id2, new Bird("Eagle"));
++
+     // Assert
+     assertEquals(1, inventory.getMap().size());
+   }
+diff --git a/CustomTestSetup/src/main/java/other/Attributes.java b/CustomTestSetup/src/main/java/other/Attributes.java
+index 96542c4..e7ea8d3 100644
+--- a/CustomTestSetup/src/main/java/other/Attributes.java
++++ b/CustomTestSetup/src/main/java/other/Attributes.java
+@@ -11,7 +11,4 @@ public class Attributes {
+     int operate(int a, int b) {
+         return a + b;
+     }
+-
+-
+-
+ }
+diff --git a/CustomTestSetup/src/test/java/other/AttributesDiffblueBase.java b/CustomTestSetup/src/test/java/other/AttributesDiffblueBase.java
+new file mode 100644
+index 0000000..ca91379
+--- /dev/null
++++ b/CustomTestSetup/src/test/java/other/AttributesDiffblueBase.java
+@@ -0,0 +1,11 @@
++package other;
++
++import org.junit.jupiter.api.BeforeAll;
++import org.mockito.Mockito;
++
++public class AttributesDiffblueBase {
++    @BeforeAll
++    static void setup() {
++        Service.service = Mockito.mock(Service.class);
++    }
++}
+diff --git a/R002/.idea/.gitignore b/R002/.idea/.gitignore
+new file mode 100644
+index 0000000..26d3352
+--- /dev/null
++++ b/R002/.idea/.gitignore
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+diff --git a/R002/.idea/CoverUsage.xml b/R002/.idea/CoverUsage.xml
+new file mode 100644
+index 0000000..842c6cd
+--- /dev/null
++++ b/R002/.idea/CoverUsage.xml
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="TestsGenerated">
++    <option name="usage" value="true" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/R002/.idea/compiler.xml b/R002/.idea/compiler.xml
+new file mode 100644
+index 0000000..b4b329a
+--- /dev/null
++++ b/R002/.idea/compiler.xml
+@@ -0,0 +1,13 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <annotationProcessing>
++      <profile name="Maven default annotation processors profile" enabled="true">
++        <sourceOutputDir name="target/generated-sources/annotations" />
++        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
++        <outputRelativeToContentRoot value="true" />
++        <module name="R002" />
++      </profile>
++    </annotationProcessing>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/R002/.idea/encodings.xml b/R002/.idea/encodings.xml
+new file mode 100644
+index 0000000..aa00ffa
+--- /dev/null
++++ b/R002/.idea/encodings.xml
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Encoding">
++    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/R002/.idea/jarRepositories.xml b/R002/.idea/jarRepositories.xml
+new file mode 100644
+index 0000000..712ab9d
+--- /dev/null
++++ b/R002/.idea/jarRepositories.xml
+@@ -0,0 +1,20 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RemoteRepositoriesConfiguration">
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Central Repository" />
++      <option name="url" value="https://repo.maven.apache.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Maven Central repository" />
++      <option name="url" value="https://repo1.maven.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="jboss.community" />
++      <option name="name" value="JBoss Community repository" />
++      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
++    </remote-repository>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/R002/.idea/misc.xml b/R002/.idea/misc.xml
+new file mode 100644
+index 0000000..82dbec8
+--- /dev/null
++++ b/R002/.idea/misc.xml
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="MavenProjectsManager">
++    <option name="originalFiles">
++      <list>
++        <option value="$PROJECT_DIR$/pom.xml" />
++      </list>
++    </option>
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/R002/.idea/uiDesigner.xml b/R002/.idea/uiDesigner.xml
+new file mode 100644
+index 0000000..2b63946
+--- /dev/null
++++ b/R002/.idea/uiDesigner.xml
+@@ -0,0 +1,124 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Palette2">
++    <group name="Swing">
++      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
++      </item>
++      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.svg" removable="false" auto-create-binding="false" can-attach-label="true">
++        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
++        <initial-values>
++          <property name="text" value="Button" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="RadioButton" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="CheckBox" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="Label" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
++          <preferred-size width="-1" height="20" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
++      </item>
++    </group>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/R002/.idea/vcs.xml b/R002/.idea/vcs.xml
+new file mode 100644
+index 0000000..6c0b863
+--- /dev/null
++++ b/R002/.idea/vcs.xml
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/R002/src/main/java/classes/Addition.java b/R002/src/main/java/classes/Addition.java
+new file mode 100644
+index 0000000..7f36229
+--- /dev/null
++++ b/R002/src/main/java/classes/Addition.java
+@@ -0,0 +1,18 @@
++package classes;
++
++import java.util.ArrayList;
++import java.util.List;
++
++public class Addition {
++
++    private List<Double> list;
++
++    public Addition(ArrayList<Double> list) {
++        this.list = list;
++    }
++
 +    public List getList() {
 +        return list;
 +    }
- 
- }
++
++}
+\ No newline at end of file
+diff --git a/R002/src/main/java/classes/Counter.java b/R002/src/main/java/classes/Counter.java
+new file mode 100644
+index 0000000..28c3a78
+--- /dev/null
++++ b/R002/src/main/java/classes/Counter.java
+@@ -0,0 +1,15 @@
++package classes;
++
++public class Counter {
++
++    private boolean flag;
++
++    public boolean getFlag() {
++        return flag;
++    }
++
++    void flip() {
++        flag = !flag;
++    }
++
++}
+diff --git a/R013/src/main/java/iterators/Addition.java b/R013/src/main/java/iterators/Addition.java
+new file mode 100644
+index 0000000..ddda8b4
+--- /dev/null
++++ b/R013/src/main/java/iterators/Addition.java
+@@ -0,0 +1,18 @@
++package iterators;
++
++import java.util.List;
++
++public class Addition {
++
++    private List<Double> list;
++
++    // R013  java.lang.NullPointerException: Cannot invoke "java.lang.Iterable.iterator()" because "iterable" is null
++    // use a constructor to initialize list
++    public double add() {
++        double sum = 0d;
++        for (double d : list)
++            sum += d;
++        return sum;
++    }
++
++}
+\ No newline at end of file
+diff --git a/spring-petclinic b/spring-petclinic
+--- a/spring-petclinic
++++ b/spring-petclinic
+@@ -1 +1 @@
+-Subproject commit a5cbb8505a1df3c348c06607933a07fc8c87c222
++Subproject commit a5cbb8505a1df3c348c06607933a07fc8c87c222-dirty

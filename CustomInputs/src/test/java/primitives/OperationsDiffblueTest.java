@@ -10,7 +10,7 @@ class OperationsDiffblueTest {
   @Test
   void testAdd() {
     // Arrange, Act and Assert
-    assertEquals(1131, (new Operations()).add(1001, (byte) 'A', 'A'));
+    assertEquals(185, (new Operations()).add(55, (byte) 'A', 'A'));
   }
 
   /**
@@ -19,9 +19,9 @@ class OperationsDiffblueTest {
   @Test
   void testSum() {
     // Arrange, Act and Assert
-    assertEquals(902, (new Operations()).sum(901, (short) 1));
-    assertEquals(2, (new Operations()).sum(1, (short) 1));
+    assertEquals(56, (new Operations()).sum(55, (short) 1));
     assertEquals(4, (new Operations()).sum(3, (short) 1));
+    assertEquals(2, (new Operations()).sum(1, (short) 1));
     assertEquals(1, (new Operations()).sum(0, (short) 1));
   }
 }

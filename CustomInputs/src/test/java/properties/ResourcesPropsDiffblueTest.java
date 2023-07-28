@@ -14,8 +14,8 @@ class ResourcesPropsDiffblueTest {
   void testConstructor() throws IOException {
     // Arrange
     Properties properties = new Properties();
-    try (InputStream inStream = ResourcesProps.class.getResourceAsStream("/Resources.properties")) {
-      properties.load(inStream);
+    try (InputStream resourceAsStream = ResourcesProps.class.getResourceAsStream("/Resources.properties")) {
+      properties.load(resourceAsStream);
     }
 
     // Act and Assert
@@ -29,8 +29,8 @@ class ResourcesPropsDiffblueTest {
   void testGetBaseUri() throws IOException {
     // Arrange
     Properties properties = new Properties();
-    try (InputStream inStream = ResourcesProps.class.getResourceAsStream("/Resources.properties")) {
-      properties.load(inStream);
+    try (InputStream resourceAsStream = ResourcesProps.class.getResourceAsStream("/Resources.properties")) {
+      properties.load(resourceAsStream);
     }
 
     // Act and Assert

@@ -16,8 +16,8 @@ class RootPropsDiffblueTest {
   void testConstructor() throws IOException {
     // Arrange
     Properties properties = new Properties();
-    try (BufferedReader reader = Files.newBufferedReader(Paths.get("Root.properties"))) {
-      properties.load(reader);
+    try (BufferedReader newBufferedReaderResult = Files.newBufferedReader(Paths.get("Root.properties"))) {
+      properties.load(newBufferedReaderResult);
     }
 
     // Act and Assert
@@ -31,8 +31,8 @@ class RootPropsDiffblueTest {
   void testGetBaseUri() throws IOException {
     // Arrange
     Properties properties = new Properties();
-    try (BufferedReader reader = Files.newBufferedReader(Paths.get("Root.properties"))) {
-      properties.load(reader);
+    try (BufferedReader newBufferedReaderResult = Files.newBufferedReader(Paths.get("Root.properties"))) {
+      properties.load(newBufferedReaderResult);
     }
 
     // Act and Assert

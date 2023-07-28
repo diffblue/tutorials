@@ -1,0 +1,34 @@
+pipeline{
+    agent any
+    stages {
+        stage('sanity checks') {
+            steps {
+                sh 'git branch'
+                sh 'git status'
+            }
+        }
+
+        stage('Get last commit author and bot name') {
+            steps {
+                script {
+                    env.GIT_AUTHOR = sh (script: 'git log --no-merges -1 --pretty=%cn', returnStdout: true).trim()
+                    env.DIFFBLUE_BOT_NAME = "db-ci-bot"
+                }
+                sh '''#!/bin/bash
+                    echo "Git author is $GIT_AUTHOR and the Diffblue bot name is $DIFFBLUE_BOT_NAME"
+                '''
+            }
+        }
+
+        stage('Use dcover create in Jenkins') {
+            when { // Making sure not to run diffblue-cover-tool for new commit if last commit was from this pipeline
+                not { environment name: 'GIT_AUTHOR', value: "$env.DIFFBLUE_BOT_NAME" }
+            }
+            steps {
+                script {
+                   build job: 'diffblue-cover-tool', parameters: [string(name: 'HEAD_BRANCH', value: "$CHANGE_BRANCH"), string(name: 'BASE_BRANCH', value: "$CHANGE_TARGET"), string(name: 'MODULES', value: "."), string(name: 'SPECIFY_PROJECT', value: "flappyowl")]
+                }
+            }
+        }
+    }
+}
