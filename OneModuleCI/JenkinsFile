@@ -26,7 +26,7 @@ pipeline{
             }
             steps {
                 script {
-                   build job: 'diffblue-cover-tool', parameters: [string(name: 'HEAD_BRANCH', value: "$CHANGE_BRANCH"), string(name: 'BASE_BRANCH', value: "$CHANGE_TARGET"), string(name: 'MODULES', value: "."), string(name: 'SPECIFY_PROJECT', value: "flappyowl")]
+                   build job: 'diffblue-cover-tool', parameters: [string(name: 'HEAD_BRANCH', value: "$CHANGE_BRANCH"), string(name: 'BASE_BRANCH', value: "$CHANGE_TARGET"), string(name: 'MODULES', value: "."), string(name: 'SPECIFY_PROJECT', value: "OneModuleCI")]
                 }
             }
         }
