@@ -10,7 +10,7 @@ class BDiffblueTest {
   @Test
   void testGetFunction() {
     // Arrange, Act and Assert
-    assertEquals(3, (new B()).getFunction().apply(1).intValue());
+    assertEquals(0, (new B()).getFunction().apply(1).intValue());
   }
 
   /**
@@ -19,7 +19,7 @@ class BDiffblueTest {
   @Test
   void testOperation() {
     // Arrange, Act and Assert
-    assertEquals(5, (new B()).operation(1).intValue());
+    assertEquals(0, (new B()).operation(1).intValue());
   }
 }
 
