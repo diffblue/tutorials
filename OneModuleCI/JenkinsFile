@@ -26,7 +26,13 @@ pipeline{
             }
             steps {
                 script {
-                   build job: 'diffblue-cover-tool', parameters: [string(name: 'HEAD_BRANCH', value: "$CHANGE_BRANCH"), string(name: 'BASE_BRANCH', value: "$CHANGE_TARGET"), string(name: 'MODULES', value: "."), string(name: 'SPECIFY_PROJECT', value: "OneModuleCI")]
+                   build job: 'diffblue-cover-tool',
+                   parameters: [
+                   string(name: 'HEAD_BRANCH', value: "$CHANGE_BRANCH"),
+                   string(name: 'BASE_BRANCH', value: "$CHANGE_TARGET"),
+                   string(name: 'MODULES', value: "."),
+                   string(name: 'SPECIFY_PROJECT', value: "OneModuleCI"),
+                   string(name: 'BUILD_TOOL', value: "maven")]
                 }
             }
         }
