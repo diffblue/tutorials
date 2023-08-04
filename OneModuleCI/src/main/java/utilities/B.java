@@ -5,11 +5,11 @@ import java.util.function.Function;
 class B implements I {
     @Override
     public Function<Integer, Integer> getFunction() {
-        return i -> 213*i;
+        return i -> 2*i;
     }
 
     @Override
     public Integer operation(Integer i) {
-        return i+61;
+        return i+7;
     }
 }
