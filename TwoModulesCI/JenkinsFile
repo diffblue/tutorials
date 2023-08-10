@@ -30,7 +30,7 @@ pipeline{
                    parameters: [
                    string(name: 'HEAD_BRANCH', value: "$CHANGE_BRANCH"),
                    string(name: 'BASE_BRANCH', value: "$CHANGE_TARGET"),
-                   string(name: 'MODULES', value: "."),
+                   string(name: 'MODULES', value: "app common"),
                    string(name: 'SPECIFY_PROJECT', value: "TwoModulesCI"),
                    string(name: 'BUILD_TOOL', value: "gradle")]
                 }
