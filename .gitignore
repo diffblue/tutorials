@@ -2,7 +2,7 @@
 */.diffblue/
 */.idea/
 */build/
-/TwoModulesCI/app/build/*
-/TwoModulesCI/common/build/*
-/TwoModulesCI/.gradle/*
+*/*/build/
 */target/
+*/*/target/
+*/.gradle/
