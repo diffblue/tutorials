@@ -10,7 +10,7 @@ class ADiffblueTest {
   @Test
   void testGetFunction() {
     // Arrange, Act and Assert
-    assertEquals(4, (new A()).getFunction().apply(1).intValue());
+    assertEquals(6, (new A()).getFunction().apply(1).intValue());
   }
 
   /**
@@ -19,7 +19,7 @@ class ADiffblueTest {
   @Test
   void testOperation() {
     // Arrange, Act and Assert
-    assertEquals(5, (new A()).operation(1).intValue());
+    assertEquals(7, (new A()).operation(1).intValue());
   }
 }
 
