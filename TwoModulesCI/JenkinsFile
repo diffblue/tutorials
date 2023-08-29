@@ -1,13 +1,7 @@
 pipeline{
     agent any
     stages {
-        stage('sanity checks') {
-            steps {
-                sh 'git branch'
-                sh 'git status'
-            }
-        }
-        stage('Get last commit author and bot name') {
+        stage('Initialization') {
             steps {
                 script {
                     env.GIT_AUTHOR = sh (script: 'git log --no-merges -1 --pretty=%cn', returnStdout: true).trim()
