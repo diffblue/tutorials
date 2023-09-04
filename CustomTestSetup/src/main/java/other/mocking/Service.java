@@ -1,4 +1,4 @@
-package other;
+package other.mocking;
 
 public class Service {
     static Service service;

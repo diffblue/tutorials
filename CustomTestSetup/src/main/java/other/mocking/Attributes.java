@@ -1,4 +1,4 @@
-package other;
+package other.mocking;
 
 public class Attributes {
     private Service service;

@@ -1,7 +1,8 @@
-package other;
+package other.mocking;
 
 import static org.junit.jupiter.api.Assertions.assertSame;
 import org.junit.jupiter.api.Test;
+import other.mocking.Service;
 
 class ServiceDiffblueTest {
   /**

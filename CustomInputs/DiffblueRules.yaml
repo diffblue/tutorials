@@ -10,13 +10,13 @@
 #    method: getAddressList
 #    class: HandleAddress
 
-boolean:
-  - immediate: true
+#boolean:
+#  - immediate: true
 #    parameter: flag
 
-char:
-  - immediate: 'X'
-    parameter: a
+#char:
+#  - immediate: 'X'
+#    parameter: a
 
 # strings package ------------
 
@@ -38,137 +38,98 @@ char:
 #  - immediate:  901
 #    method: sum
 
-java.lang.String[]:
-  - immediate: ["Camel", "Lion", "Wolf"]
-    parameter: array
+#java.lang.String[]:
+#  - immediate: ["Camel", "Lion", "Wolf"]
+#    parameter: array
 
-double[]:
-  - immediate: [1, 2, 3, 4, 5]
+#double[]:
+#  - immediate: [1, 2, 3, 4, 5]
 
-float[]:
-  - immediate: [1, 2]
-    parameter: left
-  - immediate: [3, 4]
-    parameter: right
+#float[]:
+#  - immediate: [1, 2]
+#    parameter: left
+#  - immediate: [3, 4]
+#    parameter: right
 
-short[][]:
-  - immediate: [[1, 2], [3, 4]]
+#short[][]:
+#  - immediate: [[1, 2], [3, 4]]
 
 # properties package -----------
 
-java.util.Properties:
-- class: RootProps
-  properties:
-    file: Root.properties
-- class: ResourcesProps
-  properties:
-    resource: /Resources.properties
+#java.util.Properties:
+#- class: RootProps
+#  properties:
+#    file: Root.properties
+#- class: ResourcesProps
+#  properties:
+#    resource: /Resources.properties
 
 # types package ----------------
 
-types.Bird:
-  - factory:
-      method: types.Bird.<init>:(Ljava/lang/String;)V
-      params: [ "Eagle" ]
-types.ID:
-  - factory:
-      method: types.ID.<init>:(J)V
-      params: [ 77 ]
+#types.Bird:
+#  - factory:
+#      method: types.Bird.<init>:(Ljava/lang/String;)V
+#      params: [ "Eagle" ]
+#types.ID:
+#  - factory:
+#      method: types.ID.<init>:(J)V
+#      params: [ 77 ]
 
 # files package ----------------
 
-java.io.File:
-  - factory:
-      method: files.FileFactory.load:(Ljava/lang/String;)Ljava/io/File;
-      params: ["input.txt"]
-    method: readFile
+#java.io.File:
+#  - factory:
+#      method: files.FileFactory.load:(Ljava/lang/String;)Ljava/io/File;
+#      params: ["input.txt"]
+#    method: readFile
 
 # serialization package -------
 
-serialization.Cheese:
-  - factory: # factory method
-      method: serialization.CheeseFactory.readSerializedCheese:()Lserialization/Cheese;
+#serialization.Cheese:
+#  - factory: # factory method
+#      method: serialization.CheeseFactory.readSerializedCheese:()Lserialization/Cheese;
 
 # timing package -------------
-java.time.Duration:
+#java.time.Duration:
+#  - factory:
+#      method: timing.DurationFactory.load:(Ljava/lang/String;Ljava/lang/String;)Ljava/time/Duration;
+#      params: [ "2017-10-03T10:15:30.00Z", "2017-10-03T10:16:30.00Z" ]
+#    method: command
+
+
+
+
+
+
+
+java.time.ZonedDateTime:
   - factory:
-      method: timing.DurationFactory.load:(Ljava/lang/String;Ljava/lang/String;)Ljava/time/Duration;
-      params: [ "2017-10-03T10:15:30.00Z", "2017-10-03T10:16:30.00Z" ]
-    method: command
+      method: timing.DateFactory.getSpecificDateForTesting:()Ljava/time/Clock;
+    method: zonedDateTime
+
+
+
+
+
+
+
 
 # conditions package -----------
-java.lang.String:
+#java.lang.String:
   # Matches the first argument of the `concatenateStrings` method
-  - immediate: "Hello "
-    method: "concatenateStrings"
-    parameter: "str1"
+#  - immediate: "Hello "
+#    method: "concatenateStrings"
+#    parameter: "str1"
   # Matches the second argument of the `concatenateStrings` method
-  - immediate: "World!"
-    method: "concatenateStrings"
-    parameter: "str2"
+#  - immediate: "World!"
+#    method: "concatenateStrings"
+#    parameter: "str2"
   # Matches arguments of methods whose name contains `String`
-  - immediate: "Hello"
-    method: "^.*String.*$"
+#  - immediate: "Hello"
+#    method: "^.*String.*$"
   # Matches all arguments of methods in the `NumberProcessor` class
-  - immediate: "800"
-    class: conditions.NumberProcessor
+#  - immediate: "800"
+#    class: conditions.NumberProcessor
   # Matches all arguments whose name starts with `str`
-  - immediate: "Hello World!"
-    parameter: "^str.*$"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#  - immediate: "Hello World!"
+#    parameter: "^str.*$"

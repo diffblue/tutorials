@@ -1,0 +1,6 @@
+# properties package -----------
+
+java.util.Properties:
+  - class: ResourcesProps
+    properties:
+      resource: /Resources.properties

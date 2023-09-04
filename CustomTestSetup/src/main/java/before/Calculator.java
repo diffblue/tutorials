@@ -9,14 +9,14 @@ public class Calculator {
         licensed = true;
     }
 
-    private static void checkLicence() {
+    private static void checkLicense() {
         if (!licensed) {
             throw new IllegalStateException("Not enabled!");
         }
     }
 
     public static int sum(int a, int b) {
-        checkLicence();
+        checkLicense();
         return a + b;
     }
 }
