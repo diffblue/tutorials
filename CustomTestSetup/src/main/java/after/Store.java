@@ -8,5 +8,4 @@ public class Store {
         dataStore = "abc";
         return dataStore + str;
     }
-
 }

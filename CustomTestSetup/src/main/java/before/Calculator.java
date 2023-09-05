@@ -4,7 +4,6 @@ public class Calculator {
 
     private static boolean licensed;
 
-
     public static void licenseAllFeatures() {
         licensed = true;
     }
