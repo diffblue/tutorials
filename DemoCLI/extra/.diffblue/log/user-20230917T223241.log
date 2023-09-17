@@ -1,0 +1,314 @@
+22:32:41.876 [INFO]  [Preparing] Diffblue Cover 2023.09.01-9200f07-unrestricted
+22:32:41.877 [INFO]  [Preparing] 
+22:32:41.877 [INFO]  [Preparing] Running: dcover create --working-directory=extra source --keep-partial-tests
+22:32:43.801 [INFO]  [Checking] Detecting environment:
+22:32:43.802 [INFO]  [Checking] ----------------------
+22:32:43.880 [INFO]  [Checking] Detected Java version 17.0.6
+22:32:46.205 [INFO]  [Checking] Detected build system: Gradle 8.2
+22:32:46.210 [INFO]  [Checking] Operating System: Windows 11 amd64 10.0
+22:32:46.210 [INFO]  [Checking] Default charset: windows-1252
+22:32:46.210 [INFO]  [Checking] Default locale: en_GB
+22:32:46.210 [INFO]  [Checking] Default time zone: Europe/London
+22:32:46.212 [INFO]  [Checking] Selected build system: Gradle
+22:32:46.215 [INFO]  [Checking] Selected classpath from build system Gradle
+22:32:46.217 [INFO]  [Checking] Expanded classpath: 
+C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build\classes\java\main (code under test)
+C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build\resources\test
+C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build\resources\main
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter\5.9.1\9274d3757e224bc02eae367bd481062a263c150b\junit-jupiter-5.9.1.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-params\5.9.1\ffcd1013edaeee112be11fcddeb38882d79238de\junit-jupiter-params-5.9.1.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-engine\5.9.1\1bf771097bde296c3ab174861954e8aafaaf2e94\junit-jupiter-engine-5.9.1.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-api\5.9.1\7bb53fbc0173e9f6a9d21d58297af94b1f2f9ce1\junit-jupiter-api-5.9.1.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.platform\junit-platform-engine\1.9.1\83591e5089d6cea5f324aa3ecca9b19d5a275803\junit-platform-engine-1.9.1.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.platform\junit-platform-commons\1.9.1\3145f821b5cd10abcdc5f925baa5fffa6f1b628f\junit-platform-commons-1.9.1.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.mockito\mockito-core\5.4.0\30bcbe79f7bd51b53debfc4c6014d0bea4935e37\mockito-core-5.4.0.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy\1.14.5\28a424c0c4f362568e904d992c239c996cf7adc7\byte-buddy-1.14.5.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.5\20f4e9b9d0ffb953657bfa4b92c0cceb27907d58\byte-buddy-agent-1.14.5.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.objenesis\objenesis\3.3\1049c09f1de4331e8193e579448d0916d75b7631\objenesis-3.3.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.opentest4j\opentest4j\1.2.0\28c11eb91f9b6d8e200631d46e20a7f407f2a046\opentest4j-1.2.0.jar
+22:32:46.338 [INFO]  [Checking] Detected test framework: JUnit Jupiter 5.9.1
+22:32:46.342 [INFO]  [Checking] Detected JUnit Jupiter version 5.9.1
+22:32:46.346 [INFO]  [Checking] Detected JUnit Jupiter Params version 5.9.1
+22:32:46.378 [INFO]  [Checking] Detected Mockito version 5.4.0
+22:32:46.854 [INFO]  [Checking] Indexing...
+22:32:47.198 [INFO]  [Checking] Selected test output directory: C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\src\test\java
+22:32:47.205 [INFO]  [Checking] Running: Using JAVA_HOME: C:\Program Files\Java\jdk-17 : in C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra : gradle test -i  DummyJupiterDiffblueTest
+22:32:48.778 [INFO]  [Checking] Selected test framework: JUnit Jupiter
+22:32:48.812 [INFO]  [Checking] Running: Using JAVA_HOME: C:\Program Files\Java\jdk-17 : in C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra : gradle test -i  DummyJUnitJupiterLauncherDiffblueTest
+22:32:49.933 [INFO]  [Checking] Detected JVM architecture: 64-Bit
+22:32:50.496 [INFO]  [Checking] Selected Java language compliance level: 17
+22:32:50.497 [INFO]  [Checking] Selected test validation: enabled
+22:32:50.501 [INFO]  [Checking] Prefixes for filtering classes/methods:
+22:32:50.503 [INFO]  [Checking] - source
+22:32:50.504 [INFO]  [Checking] Gathering methods to test...
+22:32:51.215 [INFO]  [Reporting] 
+22:32:51.216 [INFO]  [Reporting] Environment summary:
+22:32:51.216 [INFO]  [Reporting] --------------------
+22:32:51.218 [INFO]  [Reporting] Java version                  17.0.6                        SUCCESS        
+22:32:51.219 [INFO]  [Reporting] Build system                  Gradle                        SUCCESS        
+22:32:51.219 [INFO]  [Reporting] Mocking Framework             Mockito 5.4.0                 SUCCESS        
+22:32:51.219 [INFO]  [Reporting] Testing framework             JUnit Jupiter 5               SUCCESS        
+22:32:51.219 [INFO]  [Reporting] Launcher                      JUnit Jupiter                 SUCCESS        
+22:32:51.219 [INFO]  [Reporting] Test validation               Enabled                       SUCCESS        
+22:32:51.219 [INFO]  [Reporting] 
+22:32:51.220 [INFO]  [Reporting] Environment check status: SUCCESS
+22:32:51.256 [INFO]  [Creating] Found 12 callable methods in 6 classes
+22:32:51.258 [INFO]  [Creating] 
+22:32:51.259 [INFO]  [Creating] Creating tests:
+22:32:51.260 [INFO]  [Creating] ---------------
+22:32:51.297 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'source.A'
+================================================================================
+22:32:51.298 [INFO]  [Creating] Filtering out non-testable methods...
+22:32:51.308 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+22:32:51.314 [INFO]  [Creating] Attempting to get service client, retry 1.
+22:32:51.331 [INFO]  [Creating] Starting monitoring server.
+22:32:51.550 [INFO]  [Creating] Monitoring server listening on localhost/127.0.0.1:55794
+22:32:51.553 [INFO]  [Creating] Starting analyzer server process...
+22:32:51.553 [INFO]  [Creating] Server command-line: C:\Program Files\Java\jdk-17\bin\java.exe -XX:+IgnoreUnrecognizedVMOptions -Djdk.attach.allowAttachSelf=true -ea -javaagent:C:\DiffblueCoverProduct\launcher-shared-jar.jar -Dlogback.configurationFile=C:\Users\cbontoiu\AppData\Local\Temp\diffblue\config\logback-remote-service.xml -Dcom.diffblue.springIsolationJar=C:\DiffblueCoverProduct\cover-isolation-layer.jar -Dcover.jar.path=C:\DiffblueCoverProduct\cover-service-analyzer.jar -Dcom.diffblue.assertionSuggestionJar=C:\DiffblueCoverProduct\cover-service-analyzer.jar -Dcover.main.class=com.diffblue.cover.service.analyzer.Main -jar C:\DiffblueCoverProduct\launcher-shared-jar.jar --service-lifespan 120 --monitoring-service-port 55794 --index-service-port 55794 --debug-log
+22:32:51.564 [INFO]  [Creating] Server started. Waiting up to 300 seconds for a connection to be established...
+22:32:52.431 [INFO]  [Creating] Starting new remote monitor client
+22:32:53.117 [INFO]  [Creating] Attempting to start remote server.
+22:32:53.370 [INFO]  [Creating] Server started, listening on localhost/127.0.0.1:55797
+22:32:53.586 [INFO]  [Creating] Expect analyzer service to be listening on port 55797.
+22:32:54.199 [INFO]  [Creating] Started analyzer service and client retrieved.
+22:32:56.782 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'source.A.<init>:()V' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+22:32:58.712 [INFO]  [Creating]      [1/12] source.A.<init>
+22:32:58.712 [INFO]  [Creating]      [1/12]   Tests created: 1
+22:32:58.715 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'source.A.method:(D)I' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+22:33:01.864 [INFO]  [Creating] Created 1+0 tests and partial tests via 'SiM (!sp, fnm, df, !ris)', 1/2, returning all 1
+22:33:01.979 [INFO]  [Creating]      [2/12] source.A.method
+22:33:01.979 [INFO]  [Creating]      [2/12]   Tests created: 1
+22:33:01.985 [INFO]  [Creating] [1/6] source.A
+22:33:01.986 [INFO]  [Creating] [1/6]   Tests created: 2
+22:33:01.987 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'source.B'
+================================================================================
+22:33:01.987 [INFO]  [Creating] Filtering out non-testable methods...
+22:33:01.987 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+22:33:01.987 [INFO]  [Creating] Attempting to get service client, retry 1.
+22:33:02.028 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'source.B.<init>:()V' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+22:33:02.144 [INFO]  [Creating]      [3/12] source.B.<init>
+22:33:02.145 [INFO]  [Creating]      [3/12]   Tests created: 1
+22:33:02.147 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'source.B.method:(D)I' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+22:33:02.342 [INFO]  [Creating] Created 1+0 tests and partial tests via 'SiM (!sp, fnm, df, !ris)', 1/2, returning all 1
+22:33:02.416 [INFO]  [Creating]      [4/12] source.B.method
+22:33:02.416 [INFO]  [Creating]      [4/12]   Tests created: 1
+22:33:02.420 [INFO]  [Creating] [2/6] source.B
+22:33:02.421 [INFO]  [Creating] [2/6]   Tests created: 2
+22:33:02.422 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'source.C'
+================================================================================
+22:33:02.422 [INFO]  [Creating] Filtering out non-testable methods...
+22:33:02.422 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+22:33:02.422 [INFO]  [Creating] Attempting to get service client, retry 1.
+22:33:02.456 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'source.C.<init>:()V' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+22:33:02.556 [INFO]  [Creating]      [5/12] source.C.<init>
+22:33:02.556 [INFO]  [Creating]      [5/12]   Tests created: 1
+22:33:02.558 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'source.C.method:(D)I' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+22:33:02.727 [INFO]  [Creating] Created 1+0 tests and partial tests via 'SiM (!sp, fnm, df, !ris)', 1/2, returning all 1
+22:33:02.803 [INFO]  [Creating]      [6/12] source.C.method
+22:33:02.803 [INFO]  [Creating]      [6/12]   Tests created: 1
+22:33:02.808 [INFO]  [Creating] [3/6] source.C
+22:33:02.808 [INFO]  [Creating] [3/6]   Tests created: 2
+22:33:02.809 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'source.D'
+================================================================================
+22:33:02.809 [INFO]  [Creating] Filtering out non-testable methods...
+22:33:02.809 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+22:33:02.810 [INFO]  [Creating] Attempting to get service client, retry 1.
+22:33:02.847 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'source.D.<init>:()V' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+22:33:02.958 [INFO]  [Creating]      [7/12] source.D.<init>
+22:33:02.958 [INFO]  [Creating]      [7/12]   Tests created: 1
+22:33:02.960 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'source.D.method:(D)I' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+22:33:03.108 [INFO]  [Creating] Created 1+0 tests and partial tests via 'SiM (!sp, fnm, df, !ris)', 1/2, returning all 1
+22:33:03.187 [INFO]  [Creating]      [8/12] source.D.method
+22:33:03.187 [INFO]  [Creating]      [8/12]   Tests created: 1
+22:33:03.191 [INFO]  [Creating] [4/6] source.D
+22:33:03.192 [INFO]  [Creating] [4/6]   Tests created: 2
+22:33:03.193 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'source.E'
+================================================================================
+22:33:03.193 [INFO]  [Creating] Filtering out non-testable methods...
+22:33:03.193 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+22:33:03.194 [INFO]  [Creating] Attempting to get service client, retry 1.
+22:33:03.225 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'source.E.<init>:()V' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+22:33:03.349 [INFO]  [Creating]      [9/12] source.E.<init>
+22:33:03.349 [INFO]  [Creating]      [9/12]   Tests created: 1
+22:33:03.352 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'source.E.method:(D)I' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+22:33:03.474 [INFO]  [Creating] Created 1+0 tests and partial tests via 'SiM (!sp, fnm, df, !ris)', 1/2, returning all 1
+22:33:03.541 [INFO]  [Creating]     [10/12] source.E.method
+22:33:03.541 [INFO]  [Creating]     [10/12]   Tests created: 1
+22:33:03.545 [INFO]  [Creating] [5/6] source.E
+22:33:03.546 [INFO]  [Creating] [5/6]   Tests created: 2
+22:33:03.547 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'source.F'
+================================================================================
+22:33:03.547 [INFO]  [Creating] Filtering out non-testable methods...
+22:33:03.547 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+22:33:03.547 [INFO]  [Creating] Attempting to get service client, retry 1.
+22:33:03.579 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'source.F.<init>:()V' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+22:33:03.692 [INFO]  [Creating]     [11/12] source.F.<init>
+22:33:03.692 [INFO]  [Creating]     [11/12]   Tests created: 1
+22:33:03.694 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'source.F.method:(D)I' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+22:33:03.779 [INFO]  [Creating] Created 1+0 tests and partial tests via 'SiM (!sp, fnm, df, !ris)', 1/2, returning all 1
+22:33:03.845 [INFO]  [Creating]     [12/12] source.F.method
+22:33:03.845 [INFO]  [Creating]     [12/12]   Tests created: 1
+22:33:03.850 [INFO]  [Creating] [6/6] source.F
+22:33:03.851 [INFO]  [Creating] [6/6]   Tests created: 2
+22:33:03.857 [INFO]  [Reporting] 
+22:33:03.858 [INFO]  [Reporting] Summary:
+22:33:03.858 [INFO]  [Reporting] --------
+22:33:03.859 [INFO]  [Reporting] Total:                                              12 methods
+22:33:03.859 [INFO]  [Reporting] 12 tests created for:                               12 methods
+22:33:03.860 [INFO]  [Reporting] 
+22:33:04.012 [INFO]  [Validating] 
+22:33:04.013 [INFO]  [Validating] Running validation command.
+22:33:04.017 [INFO]  [Validating] Running: Using JAVA_HOME: C:\Program Files\Java\jdk-17 : in C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra : gradle test -i  
+22:33:05.118 [INFO]  [Validating] Standard output of build tool (gradle)
+22:33:05.119 [INFO]  [Validating] > The client will now receive all logging from the daemon (pid: 7736). The daemon log file: C:\Users\cbontoiu\.gradle\daemon\8.2\daemon-7736.out.log
+22:33:05.119 [INFO]  [Validating] > Starting 28th build in daemon [uptime: 1 hrs 44 mins 5.491 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 3.9 GiB]
+22:33:05.119 [INFO]  [Validating] > Closing daemon's stdin at end of input.
+22:33:05.119 [INFO]  [Validating] > The daemon will no longer process any standard input.
+22:33:05.119 [INFO]  [Validating] > Using 8 worker leases.
+22:33:05.119 [INFO]  [Validating] > Now considering [C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI] as hierarchies to watch
+22:33:05.119 [INFO]  [Validating] > Watching the file system is configured to be enabled if available
+22:33:05.119 [INFO]  [Validating] > File system watching is active
+22:33:05.119 [INFO]  [Validating] > Starting Build
+22:33:05.120 [INFO]  [Validating] > Settings evaluated using settings file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\settings.gradle'.
+22:33:05.120 [INFO]  [Validating] > Projects loaded. Root project using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\build.gradle'.
+22:33:05.120 [INFO]  [Validating] > Included projects: [root project 'DemoCLI', project ':app', project ':common', project ':extra']
+22:33:05.120 [INFO]  [Validating] > 
+22:33:05.120 [INFO]  [Validating] > > Configure project :
+22:33:05.120 [INFO]  [Validating] > Evaluating root project 'DemoCLI' using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\build.gradle'.
+22:33:05.120 [INFO]  [Validating] > 
+22:33:05.120 [INFO]  [Validating] > > Configure project :app
+22:33:05.120 [INFO]  [Validating] > Evaluating project ':app' using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\app\build.gradle'.
+22:33:05.120 [INFO]  [Validating] > 
+22:33:05.120 [INFO]  [Validating] > > Configure project :common
+22:33:05.120 [INFO]  [Validating] > Evaluating project ':common' using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\common\build.gradle'.
+22:33:05.120 [INFO]  [Validating] > 
+22:33:05.120 [INFO]  [Validating] > > Configure project :extra
+22:33:05.120 [INFO]  [Validating] > Evaluating project ':extra' using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build.gradle'.
+22:33:05.120 [INFO]  [Validating] > All projects evaluated.
+22:33:05.120 [INFO]  [Validating] > Task path ':extra:test' matched project ':extra'
+22:33:05.120 [INFO]  [Validating] > Task name matched 'test'
+22:33:05.120 [INFO]  [Validating] > Selected primary task 'test' from project :extra
+22:33:05.120 [INFO]  [Validating] > The configuration :extra:mainSourceElements is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+22:33:05.120 [INFO]  [Validating] > Tasks to be executed: [task ':extra:compileJava', task ':extra:processResources', task ':extra:classes', task ':extra:compileTestJava', task ':extra:processTestResources', task ':extra:testClasses', task ':extra:test']
+22:33:05.120 [INFO]  [Validating] > Tasks that were excluded: []
+22:33:05.120 [INFO]  [Validating] > Resolve mutations for :extra:compileJava (Thread[Execution worker,5,main]) started.
+22:33:05.120 [INFO]  [Validating] > :extra:compileJava (Thread[Execution worker,5,main]) started.
+22:33:05.120 [INFO]  [Validating] > 
+22:33:05.120 [INFO]  [Validating] > > Task :extra:compileJava UP-TO-DATE
+22:33:05.120 [INFO]  [Validating] > Caching disabled for task ':extra:compileJava' because:
+22:33:05.120 [INFO]  [Validating] >   Build cache is disabled
+22:33:05.120 [INFO]  [Validating] > Skipping task ':extra:compileJava' as it is up-to-date.
+22:33:05.120 [INFO]  [Validating] > Resolve mutations for :extra:processResources (Thread[Execution worker,5,main]) started.
+22:33:05.120 [INFO]  [Validating] > :extra:processResources (Thread[Execution worker,5,main]) started.
+22:33:05.120 [INFO]  [Validating] > 
+22:33:05.120 [INFO]  [Validating] > > Task :extra:processResources NO-SOURCE
+22:33:05.120 [INFO]  [Validating] > Skipping task ':extra:processResources' as it has no source files and no previous output files.
+22:33:05.120 [INFO]  [Validating] > Resolve mutations for :extra:classes (Thread[Execution worker,5,main]) started.
+22:33:05.120 [INFO]  [Validating] > :extra:classes (Thread[Execution worker,5,main]) started.
+22:33:05.120 [INFO]  [Validating] > 
+22:33:05.120 [INFO]  [Validating] > > Task :extra:classes UP-TO-DATE
+22:33:05.120 [INFO]  [Validating] > Skipping task ':extra:classes' as it has no actions.
+22:33:05.120 [INFO]  [Validating] > Resolve mutations for :extra:compileTestJava (Thread[Execution worker,5,main]) started.
+22:33:05.120 [INFO]  [Validating] > :extra:compileTestJava (Thread[Execution worker,5,main]) started.
+22:33:05.120 [INFO]  [Validating] > 
+22:33:05.120 [INFO]  [Validating] > > Task :extra:compileTestJava
+22:33:05.120 [INFO]  [Validating] > Caching disabled for task ':extra:compileTestJava' because:
+22:33:05.120 [INFO]  [Validating] >   Build cache is disabled
+22:33:05.121 [INFO]  [Validating] > Task ':extra:compileTestJava' is not up-to-date because:
+22:33:05.121 [INFO]  [Validating] >   Input property 'stableSources' file C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\src\test\java\DummyJUnitJupiterLauncherDiffblueTest.java has been removed.
+22:33:05.121 [INFO]  [Validating] >   Input property 'stableSources' file C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\src\test\java\source\FDiffblueTest.java has been added.
+22:33:05.121 [INFO]  [Validating] > Created classpath snapshot for incremental compilation in 0.001 secs.
+22:33:05.121 [INFO]  [Validating] > Compiling with toolchain 'C:\Program Files\Java\jdk-17'.
+22:33:05.121 [INFO]  [Validating] > Compiling with JDK Java compiler API.
+22:33:05.121 [INFO]  [Validating] > Incremental compilation of 3 classes completed in 0.087 secs.
+22:33:05.121 [INFO]  [Validating] > Class dependency analysis for incremental compilation took 0.004 secs.
+22:33:05.121 [INFO]  [Validating] > Resolve mutations for :extra:processTestResources (Thread[Execution worker,5,main]) started.
+22:33:05.121 [INFO]  [Validating] > :extra:processTestResources (Thread[Execution worker Thread 4,5,main]) started.
+22:33:05.121 [INFO]  [Validating] > 
+22:33:05.121 [INFO]  [Validating] > > Task :extra:processTestResources NO-SOURCE
+22:33:05.121 [INFO]  [Validating] > Skipping task ':extra:processTestResources' as it has no source files and no previous output files.
+22:33:05.121 [INFO]  [Validating] > Resolve mutations for :extra:testClasses (Thread[Execution worker Thread 4,5,main]) started.
+22:33:05.121 [INFO]  [Validating] > :extra:testClasses (Thread[Execution worker Thread 4,5,main]) started.
+22:33:05.121 [INFO]  [Validating] > 
+22:33:05.121 [INFO]  [Validating] > > Task :extra:testClasses
+22:33:05.121 [INFO]  [Validating] > Skipping task ':extra:testClasses' as it has no actions.
+22:33:05.121 [INFO]  [Validating] > Resolve mutations for :extra:test (Thread[Execution worker Thread 4,5,main]) started.
+22:33:05.121 [INFO]  [Validating] > :extra:test (Thread[Execution worker Thread 4,5,main]) started.
+22:33:05.121 [INFO]  [Validating] > Gradle Test Executor 27 started executing tests.
+22:33:05.121 [INFO]  [Validating] > Gradle Test Executor 27 finished executing tests.
+22:33:05.121 [INFO]  [Validating] > 
+22:33:05.121 [INFO]  [Validating] > > Task :extra:test
+22:33:05.121 [INFO]  [Validating] > Caching disabled for task ':extra:test' because:
+22:33:05.121 [INFO]  [Validating] >   Build cache is disabled
+22:33:05.121 [INFO]  [Validating] > Task ':extra:test' is not up-to-date because:
+22:33:05.122 [INFO]  [Validating] >   Value of input property 'filter.failOnNoMatchingTests' has changed for task ':extra:test'
+22:33:05.122 [INFO]  [Validating] >   Value of input property 'filter.includePatterns' has changed for task ':extra:test'
+22:33:05.122 [INFO]  [Validating] > Starting process 'Gradle Test Executor 27'. Working directory: C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra Command: C:\Program Files\Java\jdk-17\bin\java.exe -Dorg.gradle.internal.worker.tmpdir=C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build\tmp\test\work -Dorg.gradle.native=false @C:\Users\cbontoiu\.gradle\.tmp\gradle-worker-classpath10681482438188457840txt -Xmx512m -Dfile.encoding=windows-1252 -Duser.country=GB -Duser.language=en -Duser.variant -ea worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 27'
+22:33:05.122 [INFO]  [Validating] > Successfully started process 'Gradle Test Executor 27'
+22:33:05.122 [INFO]  [Validating] > Finished generating test XML results (0.007 secs) into: C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build\test-results\test
+22:33:05.122 [INFO]  [Validating] > Generating HTML test report...
+22:33:05.122 [INFO]  [Validating] > Finished generating test html results (0.011 secs) into: C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build\reports\tests\test
+22:33:05.122 [INFO]  [Validating] > 
+22:33:05.122 [INFO]  [Validating] > Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+22:33:05.122 [INFO]  [Validating] > 
+22:33:05.122 [INFO]  [Validating] > You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+22:33:05.122 [INFO]  [Validating] > 
+22:33:05.122 [INFO]  [Validating] > For more on this, please refer to https://docs.gradle.org/8.2/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+22:33:05.122 [INFO]  [Validating] > 
+22:33:05.122 [INFO]  [Validating] > BUILD SUCCESSFUL in 1s
+22:33:05.122 [INFO]  [Validating] > 3 actionable tasks: 2 executed, 1 up-to-date
+22:33:05.122 [INFO]  [Validating] > Watched directory hierarchies: [C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI]
+22:33:05.122 [INFO]  [Validating] Standard error of build tool (gradle)
+22:33:05.122 [INFO]  [Validating] > 
+22:33:05.134 [INFO]  [Validating] All 12 created tests were successfully validated.
+22:33:05.212 [INFO]  [Reporting] Writing JSON report to C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\.diffblue\reports\report.json
+22:33:05.249 [INFO]  [Reporting] Log file: C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\.diffblue\log\user-20230917T223241.log
+22:33:05.249 [INFO]  [Reporting] Finished in 23s

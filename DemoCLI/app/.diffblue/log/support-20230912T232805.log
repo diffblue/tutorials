@@ -1,0 +1,140 @@
+23:28:06.297 [DEBUG] [Preparing][main][c.d.cover.ui.a.u] Client heap size: 4028 MB
+23:28:06.309 [INFO]  [Preparing][main][c.d.cover.ui.a.u] Diffblue Cover 2023.08.02-1086ce8-unrestricted
+23:28:06.310 [INFO]  [Preparing][main][c.d.cover.ui.a.u] 
+23:28:06.310 [INFO]  [Preparing][main][c.d.cover.ui.a.u] Running: dcover create extra --working-directory=app --keep-partial-tests
+23:28:08.259 [INFO]  [Checking][main][c.d.cover.ui.a.j] Detecting environment:
+23:28:08.260 [INFO]  [Checking][main][c.d.cover.ui.a.j] ----------------------
+23:28:08.337 [INFO]  [Checking][main][c.d.cover.ui.a.j] Detected Java version 17.0.6
+23:28:09.810 [DEBUG] [Checking][main][c.d.d.g.a] Querying Gradle project info using --init-script C:\Users\cbontoiu\AppData\Local\Temp\diffblueGradleInit8385424255831770373.gradle and plugin C:\Users\cbontoiu\AppData\Local\Temp\diffblueGradlePlugin4028048938871425422.jar
+23:28:09.812 [DEBUG] [Checking][gradle][c.d.d.g.a] cmd: gradle --init-script C:\Users\cbontoiu\AppData\Local\Temp\diffblueGradleInit8385424255831770373.gradle --info (equivalent via API)
+23:28:09.937 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The client will now receive all logging from the daemon (pid: 18380). The daemon log file: C:\Users\cbontoiu\.gradle\daemon\8.2\daemon-18380.out.log
+23:28:09.937 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Starting 18th build in daemon [uptime: 13 mins 36.066 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 20% of 384 MiB]
+23:28:09.937 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Closing daemon's stdin at end of input.
+23:28:09.937 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The daemon will no longer process any standard input.
+23:28:09.938 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Using 8 worker leases.
+23:28:09.938 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Now considering [C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI] as hierarchies to watch
+23:28:09.938 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Watching the file system is configured to be enabled if available
+23:28:09.938 [DEBUG] [Checking][gradle][c.d.d.g.a] out: File system watching is active
+23:28:09.938 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Compiling initialization script 'C:\Users\cbontoiu\AppData\Local\Temp\diffblueGradleInit8385424255831770373.gradle' using SubsetScriptTransformer.
+23:28:09.938 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Invalidating in-memory cache of C:\Users\cbontoiu\.gradle\caches\8.2\fileHashes\fileHashes.bin
+23:28:09.938 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Invalidating in-memory cache of C:\Users\cbontoiu\.gradle\caches\8.2\fileHashes\resourceHashesCache.bin
+23:28:10.032 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Invalidating in-memory cache of C:\Users\cbontoiu\.gradle\caches\journal-1\file-access.bin
+23:28:10.032 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The configuration classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+23:28:10.032 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The configuration classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+23:28:10.032 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The configuration classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+23:28:10.032 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The configuration classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+23:28:10.032 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Compiling initialization script 'C:\Users\cbontoiu\AppData\Local\Temp\diffblueGradleInit8385424255831770373.gradle' using BuildScriptTransformer.
+23:28:10.327 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Starting Build
+23:28:10.328 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Settings evaluated using settings file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\settings.gradle'.
+23:28:10.328 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Projects loaded. Root project using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\build.gradle'.
+23:28:10.328 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Included projects: [root project 'DemoCLI', project ':app', project ':common']
+23:28:10.439 [DEBUG] [Checking][gradle][c.d.d.g.a] out: 
+23:28:10.439 [DEBUG] [Checking][gradle][c.d.d.g.a] out: > Configure project :
+23:28:10.439 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Evaluating root project 'DemoCLI' using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\build.gradle'.
+23:28:10.439 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring Jacoco Plugin for use with Diffblue Cover
+23:28:10.439 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :test for use with Diffblue Cover
+23:28:10.439 [DEBUG] [Checking][gradle][c.d.d.g.a] out: ignoreFailures: false
+23:28:10.439 [DEBUG] [Checking][gradle][c.d.d.g.a] out: excludes: []
+23:28:10.439 [DEBUG] [Checking][gradle][c.d.d.g.a] out: includes: []
+23:28:10.439 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :jacocoTestReport for use with Diffblue Cover
+23:28:10.439 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :jacocoTestReportDeletePrevious for use with Diffblue Cover
+23:28:10.439 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :jacocoTestReportPrepareEmptyExec for use with Diffblue Cover
+23:28:10.439 [DEBUG] [Checking][gradle][c.d.d.g.a] out: 
+23:28:10.440 [DEBUG] [Checking][gradle][c.d.d.g.a] out: > Configure project :app
+23:28:10.440 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Evaluating project ':app' using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\app\build.gradle'.
+23:28:10.440 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring Jacoco Plugin for use with Diffblue Cover
+23:28:10.440 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :app:test for use with Diffblue Cover
+23:28:10.440 [DEBUG] [Checking][gradle][c.d.d.g.a] out: ignoreFailures: false
+23:28:10.440 [DEBUG] [Checking][gradle][c.d.d.g.a] out: excludes: []
+23:28:10.440 [DEBUG] [Checking][gradle][c.d.d.g.a] out: includes: []
+23:28:10.440 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :app:jacocoTestReport for use with Diffblue Cover
+23:28:10.440 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :app:jacocoTestReportDeletePrevious for use with Diffblue Cover
+23:28:10.440 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :app:jacocoTestReportPrepareEmptyExec for use with Diffblue Cover
+23:28:10.440 [DEBUG] [Checking][gradle][c.d.d.g.a] out: 
+23:28:10.440 [DEBUG] [Checking][gradle][c.d.d.g.a] out: > Configure project :common
+23:28:10.440 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Evaluating project ':common' using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\common\build.gradle'.
+23:28:10.440 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring Jacoco Plugin for use with Diffblue Cover
+23:28:10.440 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :common:test for use with Diffblue Cover
+23:28:10.440 [DEBUG] [Checking][gradle][c.d.d.g.a] out: ignoreFailures: false
+23:28:10.440 [DEBUG] [Checking][gradle][c.d.d.g.a] out: excludes: []
+23:28:10.440 [DEBUG] [Checking][gradle][c.d.d.g.a] out: includes: []
+23:28:10.440 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :common:jacocoTestReport for use with Diffblue Cover
+23:28:10.440 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :common:jacocoTestReportDeletePrevious for use with Diffblue Cover
+23:28:10.440 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :common:jacocoTestReportPrepareEmptyExec for use with Diffblue Cover
+23:28:10.440 [DEBUG] [Checking][gradle][c.d.d.g.a] out: All projects evaluated.
+23:28:10.440 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The configuration :app:coverageDataElementsForTest is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+23:28:10.440 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The configuration :app:mainSourceElements is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+23:28:10.441 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The configuration :common:coverageDataElementsForTest is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+23:28:10.441 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The configuration :common:mainSourceElements is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+23:28:10.501 [DEBUG] [Checking][gradle][c.d.d.g.a] out: 
+23:28:10.502 [DEBUG] [Checking][gradle][c.d.d.g.a] out: CONFIGURE SUCCESSFUL in 636ms
+23:28:10.502 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Watched directory hierarchies: [C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI]
+23:28:10.870 [INFO]  [Checking][main][c.d.cover.ui.a.j] Detected build system: Gradle 8.2
+23:28:10.876 [INFO]  [Checking][main][c.d.cover.n.a.ag] Operating System: Windows 11 amd64 10.0
+23:28:10.876 [INFO]  [Checking][main][c.d.cover.n.a.ag] Default charset: windows-1252
+23:28:10.876 [INFO]  [Checking][main][c.d.cover.n.a.ag] Default locale: en_GB
+23:28:10.877 [INFO]  [Checking][main][c.d.cover.n.a.ag] Default time zone: Europe/London
+23:28:10.879 [INFO]  [Checking][main][c.d.cover.ui.a.j] Selected build system: Gradle
+23:28:10.883 [INFO]  [Checking][main][c.d.cover.ui.a.j] Selected classpath from build system Gradle
+23:28:10.886 [INFO]  [Checking][main][c.d.cover.n.c.b] Expanded classpath: 
+C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\app\build\classes\java\main (code under test)
+C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\app\build\resources\test
+C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\app\build\resources\main
+C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\common\build\libs\common-1.0-SNAPSHOT.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter\5.10.0\8fea1d9c58b2156f1b998f2f18da04bc9e087f74\junit-jupiter-5.10.0.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-params\5.10.0\9041c7365495a897a64782ea5a6fdb99dab1814e\junit-jupiter-params-5.10.0.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-engine\5.10.0\90587932d718fc51a48112d33045a18476c542ad\junit-jupiter-engine-5.10.0.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-api\5.10.0\2fe4ba3d31d5067878e468c96aa039005a9134d3\junit-jupiter-api-5.10.0.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.platform\junit-platform-engine\1.10.0\276c4edcf64fabb5a139fa7b4f99330d7a93b804\junit-platform-engine-1.10.0.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.platform\junit-platform-commons\1.10.0\d533ff2c286eaf963566f92baf5f8a06628d2609\junit-platform-commons-1.10.0.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.mockito\mockito-core\5.4.0\30bcbe79f7bd51b53debfc4c6014d0bea4935e37\mockito-core-5.4.0.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy\1.14.5\28a424c0c4f362568e904d992c239c996cf7adc7\byte-buddy-1.14.5.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.5\20f4e9b9d0ffb953657bfa4b92c0cceb27907d58\byte-buddy-agent-1.14.5.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.objenesis\objenesis\3.3\1049c09f1de4331e8193e579448d0916d75b7631\objenesis-3.3.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.opentest4j\opentest4j\1.3.0\152ea56b3a72f655d4fd677fc0ef2596c3dd5e6e\opentest4j-1.3.0.jar
+23:28:11.058 [INFO]  [Checking][main][c.d.cover.ui.a.j] Detected test framework: JUnit Jupiter 5.10.0
+23:28:11.065 [INFO]  [Checking][main][c.d.cover.ui.a.j] Detected JUnit Jupiter version 5.10.0
+23:28:11.072 [INFO]  [Checking][main][c.d.cover.ui.a.j] Detected JUnit Jupiter Params version 5.10.0
+23:28:11.126 [INFO]  [Checking][main][c.d.cover.ui.a.j] Detected Mockito version 5.4.0
+23:28:11.612 [INFO]  [Checking][main][c.d.cover.ui.a.j] Indexing...
+23:28:11.915 [INFO]  [Checking][main][c.d.cover.ui.a.j] Selected test output directory: C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\app\src\test\java
+23:28:11.926 [INFO]  [Checking][main][c.d.d.g.b] Running: Using JAVA_HOME: C:\Program Files\Java\jdk-17 : in C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\app : gradle test -i  DummyJupiterDiffblueTest
+23:28:13.692 [DEBUG] [Checking][main][c.d.cover.n.c.m] JUnitJupiter5 is present
+23:28:13.692 [DEBUG] [Checking][main][c.d.cover.n.c.m] JUnitJupiter5 is supported
+23:28:13.692 [DEBUG] [Checking][main][c.d.cover.n.c.m] JUnit 5 is present and either it's not been specified by the user or it is the same as the version the user specified
+23:28:13.692 [INFO]  [Checking][main][c.d.cover.ui.a.j] Selected test framework: JUnit Jupiter
+23:28:13.752 [INFO]  [Checking][main][c.d.d.g.b] Running: Using JAVA_HOME: C:\Program Files\Java\jdk-17 : in C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\app : gradle test -i  DummyJUnitJupiterLauncherDiffblueTest
+23:28:14.932 [INFO]  [Checking][main][c.d.cover.ui.a.j] Detected JVM architecture: 64-Bit
+23:28:15.647 [INFO]  [Checking][main][c.d.cover.ui.a.j] Selected Java language compliance level: 17
+23:28:15.649 [INFO]  [Checking][main][c.d.cover.ui.a.j] Selected test validation: enabled
+23:28:15.652 [INFO]  [Checking][main][c.d.cover.ui.a.j] Prefixes for filtering classes/methods:
+23:28:15.654 [INFO]  [Checking][main][c.d.cover.ui.a.j] - extra
+23:28:15.655 [INFO]  [Checking][main][c.d.cover.ui.a.j] Gathering methods to test...
+23:28:16.322 [ERROR] [Checking][main][c.d.cover.ui.a.j] E004: No methods found to test
+Please ensure the project has been built, that any specified entry points
+exist, and that the patch (if given) is valid.
+See https://diff.blue/E004 to resolve this issue.
+23:28:16.334 [INFO]  [Reporting][main][c.d.cover.ui.a.j] 
+23:28:16.334 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Environment summary:
+23:28:16.335 [INFO]  [Reporting][main][c.d.cover.ui.a.j] --------------------
+23:28:16.337 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Java version                  17.0.6                        SUCCESS        
+23:28:16.338 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Build system                  Gradle                        SUCCESS        
+23:28:16.338 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Mocking Framework             Mockito 5.4.0                 SUCCESS        
+23:28:16.338 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] Surefire version              Skipped                       -----          
+23:28:16.338 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Testing framework             JUnit Jupiter 5               SUCCESS        
+23:28:16.338 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] JavaEE version                Skipped                       -----          
+23:28:16.338 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] JaCoCo plugin version         Skipped                       -----          
+23:28:16.338 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Launcher                      JUnit Jupiter                 SUCCESS        
+23:28:16.339 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Test validation               Enabled                       SUCCESS        
+23:28:16.339 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] Hamcrest                      Not Detected                  -----          
+23:28:16.339 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] Spring Core                   Not Detected                  -----          
+23:28:16.339 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] Spring Boot                   Skipped                       -----          
+23:28:16.339 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] Spring Boot Test              Skipped                       -----          
+23:28:16.339 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] Spring Web                    Skipped                       -----          
+23:28:16.339 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] Spring Security Web           Skipped                       -----          
+23:28:16.339 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] Spring Test                   Skipped                       -----          
+23:28:16.339 [ERROR] [Reporting][main][c.d.cover.ui.a.j] Methods to test                                             ERROR          
+23:28:16.340 [INFO]  [Reporting][main][c.d.cover.ui.a.j] 
+23:28:16.340 [ERROR] [Reporting][main][c.d.cover.ui.a.j] Environment check status: ERROR
+23:28:16.366 [INFO]  [Checking][main][c.d.cover.ui.a.b] Log file: C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\app\.diffblue\log\user-20230912T232805.log
+23:28:16.369 [INFO]  [Reporting][main][c.d.cover.ui.a.u] Finished in 9s

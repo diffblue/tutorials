@@ -1,22 +1,21 @@
-package sealed;
+package org.features;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-class BearDiffblueTest {
+class KoalaDiffblueTest {
   /**
   * Methods under test: 
   * 
   * <ul>
-  *   <li>{@link Bear#Bear()}
-  *   <li>{@link Bear#getIt()}
+  *   <li>{@link Koala#Koala(int)}
+  *   <li>{@link Koala#getIt()}
   * </ul>
   */
   @Test
   void testConstructor() {
     // Arrange, Act and Assert
-    assertEquals(1, (new Bear()).getIt());
-    assertEquals(1, (new Bear(1)).getIt());
+    assertEquals(1, (new Koala(1)).getIt());
   }
 }
 

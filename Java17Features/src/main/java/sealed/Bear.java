@@ -7,6 +7,10 @@ public sealed class Bear permits Kodiak, Koala {
         N = n;
     }
 
+    Bear() {
+        N = 1;
+    }
+
     public int getIt() {
         return N;
     }

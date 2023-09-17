@@ -1,0 +1,389 @@
+22:01:28.230 [DEBUG] [Preparing][main][c.d.cover.ui.a.u] Client heap size: 4028 MB
+22:01:28.239 [INFO]  [Preparing][main][c.d.cover.ui.a.u] Diffblue Cover 2023.09.01-9200f07-unrestricted
+22:01:28.240 [INFO]  [Preparing][main][c.d.cover.ui.a.u] 
+22:01:28.241 [INFO]  [Preparing][main][c.d.cover.ui.a.u] Running: dcover create --working-directory=extra source --keep-partial-tests
+22:01:30.187 [INFO]  [Checking][main][c.d.cover.ui.a.j] Detecting environment:
+22:01:30.188 [INFO]  [Checking][main][c.d.cover.ui.a.j] ----------------------
+22:01:30.263 [INFO]  [Checking][main][c.d.cover.ui.a.j] Detected Java version 17.0.6
+22:01:31.715 [DEBUG] [Checking][main][c.d.d.g.a] Querying Gradle project info using --init-script C:\Users\cbontoiu\AppData\Local\Temp\diffblueGradleInit189717287398643174.gradle and plugin C:\Users\cbontoiu\AppData\Local\Temp\diffblueGradlePlugin8536315240404370170.jar
+22:01:31.718 [DEBUG] [Checking][gradle][c.d.d.g.a] cmd: gradle --init-script C:\Users\cbontoiu\AppData\Local\Temp\diffblueGradleInit189717287398643174.gradle --info (equivalent via API)
+22:01:31.837 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The client will now receive all logging from the daemon (pid: 7668). The daemon log file: C:\Users\cbontoiu\.gradle\daemon\8.2\daemon-7668.out.log
+22:01:31.837 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Starting 12th build in daemon [uptime: 1 hrs 13 mins 1.358 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 19% of 384 MiB]
+22:01:31.838 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Closing daemon's stdin at end of input.
+22:01:31.838 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The daemon will no longer process any standard input.
+22:01:31.838 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Using 8 worker leases.
+22:01:31.838 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Now considering [C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI] as hierarchies to watch
+22:01:31.838 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Watching the file system is configured to be enabled if available
+22:01:31.838 [DEBUG] [Checking][gradle][c.d.d.g.a] out: File system watching is active
+22:01:31.838 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Compiling initialization script 'C:\Users\cbontoiu\AppData\Local\Temp\diffblueGradleInit189717287398643174.gradle' using SubsetScriptTransformer.
+22:01:31.929 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The configuration classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+22:01:31.929 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The configuration classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+22:01:31.929 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The configuration classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+22:01:31.929 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The configuration classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+22:01:31.929 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Compiling initialization script 'C:\Users\cbontoiu\AppData\Local\Temp\diffblueGradleInit189717287398643174.gradle' using BuildScriptTransformer.
+22:01:32.243 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Starting Build
+22:01:32.243 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Settings evaluated using settings file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\settings.gradle'.
+22:01:32.243 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Projects loaded. Root project using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\build.gradle'.
+22:01:32.243 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Included projects: [root project 'DemoCLI', project ':app', project ':common', project ':extra']
+22:01:32.244 [DEBUG] [Checking][gradle][c.d.d.g.a] out: 
+22:01:32.244 [DEBUG] [Checking][gradle][c.d.d.g.a] out: > Configure project :
+22:01:32.244 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Evaluating root project 'DemoCLI' using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\build.gradle'.
+22:01:32.244 [DEBUG] [Checking][gradle][c.d.d.g.a] out: 
+22:01:32.244 [DEBUG] [Checking][gradle][c.d.d.g.a] out: > Configure project :app
+22:01:32.244 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Evaluating project ':app' using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\app\build.gradle'.
+22:01:32.244 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring Jacoco Plugin for use with Diffblue Cover
+22:01:32.244 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :app:test for use with Diffblue Cover
+22:01:32.244 [DEBUG] [Checking][gradle][c.d.d.g.a] out: ignoreFailures: false
+22:01:32.244 [DEBUG] [Checking][gradle][c.d.d.g.a] out: excludes: []
+22:01:32.244 [DEBUG] [Checking][gradle][c.d.d.g.a] out: includes: []
+22:01:32.244 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :app:jacocoTestReport for use with Diffblue Cover
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :app:jacocoTestReportDeletePrevious for use with Diffblue Cover
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :app:jacocoTestReportPrepareEmptyExec for use with Diffblue Cover
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: 
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: > Configure project :common
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Evaluating project ':common' using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\common\build.gradle'.
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring Jacoco Plugin for use with Diffblue Cover
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :common:test for use with Diffblue Cover
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: ignoreFailures: false
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: excludes: []
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: includes: []
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :common:jacocoTestReport for use with Diffblue Cover
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :common:jacocoTestReportDeletePrevious for use with Diffblue Cover
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :common:jacocoTestReportPrepareEmptyExec for use with Diffblue Cover
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: 
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: > Configure project :extra
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Evaluating project ':extra' using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build.gradle'.
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring Jacoco Plugin for use with Diffblue Cover
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :extra:test for use with Diffblue Cover
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: ignoreFailures: false
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: excludes: []
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: includes: []
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :extra:jacocoTestReport for use with Diffblue Cover
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :extra:jacocoTestReportDeletePrevious for use with Diffblue Cover
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :extra:jacocoTestReportPrepareEmptyExec for use with Diffblue Cover
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: All projects evaluated.
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The configuration :extra:coverageDataElementsForTest is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+22:01:32.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The configuration :extra:mainSourceElements is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+22:01:32.277 [DEBUG] [Checking][gradle][c.d.d.g.a] out: 
+22:01:32.278 [DEBUG] [Checking][gradle][c.d.d.g.a] out: CONFIGURE SUCCESSFUL in 514ms
+22:01:32.278 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Watched directory hierarchies: [C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI]
+22:01:32.672 [INFO]  [Checking][main][c.d.cover.ui.a.j] Detected build system: Gradle 8.2
+22:01:32.676 [INFO]  [Checking][main][c.d.cover.n.a.ai] Operating System: Windows 11 amd64 10.0
+22:01:32.676 [INFO]  [Checking][main][c.d.cover.n.a.ai] Default charset: windows-1252
+22:01:32.678 [INFO]  [Checking][main][c.d.cover.n.a.ai] Default locale: en_GB
+22:01:32.678 [INFO]  [Checking][main][c.d.cover.n.a.ai] Default time zone: Europe/London
+22:01:32.680 [INFO]  [Checking][main][c.d.cover.ui.a.j] Selected build system: Gradle
+22:01:32.683 [INFO]  [Checking][main][c.d.cover.ui.a.j] Selected classpath from build system Gradle
+22:01:32.684 [INFO]  [Checking][main][c.d.cover.n.c.b] Expanded classpath: 
+C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build\classes\java\test
+C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build\classes\java\main (code under test)
+C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build\resources\test
+C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build\resources\main
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter\5.9.1\9274d3757e224bc02eae367bd481062a263c150b\junit-jupiter-5.9.1.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-params\5.9.1\ffcd1013edaeee112be11fcddeb38882d79238de\junit-jupiter-params-5.9.1.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-engine\5.9.1\1bf771097bde296c3ab174861954e8aafaaf2e94\junit-jupiter-engine-5.9.1.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-api\5.9.1\7bb53fbc0173e9f6a9d21d58297af94b1f2f9ce1\junit-jupiter-api-5.9.1.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.platform\junit-platform-engine\1.9.1\83591e5089d6cea5f324aa3ecca9b19d5a275803\junit-platform-engine-1.9.1.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.platform\junit-platform-commons\1.9.1\3145f821b5cd10abcdc5f925baa5fffa6f1b628f\junit-platform-commons-1.9.1.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.mockito\mockito-core\5.4.0\30bcbe79f7bd51b53debfc4c6014d0bea4935e37\mockito-core-5.4.0.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy\1.14.5\28a424c0c4f362568e904d992c239c996cf7adc7\byte-buddy-1.14.5.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.5\20f4e9b9d0ffb953657bfa4b92c0cceb27907d58\byte-buddy-agent-1.14.5.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.objenesis\objenesis\3.3\1049c09f1de4331e8193e579448d0916d75b7631\objenesis-3.3.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.opentest4j\opentest4j\1.2.0\28c11eb91f9b6d8e200631d46e20a7f407f2a046\opentest4j-1.2.0.jar
+22:01:32.810 [INFO]  [Checking][main][c.d.cover.ui.a.j] Detected test framework: JUnit Jupiter 5.9.1
+22:01:32.815 [INFO]  [Checking][main][c.d.cover.ui.a.j] Detected JUnit Jupiter version 5.9.1
+22:01:32.819 [INFO]  [Checking][main][c.d.cover.ui.a.j] Detected JUnit Jupiter Params version 5.9.1
+22:01:32.852 [INFO]  [Checking][main][c.d.cover.ui.a.j] Detected Mockito version 5.4.0
+22:01:33.350 [INFO]  [Checking][main][c.d.cover.ui.a.j] Indexing...
+22:01:33.682 [INFO]  [Checking][main][c.d.cover.ui.a.j] Selected test output directory: C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\src\test\java
+22:01:33.689 [INFO]  [Checking][main][c.d.d.g.b] Running: Using JAVA_HOME: C:\Program Files\Java\jdk-17 : in C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra : gradle test -i  DummyJupiterDiffblueTest
+22:01:35.082 [DEBUG] [Checking][main][c.d.cover.n.c.m] JUnitJupiter5 is present
+22:01:35.082 [DEBUG] [Checking][main][c.d.cover.n.c.m] JUnitJupiter5 is supported
+22:01:35.082 [DEBUG] [Checking][main][c.d.cover.n.c.m] JUnit 5 is present and either it's not been specified by the user or it is the same as the version the user specified
+22:01:35.083 [INFO]  [Checking][main][c.d.cover.ui.a.j] Selected test framework: JUnit Jupiter
+22:01:35.118 [INFO]  [Checking][main][c.d.d.g.b] Running: Using JAVA_HOME: C:\Program Files\Java\jdk-17 : in C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra : gradle test -i  DummyJUnitJupiterLauncherDiffblueTest
+22:01:36.294 [INFO]  [Checking][main][c.d.cover.ui.a.j] Detected JVM architecture: 64-Bit
+22:01:36.948 [INFO]  [Checking][main][c.d.cover.ui.a.j] Selected Java language compliance level: 17
+22:01:36.949 [INFO]  [Checking][main][c.d.cover.ui.a.j] Selected test validation: enabled
+22:01:36.953 [INFO]  [Checking][main][c.d.cover.ui.a.j] Prefixes for filtering classes/methods:
+22:01:36.955 [INFO]  [Checking][main][c.d.cover.ui.a.j] - source
+22:01:36.956 [INFO]  [Checking][main][c.d.cover.ui.a.j] Gathering methods to test...
+22:01:37.620 [INFO]  [Reporting][main][c.d.cover.ui.a.j] 
+22:01:37.620 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Environment summary:
+22:01:37.621 [INFO]  [Reporting][main][c.d.cover.ui.a.j] --------------------
+22:01:37.623 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Java version                  17.0.6                        SUCCESS        
+22:01:37.623 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Build system                  Gradle                        SUCCESS        
+22:01:37.623 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Mocking Framework             Mockito 5.4.0                 SUCCESS        
+22:01:37.623 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] Surefire version              Skipped                       -----          
+22:01:37.623 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Testing framework             JUnit Jupiter 5               SUCCESS        
+22:01:37.623 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] JavaEE version                Skipped                       -----          
+22:01:37.623 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] JaCoCo plugin version         Skipped                       -----          
+22:01:37.623 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Launcher                      JUnit Jupiter                 SUCCESS        
+22:01:37.623 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Test validation               Enabled                       SUCCESS        
+22:01:37.623 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] Hamcrest                      Not Detected                  -----          
+22:01:37.623 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] Spring Core                   Not Detected                  -----          
+22:01:37.623 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] Spring Boot                   Skipped                       -----          
+22:01:37.624 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] Spring Boot Test              Skipped                       -----          
+22:01:37.624 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] Spring Web                    Skipped                       -----          
+22:01:37.624 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] Spring Security Web           Skipped                       -----          
+22:01:37.624 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] Spring Test                   Skipped                       -----          
+22:01:37.624 [INFO]  [Reporting][main][c.d.cover.ui.a.j] 
+22:01:37.624 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Environment check status: SUCCESS
+22:01:37.653 [DEBUG] [Creating][pool-5-thread-1][c.d.cover.k.a.g] Configuration:
+Module: 
+Configuration: 
+ features=[TESTING_FRAMEWORK_JUNIT_JUPITER5, JUNIT_JUPITER_PARAMS, MOCKING, MOCKITO_SESSION, INCLUDE_SYSTEM_ENVIRONMENT_VARIABLES, INLINE_ACT_INTO_ASSERT, INLINE_ARRANGE_INTO_ACT_ASSERT, INLINE_CHAINED_MEMBER_ACCESSES, INLINE_CONSTRUCTORS, INLINE_IMMEDIATE_VALUES, JOIN_SIMPLE_TESTS, SHOW_SECTION_COMMENTS, KEEP_NON_COMPILING_TESTS, KEEP_NONDETERMINISTIC_TESTS, KEEP_TESTS_WITHOUT_ASSERTIONS, KEEP_TESTS_WITH_VIOLATIONS, KEEP_THROWING_TESTS, PREFLIGHT_ENABLE_TEST_EXECUTION, REPORT, SANDBOXING, VALIDATION, ANALYZER_SERVICE, VERIFICATION]
+ analyzerServiceIdleTimeout=PT2M
+ coverReportsBaseUrl=Optional.empty
+ coverReportsGroupName=17/09/2023, 22:01
+ coverReportsProject=Optional.empty
+ environmentVariables={}
+ complianceLevel=17
+ fuzzingIterations=1000
+ jacocoCommandDiffblue=Optional.empty
+ jacocoCommandManual=Optional.empty
+ jacocoXmlTestReport=Optional.empty
+ jacocoXmlTestReportDiffblue=C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\.diffblue\reports\diffblue-tests-jacoco-report.xml
+ jacocoXmlTestReportManual=C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\.diffblue\reports\manual-tests-jacoco-report.xml
+ sandboxAllowedJavaNativeInterfacePrefixes=[]
+ mockingFramework=MOCKITO_5_0_0
+ mockClasses=[]
+ mockStaticClasses=[]
+ workingDirectory=C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra
+ classpath=Classpath(15 full entries, 1 code under test entries)
+ warningsToSuppress=[]
+ perMethodTimeouts=Timeouts{softTimeout=PT20S, initialExecutionTimeout=PT20S, hardTimeout=PT1M, springStartupTimeout=PT4M}
+ reportFile=C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\.diffblue\reports\report.json
+ activeProfiles=[]
+ classScheme=${CLASS_NAME}DiffblueTest
+ methodScheme=test${INNER_CLASS_NAME}${METHOD_NAME}
+ springConfigurationClasses=[]
+ testOutputDirectory=C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\src\test\java
+ validationCommand=Optional.empty
+ validationTimeout=PT30M
+ jacocoVersion=null
+ observerMethodSpecification=MethodSpecification[excludedPrefixes=[]]
+ analyzerServiceRestartFrequency=50
+
+22:01:37.658 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b] Found 6 callable methods in 3 classes
+22:01:37.659 [INFO]  [Creating][pool-5-thread-1][c.d.cover.k.a.a] 
+22:01:37.660 [INFO]  [Creating][pool-5-thread-1][c.d.cover.k.a.a] Creating tests:
+22:01:37.661 [INFO]  [Creating][pool-5-thread-1][c.d.cover.k.a.a] ---------------
+22:01:37.681 [INFO]  [Creating][pool-5-thread-1][c.d.cover.k.a.a] 
+================================================================================
+= Starting analysis for class 'source.A'
+================================================================================
+22:01:37.681 [INFO]  [Creating][pool-5-thread-1][c.d.cover.k.a.a] Filtering out non-testable methods...
+22:01:39.194 [INFO]  [Creating][pool-5-thread-1][c.d.cover.k.a.a] Filtering of methods complete. Creating analysis request
+22:01:39.195 [INFO]  [Creating][pool-5-thread-1][c.d.c.service.c] Attempting to get service client, retry 1.
+22:01:39.202 [INFO]  [Creating][pool-5-thread-1][c.d.c.service.c] Starting monitoring server.
+22:01:39.398 [INFO]  [Creating][pool-5-thread-1][c.d.c.service.c] Monitoring server listening on localhost/127.0.0.1:55075
+22:01:39.401 [INFO]  [Creating][pool-5-thread-1][c.d.c.service.c] Starting analyzer server process...
+22:01:39.402 [INFO]  [Creating][pool-5-thread-1][c.d.c.service.c] Server command-line: C:\Program Files\Java\jdk-17\bin\java.exe -XX:+IgnoreUnrecognizedVMOptions -Djdk.attach.allowAttachSelf=true -ea -javaagent:C:\DiffblueCoverProduct\launcher-shared-jar.jar -Dlogback.configurationFile=C:\Users\cbontoiu\AppData\Local\Temp\diffblue\config\logback-remote-service.xml -Dcom.diffblue.springIsolationJar=C:\DiffblueCoverProduct\cover-isolation-layer.jar -Dcover.jar.path=C:\DiffblueCoverProduct\cover-service-analyzer.jar -Dcom.diffblue.assertionSuggestionJar=C:\DiffblueCoverProduct\cover-service-analyzer.jar -Dcover.main.class=com.diffblue.cover.service.analyzer.Main -jar C:\DiffblueCoverProduct\launcher-shared-jar.jar --service-lifespan 120 --monitoring-service-port 55075 --index-service-port 55075 --debug-log
+22:01:39.413 [INFO]  [Creating][pool-5-thread-1][c.d.c.service.c] Server started. Waiting up to 300 seconds for a connection to be established...
+22:01:40.165 [DEBUG] [Creating][nullmain][c.d.c.s.a.Main] Service heap size: 4028 MB
+22:01:40.258 [INFO]  [Creating][nullmain][c.d.c.s.a.a.b] Starting new remote monitor client
+22:01:40.928 [INFO]  [Creating][analyzer-service:main][c.d.c.s.a.a.b] Attempting to start remote server.
+22:01:41.188 [INFO]  [Creating][analyzer-service:main][c.d.c.s.a.a.a] Server started, listening on localhost/127.0.0.1:55077
+22:01:41.431 [INFO]  [Creating][pool-5-thread-1][c.d.c.service.c] Expect analyzer service to be listening on port 55077.
+22:01:42.128 [INFO]  [Creating][pool-5-thread-1][c.d.c.service.c] Started analyzer service and client retrieved.
+22:01:44.088 [DEBUG] [Creating][analyzer-service:grpc-default-executor-0][c.d.fuzztest.d.a] Class information:
+22:01:44.089 [DEBUG] [Creating][analyzer-service:grpc-default-executor-0][c.d.fuzztest.d.a]   Fields: int source.A.a
+22:01:44.090 [DEBUG] [Creating][analyzer-service:grpc-default-executor-0][c.d.fuzztest.d.a]   Constructors: public source.A()
+22:01:44.091 [DEBUG] [Creating][analyzer-service:grpc-default-executor-0][c.d.fuzztest.d.a]   Methods: int source.A.method(double)
+22:01:44.683 [INFO]  [Creating][analyzer-service:TimedExecutor-4][c.d.fuzztest.f.c] 
+================================================================================
+= Creating tests for 'source.A.<init>:()V' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+22:01:46.613 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b]     [1/6] source.A.<init>
+22:01:46.613 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b]     [1/6]   Tests created: 1
+22:01:46.617 [INFO]  [Creating][analyzer-service:TimedExecutor-11][c.d.fuzztest.f.c] 
+================================================================================
+= Creating tests for 'source.A.method:(D)I' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+22:01:48.093 [DEBUG] [Creating][analyzer-service:TimedExecutor-11][c.d.fuzztest.b.d] Refinement loop done: 2 seeds, 1+0 new+accumulated tests, 1+0 tests+partial tests, 43/1000 its
+22:01:48.182 [INFO]  [Creating][analyzer-service:grpc-default-executor-0][c.d.fuzztest.f.v] Created 1+0 tests and partial tests via 'SiM (!sp, fnm, df, !ris)', 1/2, returning all 1
+22:01:48.320 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b]     [2/6] source.A.method
+22:01:48.320 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b]     [2/6]   Tests created: 1
+22:01:48.327 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b] [1/3] source.A
+22:01:48.327 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b] [1/3]   Tests created: 2
+22:01:48.328 [INFO]  [Creating][pool-5-thread-1][c.d.cover.k.a.a] 
+================================================================================
+= Starting analysis for class 'source.B'
+================================================================================
+22:01:48.328 [INFO]  [Creating][pool-5-thread-1][c.d.cover.k.a.a] Filtering out non-testable methods...
+22:01:48.328 [INFO]  [Creating][pool-5-thread-1][c.d.cover.k.a.a] Filtering of methods complete. Creating analysis request
+22:01:48.328 [INFO]  [Creating][pool-5-thread-1][c.d.c.service.c] Attempting to get service client, retry 1.
+22:01:48.353 [DEBUG] [Creating][analyzer-service:grpc-default-executor-0][c.d.fuzztest.d.a] Class information:
+22:01:48.353 [DEBUG] [Creating][analyzer-service:grpc-default-executor-0][c.d.fuzztest.d.a]   Extends: class source.A
+22:01:48.353 [DEBUG] [Creating][analyzer-service:grpc-default-executor-0][c.d.fuzztest.d.a]   Fields: int source.B.b
+22:01:48.353 [DEBUG] [Creating][analyzer-service:grpc-default-executor-0][c.d.fuzztest.d.a]   Constructors: public source.B()
+22:01:48.354 [DEBUG] [Creating][analyzer-service:grpc-default-executor-0][c.d.fuzztest.d.a]   Methods: int source.B.method(double)
+22:01:48.369 [INFO]  [Creating][analyzer-service:TimedExecutor-36][c.d.fuzztest.f.c] 
+================================================================================
+= Creating tests for 'source.B.<init>:()V' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+22:01:48.490 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b]     [3/6] source.B.<init>
+22:01:48.490 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b]     [3/6]   Tests created: 1
+22:01:48.493 [INFO]  [Creating][analyzer-service:TimedExecutor-43][c.d.fuzztest.f.c] 
+================================================================================
+= Creating tests for 'source.B.method:(D)I' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+22:01:48.609 [DEBUG] [Creating][analyzer-service:TimedExecutor-43][c.d.fuzztest.b.d] Refinement loop done: 2 seeds, 1+0 new+accumulated tests, 1+0 tests+partial tests, 31/1000 its
+22:01:48.662 [INFO]  [Creating][analyzer-service:grpc-default-executor-0][c.d.fuzztest.f.v] Created 1+0 tests and partial tests via 'SiM (!sp, fnm, df, !ris)', 1/2, returning all 1
+22:01:48.732 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b]     [4/6] source.B.method
+22:01:48.732 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b]     [4/6]   Tests created: 1
+22:01:48.737 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b] [2/3] source.B
+22:01:48.738 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b] [2/3]   Tests created: 2
+22:01:48.738 [INFO]  [Creating][pool-5-thread-1][c.d.cover.k.a.a] 
+================================================================================
+= Starting analysis for class 'source.C'
+================================================================================
+22:01:48.738 [INFO]  [Creating][pool-5-thread-1][c.d.cover.k.a.a] Filtering out non-testable methods...
+22:01:48.738 [INFO]  [Creating][pool-5-thread-1][c.d.cover.k.a.a] Filtering of methods complete. Creating analysis request
+22:01:48.739 [INFO]  [Creating][pool-5-thread-1][c.d.c.service.c] Attempting to get service client, retry 1.
+22:01:48.758 [DEBUG] [Creating][analyzer-service:grpc-default-executor-0][c.d.fuzztest.d.a] Class information:
+22:01:48.758 [DEBUG] [Creating][analyzer-service:grpc-default-executor-0][c.d.fuzztest.d.a]   Extends: class source.B
+22:01:48.758 [DEBUG] [Creating][analyzer-service:grpc-default-executor-0][c.d.fuzztest.d.a]   Fields: int source.C.c
+22:01:48.758 [DEBUG] [Creating][analyzer-service:grpc-default-executor-0][c.d.fuzztest.d.a]   Constructors: public source.C()
+22:01:48.758 [DEBUG] [Creating][analyzer-service:grpc-default-executor-0][c.d.fuzztest.d.a]   Methods: int source.C.method(double)
+22:01:48.775 [INFO]  [Creating][analyzer-service:TimedExecutor-63][c.d.fuzztest.f.c] 
+================================================================================
+= Creating tests for 'source.C.<init>:()V' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+22:01:48.903 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b]     [5/6] source.C.<init>
+22:01:48.903 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b]     [5/6]   Tests created: 1
+22:01:48.906 [INFO]  [Creating][analyzer-service:TimedExecutor-70][c.d.fuzztest.f.c] 
+================================================================================
+= Creating tests for 'source.C.method:(D)I' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+22:01:48.991 [DEBUG] [Creating][analyzer-service:TimedExecutor-70][c.d.fuzztest.b.d] Refinement loop done: 2 seeds, 1+0 new+accumulated tests, 1+0 tests+partial tests, 19/1000 its
+22:01:49.051 [INFO]  [Creating][analyzer-service:grpc-default-executor-0][c.d.fuzztest.f.v] Created 1+0 tests and partial tests via 'SiM (!sp, fnm, df, !ris)', 1/2, returning all 1
+22:01:49.145 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b]     [6/6] source.C.method
+22:01:49.145 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b]     [6/6]   Tests created: 1
+22:01:49.151 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b] [3/3] source.C
+22:01:49.152 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b] [3/3]   Tests created: 2
+22:01:49.157 [INFO]  [Reporting][pool-5-thread-1][c.d.cover.ui.d.b] 
+22:01:49.158 [INFO]  [Reporting][pool-5-thread-1][c.d.cover.ui.d.b] Summary:
+22:01:49.159 [INFO]  [Reporting][pool-5-thread-1][c.d.cover.ui.d.b] --------
+22:01:49.160 [INFO]  [Reporting][pool-5-thread-1][c.d.cover.ui.d.b] Total:                                               6 methods
+22:01:49.160 [INFO]  [Reporting][pool-5-thread-1][c.d.cover.ui.d.b] 6 tests created for:                                 6 methods
+22:01:49.161 [INFO]  [Reporting][pool-5-thread-1][c.d.cover.ui.d.b] 
+22:01:49.303 [INFO]  [Validating][main][c.d.cover.ui.a.j] 
+22:01:49.304 [INFO]  [Validating][main][c.d.cover.ui.a.j] Running validation command.
+22:01:49.307 [DEBUG] [Validating][main][c.d.cover.k.c.f] Validating tests with default internal Gradle "test" task: gradle test
+22:01:49.308 [INFO]  [Validating][main][c.d.d.g.b] Running: Using JAVA_HOME: C:\Program Files\Java\jdk-17 : in C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra : gradle test -i  
+22:01:50.303 [INFO]  [Validating][main][c.d.d.b.a] Standard output of build tool (gradle)
+22:01:50.303 [INFO]  [Validating][main][c.d.d.b.a] > The client will now receive all logging from the daemon (pid: 7736). The daemon log file: C:\Users\cbontoiu\.gradle\daemon\8.2\daemon-7736.out.log
+22:01:50.303 [INFO]  [Validating][main][c.d.d.b.a] > Starting 10th build in daemon [uptime: 1 hrs 12 mins 50.783 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 3.9 GiB]
+22:01:50.303 [INFO]  [Validating][main][c.d.d.b.a] > Closing daemon's stdin at end of input.
+22:01:50.303 [INFO]  [Validating][main][c.d.d.b.a] > The daemon will no longer process any standard input.
+22:01:50.303 [INFO]  [Validating][main][c.d.d.b.a] > Using 8 worker leases.
+22:01:50.303 [INFO]  [Validating][main][c.d.d.b.a] > Now considering [C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI] as hierarchies to watch
+22:01:50.303 [INFO]  [Validating][main][c.d.d.b.a] > Watching the file system is configured to be enabled if available
+22:01:50.303 [INFO]  [Validating][main][c.d.d.b.a] > File system watching is active
+22:01:50.303 [INFO]  [Validating][main][c.d.d.b.a] > Starting Build
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > Settings evaluated using settings file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\settings.gradle'.
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > Projects loaded. Root project using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\build.gradle'.
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > Included projects: [root project 'DemoCLI', project ':app', project ':common', project ':extra']
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > > Configure project :
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > Evaluating root project 'DemoCLI' using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\build.gradle'.
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > > Configure project :app
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > Evaluating project ':app' using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\app\build.gradle'.
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > > Configure project :common
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > Evaluating project ':common' using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\common\build.gradle'.
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > > Configure project :extra
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > Evaluating project ':extra' using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build.gradle'.
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > All projects evaluated.
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > Task path ':extra:test' matched project ':extra'
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > Task name matched 'test'
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > Selected primary task 'test' from project :extra
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > The configuration :extra:mainSourceElements is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > Tasks to be executed: [task ':extra:compileJava', task ':extra:processResources', task ':extra:classes', task ':extra:compileTestJava', task ':extra:processTestResources', task ':extra:testClasses', task ':extra:test']
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > Tasks that were excluded: []
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > Resolve mutations for :extra:compileJava (Thread[Execution worker,5,main]) started.
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > :extra:compileJava (Thread[Execution worker,5,main]) started.
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > > Task :extra:compileJava UP-TO-DATE
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > Caching disabled for task ':extra:compileJava' because:
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] >   Build cache is disabled
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > Skipping task ':extra:compileJava' as it is up-to-date.
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > Resolve mutations for :extra:processResources (Thread[Execution worker,5,main]) started.
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > :extra:processResources (Thread[Execution worker,5,main]) started.
+22:01:50.304 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > > Task :extra:processResources NO-SOURCE
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > Skipping task ':extra:processResources' as it has no source files and no previous output files.
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > Resolve mutations for :extra:classes (Thread[Execution worker,5,main]) started.
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > :extra:classes (Thread[Execution worker,5,main]) started.
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > > Task :extra:classes UP-TO-DATE
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > Skipping task ':extra:classes' as it has no actions.
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > Resolve mutations for :extra:compileTestJava (Thread[Execution worker,5,main]) started.
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > :extra:compileTestJava (Thread[Execution worker,5,main]) started.
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > > Task :extra:compileTestJava UP-TO-DATE
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > Caching disabled for task ':extra:compileTestJava' because:
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] >   Build cache is disabled
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > Task ':extra:compileTestJava' is not up-to-date because:
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] >   Input property 'stableSources' file C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\src\test\java\DummyJUnitJupiterLauncherDiffblueTest.java has been removed.
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > Created classpath snapshot for incremental compilation in 0.001 secs.
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > None of the classes needs to be compiled! Analysis took 0.006 secs. 
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > Resolve mutations for :extra:processTestResources (Thread[Execution worker,5,main]) started.
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > :extra:processTestResources (Thread[Execution worker,5,main]) started.
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > > Task :extra:processTestResources NO-SOURCE
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > Skipping task ':extra:processTestResources' as it has no source files and no previous output files.
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > Resolve mutations for :extra:testClasses (Thread[Execution worker,5,main]) started.
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > :extra:testClasses (Thread[Execution worker,5,main]) started.
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > > Task :extra:testClasses UP-TO-DATE
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > Skipping task ':extra:testClasses' as it has no actions.
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > Resolve mutations for :extra:test (Thread[Execution worker,5,main]) started.
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > :extra:test (Thread[Execution worker,5,main]) started.
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > Gradle Test Executor 9 started executing tests.
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > Gradle Test Executor 9 finished executing tests.
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > > Task :extra:test
+22:01:50.305 [INFO]  [Validating][main][c.d.d.b.a] > Caching disabled for task ':extra:test' because:
+22:01:50.306 [INFO]  [Validating][main][c.d.d.b.a] >   Build cache is disabled
+22:01:50.306 [INFO]  [Validating][main][c.d.d.b.a] > Task ':extra:test' is not up-to-date because:
+22:01:50.306 [INFO]  [Validating][main][c.d.d.b.a] >   Value of input property 'filter.failOnNoMatchingTests' has changed for task ':extra:test'
+22:01:50.306 [INFO]  [Validating][main][c.d.d.b.a] >   Value of input property 'filter.includePatterns' has changed for task ':extra:test'
+22:01:50.306 [INFO]  [Validating][main][c.d.d.b.a] > Starting process 'Gradle Test Executor 9'. Working directory: C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra Command: C:\Program Files\Java\jdk-17\bin\java.exe -Dorg.gradle.internal.worker.tmpdir=C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build\tmp\test\work -Dorg.gradle.native=false @C:\Users\cbontoiu\.gradle\.tmp\gradle-worker-classpath17897907882260366742txt -Xmx512m -Dfile.encoding=windows-1252 -Duser.country=GB -Duser.language=en -Duser.variant -ea worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 9'
+22:01:50.306 [INFO]  [Validating][main][c.d.d.b.a] > Successfully started process 'Gradle Test Executor 9'
+22:01:50.306 [INFO]  [Validating][main][c.d.d.b.a] > Finished generating test XML results (0.004 secs) into: C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build\test-results\test
+22:01:50.306 [INFO]  [Validating][main][c.d.d.b.a] > Generating HTML test report...
+22:01:50.306 [INFO]  [Validating][main][c.d.d.b.a] > Finished generating test html results (0.008 secs) into: C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build\reports\tests\test
+22:01:50.306 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:01:50.306 [INFO]  [Validating][main][c.d.d.b.a] > Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+22:01:50.306 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:01:50.306 [INFO]  [Validating][main][c.d.d.b.a] > You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+22:01:50.306 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:01:50.306 [INFO]  [Validating][main][c.d.d.b.a] > For more on this, please refer to https://docs.gradle.org/8.2/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+22:01:50.306 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:01:50.306 [INFO]  [Validating][main][c.d.d.b.a] > BUILD SUCCESSFUL in 949ms
+22:01:50.306 [INFO]  [Validating][main][c.d.d.b.a] > 3 actionable tasks: 1 executed, 2 up-to-date
+22:01:50.306 [INFO]  [Validating][main][c.d.d.b.a] > Watched directory hierarchies: [C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI]
+22:01:50.306 [INFO]  [Validating][main][c.d.d.b.a] Standard error of build tool (gradle)
+22:01:50.306 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:01:50.308 [DEBUG] [Validating][main][c.d.cover.k.c.f] Parsing test reports from default dir: C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build\test-results\test
+22:01:50.315 [INFO]  [Validating][main][c.d.cover.ui.a.j] All 6 created tests were successfully validated.
+22:01:50.386 [DEBUG] [Reporting][main][c.d.c.r.StructuredReportManager] Run metrics:
+Total time:                21.9s
+Environment detection:      0.7s ( 3.1%)
+Indexing:                   0.3s ( 1.5%)
+Entry points:               0.7s ( 3.0%)
+Test generation:            9.9s (45.1%)
+  - Index query:            3.2s (14.6%)
+Test verification:          1.6s ( 7.5%)
+Test validation:            1.0s ( 4.6%)
+Other:                      7.7s (35.3%)
+Time to first test:        18.1s (82.8%)
+Time to last test:         20.6s (94.4%)
+22:01:50.388 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Writing JSON report to C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\.diffblue\reports\report.json
+22:01:50.426 [INFO]  [Reporting][main][c.d.cover.ui.a.b] Log file: C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\.diffblue\log\user-20230917T220127.log
+22:01:50.427 [INFO]  [Reporting][main][c.d.cover.ui.a.u] Finished in 21s

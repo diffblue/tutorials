@@ -1,0 +1,467 @@
+22:26:33.694 [DEBUG] [Preparing][main][c.d.cover.ui.a.u] Client heap size: 4028 MB
+22:26:33.704 [INFO]  [Preparing][main][c.d.cover.ui.a.u] Diffblue Cover 2023.09.01-9200f07-unrestricted
+22:26:33.705 [INFO]  [Preparing][main][c.d.cover.ui.a.u] 
+22:26:33.705 [INFO]  [Preparing][main][c.d.cover.ui.a.u] Running: dcover create --working-directory=extra source.E --keep-partial-tests
+22:26:35.634 [INFO]  [Checking][main][c.d.cover.ui.a.j] Detecting environment:
+22:26:35.635 [INFO]  [Checking][main][c.d.cover.ui.a.j] ----------------------
+22:26:35.722 [INFO]  [Checking][main][c.d.cover.ui.a.j] Detected Java version 17.0.6
+22:26:37.125 [DEBUG] [Checking][main][c.d.d.g.a] Querying Gradle project info using --init-script C:\Users\cbontoiu\AppData\Local\Temp\diffblueGradleInit18136741864684092565.gradle and plugin C:\Users\cbontoiu\AppData\Local\Temp\diffblueGradlePlugin8919720898223644527.jar
+22:26:37.128 [DEBUG] [Checking][gradle][c.d.d.g.a] cmd: gradle --init-script C:\Users\cbontoiu\AppData\Local\Temp\diffblueGradleInit18136741864684092565.gradle --info (equivalent via API)
+22:26:37.244 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The client will now receive all logging from the daemon (pid: 7668). The daemon log file: C:\Users\cbontoiu\.gradle\daemon\8.2\daemon-7668.out.log
+22:26:37.244 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Starting 24th build in daemon [uptime: 1 hrs 38 mins 6.768 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 20% of 384 MiB]
+22:26:37.244 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Closing daemon's stdin at end of input.
+22:26:37.244 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The daemon will no longer process any standard input.
+22:26:37.244 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Using 8 worker leases.
+22:26:37.244 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Now considering [C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI] as hierarchies to watch
+22:26:37.244 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Watching the file system is configured to be enabled if available
+22:26:37.244 [DEBUG] [Checking][gradle][c.d.d.g.a] out: File system watching is active
+22:26:37.244 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Compiling initialization script 'C:\Users\cbontoiu\AppData\Local\Temp\diffblueGradleInit18136741864684092565.gradle' using SubsetScriptTransformer.
+22:26:37.244 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Invalidating in-memory cache of C:\Users\cbontoiu\.gradle\caches\8.2\fileHashes\fileHashes.bin
+22:26:37.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Invalidating in-memory cache of C:\Users\cbontoiu\.gradle\caches\8.2\fileHashes\resourceHashesCache.bin
+22:26:37.245 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Invalidating in-memory cache of C:\Users\cbontoiu\.gradle\caches\journal-1\file-access.bin
+22:26:37.354 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The configuration classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+22:26:37.354 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The configuration classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+22:26:37.354 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The configuration classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+22:26:37.354 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The configuration classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+22:26:37.354 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Compiling initialization script 'C:\Users\cbontoiu\AppData\Local\Temp\diffblueGradleInit18136741864684092565.gradle' using BuildScriptTransformer.
+22:26:37.543 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Starting Build
+22:26:37.543 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Settings evaluated using settings file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\settings.gradle'.
+22:26:37.543 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Projects loaded. Root project using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\build.gradle'.
+22:26:37.543 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Included projects: [root project 'DemoCLI', project ':app', project ':common', project ':extra']
+22:26:37.544 [DEBUG] [Checking][gradle][c.d.d.g.a] out: 
+22:26:37.544 [DEBUG] [Checking][gradle][c.d.d.g.a] out: > Configure project :
+22:26:37.544 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Evaluating root project 'DemoCLI' using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\build.gradle'.
+22:26:37.639 [DEBUG] [Checking][gradle][c.d.d.g.a] out: 
+22:26:37.639 [DEBUG] [Checking][gradle][c.d.d.g.a] out: > Configure project :app
+22:26:37.639 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Evaluating project ':app' using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\app\build.gradle'.
+22:26:37.639 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring Jacoco Plugin for use with Diffblue Cover
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :app:test for use with Diffblue Cover
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: ignoreFailures: false
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: excludes: []
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: includes: []
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :app:jacocoTestReport for use with Diffblue Cover
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :app:jacocoTestReportDeletePrevious for use with Diffblue Cover
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :app:jacocoTestReportPrepareEmptyExec for use with Diffblue Cover
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: 
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: > Configure project :common
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Evaluating project ':common' using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\common\build.gradle'.
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring Jacoco Plugin for use with Diffblue Cover
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :common:test for use with Diffblue Cover
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: ignoreFailures: false
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: excludes: []
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: includes: []
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :common:jacocoTestReport for use with Diffblue Cover
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :common:jacocoTestReportDeletePrevious for use with Diffblue Cover
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :common:jacocoTestReportPrepareEmptyExec for use with Diffblue Cover
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: 
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: > Configure project :extra
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Evaluating project ':extra' using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build.gradle'.
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring Jacoco Plugin for use with Diffblue Cover
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :extra:test for use with Diffblue Cover
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: ignoreFailures: false
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: excludes: []
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: includes: []
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :extra:jacocoTestReport for use with Diffblue Cover
+22:26:37.640 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :extra:jacocoTestReportDeletePrevious for use with Diffblue Cover
+22:26:37.641 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Configuring task :extra:jacocoTestReportPrepareEmptyExec for use with Diffblue Cover
+22:26:37.641 [DEBUG] [Checking][gradle][c.d.d.g.a] out: All projects evaluated.
+22:26:37.641 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The configuration :extra:coverageDataElementsForTest is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+22:26:37.641 [DEBUG] [Checking][gradle][c.d.d.g.a] out: The configuration :extra:mainSourceElements is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+22:26:37.641 [DEBUG] [Checking][gradle][c.d.d.g.a] out: 
+22:26:37.641 [DEBUG] [Checking][gradle][c.d.d.g.a] out: CONFIGURE SUCCESSFUL in 461ms
+22:26:37.641 [DEBUG] [Checking][gradle][c.d.d.g.a] out: Watched directory hierarchies: [C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI]
+22:26:38.018 [INFO]  [Checking][main][c.d.cover.ui.a.j] Detected build system: Gradle 8.2
+22:26:38.022 [INFO]  [Checking][main][c.d.cover.n.a.ai] Operating System: Windows 11 amd64 10.0
+22:26:38.023 [INFO]  [Checking][main][c.d.cover.n.a.ai] Default charset: windows-1252
+22:26:38.025 [INFO]  [Checking][main][c.d.cover.n.a.ai] Default locale: en_GB
+22:26:38.025 [INFO]  [Checking][main][c.d.cover.n.a.ai] Default time zone: Europe/London
+22:26:38.026 [INFO]  [Checking][main][c.d.cover.ui.a.j] Selected build system: Gradle
+22:26:38.030 [INFO]  [Checking][main][c.d.cover.ui.a.j] Selected classpath from build system Gradle
+22:26:38.032 [INFO]  [Checking][main][c.d.cover.n.c.b] Expanded classpath: 
+C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build\classes\java\main (code under test)
+C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build\resources\test
+C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build\resources\main
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter\5.9.1\9274d3757e224bc02eae367bd481062a263c150b\junit-jupiter-5.9.1.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-params\5.9.1\ffcd1013edaeee112be11fcddeb38882d79238de\junit-jupiter-params-5.9.1.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-engine\5.9.1\1bf771097bde296c3ab174861954e8aafaaf2e94\junit-jupiter-engine-5.9.1.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-api\5.9.1\7bb53fbc0173e9f6a9d21d58297af94b1f2f9ce1\junit-jupiter-api-5.9.1.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.platform\junit-platform-engine\1.9.1\83591e5089d6cea5f324aa3ecca9b19d5a275803\junit-platform-engine-1.9.1.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.platform\junit-platform-commons\1.9.1\3145f821b5cd10abcdc5f925baa5fffa6f1b628f\junit-platform-commons-1.9.1.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.mockito\mockito-core\5.4.0\30bcbe79f7bd51b53debfc4c6014d0bea4935e37\mockito-core-5.4.0.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy\1.14.5\28a424c0c4f362568e904d992c239c996cf7adc7\byte-buddy-1.14.5.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.5\20f4e9b9d0ffb953657bfa4b92c0cceb27907d58\byte-buddy-agent-1.14.5.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.objenesis\objenesis\3.3\1049c09f1de4331e8193e579448d0916d75b7631\objenesis-3.3.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.opentest4j\opentest4j\1.2.0\28c11eb91f9b6d8e200631d46e20a7f407f2a046\opentest4j-1.2.0.jar
+22:26:38.153 [INFO]  [Checking][main][c.d.cover.ui.a.j] Detected test framework: JUnit Jupiter 5.9.1
+22:26:38.158 [INFO]  [Checking][main][c.d.cover.ui.a.j] Detected JUnit Jupiter version 5.9.1
+22:26:38.162 [INFO]  [Checking][main][c.d.cover.ui.a.j] Detected JUnit Jupiter Params version 5.9.1
+22:26:38.193 [INFO]  [Checking][main][c.d.cover.ui.a.j] Detected Mockito version 5.4.0
+22:26:38.658 [INFO]  [Checking][main][c.d.cover.ui.a.j] Indexing...
+22:26:38.975 [INFO]  [Checking][main][c.d.cover.ui.a.j] Selected test output directory: C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\src\test\java
+22:26:38.983 [INFO]  [Checking][main][c.d.d.g.b] Running: Using JAVA_HOME: C:\Program Files\Java\jdk-17 : in C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra : gradle test -i  DummyJupiterDiffblueTest
+22:26:40.615 [DEBUG] [Checking][main][c.d.cover.n.c.m] JUnitJupiter5 is present
+22:26:40.615 [DEBUG] [Checking][main][c.d.cover.n.c.m] JUnitJupiter5 is supported
+22:26:40.615 [DEBUG] [Checking][main][c.d.cover.n.c.m] JUnit 5 is present and either it's not been specified by the user or it is the same as the version the user specified
+22:26:40.616 [INFO]  [Checking][main][c.d.cover.ui.a.j] Selected test framework: JUnit Jupiter
+22:26:40.650 [INFO]  [Checking][main][c.d.d.g.b] Running: Using JAVA_HOME: C:\Program Files\Java\jdk-17 : in C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra : gradle test -i  DummyJUnitJupiterLauncherDiffblueTest
+22:26:41.771 [INFO]  [Checking][main][c.d.cover.ui.a.j] Detected JVM architecture: 64-Bit
+22:26:42.365 [INFO]  [Checking][main][c.d.cover.ui.a.j] Selected Java language compliance level: 17
+22:26:42.366 [INFO]  [Checking][main][c.d.cover.ui.a.j] Selected test validation: enabled
+22:26:42.370 [INFO]  [Checking][main][c.d.cover.ui.a.j] Prefixes for filtering classes/methods:
+22:26:42.372 [INFO]  [Checking][main][c.d.cover.ui.a.j] - source.E
+22:26:42.373 [INFO]  [Checking][main][c.d.cover.ui.a.j] Gathering methods to test...
+22:26:43.104 [INFO]  [Reporting][main][c.d.cover.ui.a.j] 
+22:26:43.105 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Environment summary:
+22:26:43.105 [INFO]  [Reporting][main][c.d.cover.ui.a.j] --------------------
+22:26:43.108 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Java version                  17.0.6                        SUCCESS        
+22:26:43.108 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Build system                  Gradle                        SUCCESS        
+22:26:43.108 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Mocking Framework             Mockito 5.4.0                 SUCCESS        
+22:26:43.109 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] Surefire version              Skipped                       -----          
+22:26:43.109 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Testing framework             JUnit Jupiter 5               SUCCESS        
+22:26:43.109 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] JavaEE version                Skipped                       -----          
+22:26:43.109 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] JaCoCo plugin version         Skipped                       -----          
+22:26:43.109 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Launcher                      JUnit Jupiter                 SUCCESS        
+22:26:43.109 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Test validation               Enabled                       SUCCESS        
+22:26:43.109 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] Hamcrest                      Not Detected                  -----          
+22:26:43.109 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] Spring Core                   Not Detected                  -----          
+22:26:43.109 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] Spring Boot                   Skipped                       -----          
+22:26:43.109 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] Spring Boot Test              Skipped                       -----          
+22:26:43.109 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] Spring Web                    Skipped                       -----          
+22:26:43.109 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] Spring Security Web           Skipped                       -----          
+22:26:43.109 [DEBUG] [Reporting][main][c.d.cover.ui.a.j] Spring Test                   Skipped                       -----          
+22:26:43.109 [INFO]  [Reporting][main][c.d.cover.ui.a.j] 
+22:26:43.110 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Environment check status: SUCCESS
+22:26:43.148 [DEBUG] [Creating][pool-5-thread-1][c.d.cover.k.a.g] Configuration:
+Module: 
+Configuration: 
+ features=[TESTING_FRAMEWORK_JUNIT_JUPITER5, JUNIT_JUPITER_PARAMS, MOCKING, MOCKITO_SESSION, INCLUDE_SYSTEM_ENVIRONMENT_VARIABLES, INLINE_ACT_INTO_ASSERT, INLINE_ARRANGE_INTO_ACT_ASSERT, INLINE_CHAINED_MEMBER_ACCESSES, INLINE_CONSTRUCTORS, INLINE_IMMEDIATE_VALUES, JOIN_SIMPLE_TESTS, SHOW_SECTION_COMMENTS, KEEP_NON_COMPILING_TESTS, KEEP_NONDETERMINISTIC_TESTS, KEEP_TESTS_WITHOUT_ASSERTIONS, KEEP_TESTS_WITH_VIOLATIONS, KEEP_THROWING_TESTS, PREFLIGHT_ENABLE_TEST_EXECUTION, REPORT, SANDBOXING, VALIDATION, ANALYZER_SERVICE, VERIFICATION]
+ analyzerServiceIdleTimeout=PT2M
+ coverReportsBaseUrl=Optional.empty
+ coverReportsGroupName=17/09/2023, 22:26
+ coverReportsProject=Optional.empty
+ environmentVariables={}
+ complianceLevel=17
+ fuzzingIterations=1000
+ jacocoCommandDiffblue=Optional.empty
+ jacocoCommandManual=Optional.empty
+ jacocoXmlTestReport=Optional.empty
+ jacocoXmlTestReportDiffblue=C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\.diffblue\reports\diffblue-tests-jacoco-report.xml
+ jacocoXmlTestReportManual=C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\.diffblue\reports\manual-tests-jacoco-report.xml
+ sandboxAllowedJavaNativeInterfacePrefixes=[]
+ mockingFramework=MOCKITO_5_0_0
+ mockClasses=[]
+ mockStaticClasses=[]
+ workingDirectory=C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra
+ classpath=Classpath(14 full entries, 1 code under test entries)
+ warningsToSuppress=[]
+ perMethodTimeouts=Timeouts{softTimeout=PT20S, initialExecutionTimeout=PT20S, hardTimeout=PT1M, springStartupTimeout=PT4M}
+ reportFile=C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\.diffblue\reports\report.json
+ activeProfiles=[]
+ classScheme=${CLASS_NAME}DiffblueTest
+ methodScheme=test${INNER_CLASS_NAME}${METHOD_NAME}
+ springConfigurationClasses=[]
+ testOutputDirectory=C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\src\test\java
+ validationCommand=Optional.empty
+ validationTimeout=PT30M
+ jacocoVersion=null
+ observerMethodSpecification=MethodSpecification[excludedPrefixes=[]]
+ analyzerServiceRestartFrequency=50
+
+22:26:43.154 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b] Found 2 callable methods in 1 class
+22:26:43.155 [INFO]  [Creating][pool-5-thread-1][c.d.cover.k.a.a] 
+22:26:43.156 [INFO]  [Creating][pool-5-thread-1][c.d.cover.k.a.a] Creating tests:
+22:26:43.157 [INFO]  [Creating][pool-5-thread-1][c.d.cover.k.a.a] ---------------
+22:26:43.180 [INFO]  [Creating][pool-5-thread-1][c.d.cover.k.a.a] 
+================================================================================
+= Starting analysis for class 'source.E'
+================================================================================
+22:26:43.181 [INFO]  [Creating][pool-5-thread-1][c.d.cover.k.a.a] Filtering out non-testable methods...
+22:26:44.682 [INFO]  [Creating][pool-5-thread-1][c.d.cover.k.a.a] Filtering of methods complete. Creating analysis request
+22:26:44.683 [INFO]  [Creating][pool-5-thread-1][c.d.c.service.c] Attempting to get service client, retry 1.
+22:26:44.691 [INFO]  [Creating][pool-5-thread-1][c.d.c.service.c] Starting monitoring server.
+22:26:44.866 [INFO]  [Creating][pool-5-thread-1][c.d.c.service.c] Monitoring server listening on localhost/127.0.0.1:55709
+22:26:44.869 [INFO]  [Creating][pool-5-thread-1][c.d.c.service.c] Starting analyzer server process...
+22:26:44.869 [INFO]  [Creating][pool-5-thread-1][c.d.c.service.c] Server command-line: C:\Program Files\Java\jdk-17\bin\java.exe -XX:+IgnoreUnrecognizedVMOptions -Djdk.attach.allowAttachSelf=true -ea -javaagent:C:\DiffblueCoverProduct\launcher-shared-jar.jar -Dlogback.configurationFile=C:\Users\cbontoiu\AppData\Local\Temp\diffblue\config\logback-remote-service.xml -Dcom.diffblue.springIsolationJar=C:\DiffblueCoverProduct\cover-isolation-layer.jar -Dcover.jar.path=C:\DiffblueCoverProduct\cover-service-analyzer.jar -Dcom.diffblue.assertionSuggestionJar=C:\DiffblueCoverProduct\cover-service-analyzer.jar -Dcover.main.class=com.diffblue.cover.service.analyzer.Main -jar C:\DiffblueCoverProduct\launcher-shared-jar.jar --service-lifespan 120 --monitoring-service-port 55709 --index-service-port 55709 --debug-log
+22:26:44.881 [INFO]  [Creating][pool-5-thread-1][c.d.c.service.c] Server started. Waiting up to 300 seconds for a connection to be established...
+22:26:45.646 [DEBUG] [Creating][nullmain][c.d.c.s.a.Main] Service heap size: 4028 MB
+22:26:45.737 [INFO]  [Creating][nullmain][c.d.c.s.a.a.b] Starting new remote monitor client
+22:26:46.427 [INFO]  [Creating][analyzer-service:main][c.d.c.s.a.a.b] Attempting to start remote server.
+22:26:46.687 [INFO]  [Creating][analyzer-service:main][c.d.c.s.a.a.a] Server started, listening on localhost/127.0.0.1:55711
+22:26:46.886 [INFO]  [Creating][pool-5-thread-1][c.d.c.service.c] Expect analyzer service to be listening on port 55711.
+22:26:47.523 [INFO]  [Creating][pool-5-thread-1][c.d.c.service.c] Started analyzer service and client retrieved.
+22:26:49.512 [DEBUG] [Creating][analyzer-service:grpc-default-executor-0][c.d.fuzztest.d.a] Class information:
+22:26:49.513 [DEBUG] [Creating][analyzer-service:grpc-default-executor-0][c.d.fuzztest.d.a]   Extends: class source.D
+22:26:49.514 [DEBUG] [Creating][analyzer-service:grpc-default-executor-0][c.d.fuzztest.d.a]   Fields: int source.E.e
+22:26:49.515 [DEBUG] [Creating][analyzer-service:grpc-default-executor-0][c.d.fuzztest.d.a]   Constructors: public source.E()
+22:26:49.517 [DEBUG] [Creating][analyzer-service:grpc-default-executor-0][c.d.fuzztest.d.a]   Methods: int source.E.method(double)
+22:26:50.084 [INFO]  [Creating][analyzer-service:TimedExecutor-4][c.d.fuzztest.f.c] 
+================================================================================
+= Creating tests for 'source.E.<init>:()V' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+22:26:52.678 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b]     [1/2] source.E.<init>
+22:26:52.678 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b]     [1/2]   Tests created: 1
+22:26:52.681 [INFO]  [Creating][analyzer-service:TimedExecutor-11][c.d.fuzztest.f.c] 
+================================================================================
+= Creating tests for 'source.E.method:(D)I' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+22:26:53.566 [DEBUG] [Creating][analyzer-service:TimedExecutor-11][c.d.fuzztest.b.d] Refinement loop done: 2 seeds, 1+0 new+accumulated tests, 1+0 tests+partial tests, 19/1000 its
+22:26:53.615 [INFO]  [Creating][analyzer-service:grpc-default-executor-0][c.d.fuzztest.f.v] Created 1+0 tests and partial tests via 'SiM (!sp, fnm, df, !ris)', 1/2, returning all 1
+22:26:53.738 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b]     [2/2] source.E.method
+22:26:53.738 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b]     [2/2]   Tests created: 1
+22:26:53.745 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b] [1/1] source.E
+22:26:53.746 [INFO]  [Creating][pool-5-thread-1][c.d.cover.ui.d.b] [1/1]   Tests created: 2
+22:26:53.752 [INFO]  [Reporting][pool-5-thread-1][c.d.cover.ui.d.b] 
+22:26:53.754 [INFO]  [Reporting][pool-5-thread-1][c.d.cover.ui.d.b] Summary:
+22:26:53.755 [INFO]  [Reporting][pool-5-thread-1][c.d.cover.ui.d.b] --------
+22:26:53.755 [INFO]  [Reporting][pool-5-thread-1][c.d.cover.ui.d.b] Total:                                               2 methods
+22:26:53.756 [INFO]  [Reporting][pool-5-thread-1][c.d.cover.ui.d.b] 2 tests created for:                                 2 methods
+22:26:53.757 [INFO]  [Reporting][pool-5-thread-1][c.d.cover.ui.d.b] 
+22:26:53.919 [INFO]  [Validating][main][c.d.cover.ui.a.j] 
+22:26:53.920 [INFO]  [Validating][main][c.d.cover.ui.a.j] Running validation command.
+22:26:53.923 [DEBUG] [Validating][main][c.d.cover.k.c.f] Validating tests with default internal Gradle "test" task: gradle test
+22:26:53.924 [INFO]  [Validating][main][c.d.d.g.b] Running: Using JAVA_HOME: C:\Program Files\Java\jdk-17 : in C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra : gradle test -i  
+22:26:55.059 [INFO]  [Validating][main][c.d.d.b.a] Standard output of build tool (gradle)
+22:26:55.060 [INFO]  [Validating][main][c.d.d.b.a] > The client will now receive all logging from the daemon (pid: 7736). The daemon log file: C:\Users\cbontoiu\.gradle\daemon\8.2\daemon-7736.out.log
+22:26:55.060 [INFO]  [Validating][main][c.d.d.b.a] > Starting 22nd build in daemon [uptime: 1 hrs 37 mins 55.399 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 3.9 GiB]
+22:26:55.060 [INFO]  [Validating][main][c.d.d.b.a] > Closing daemon's stdin at end of input.
+22:26:55.060 [INFO]  [Validating][main][c.d.d.b.a] > The daemon will no longer process any standard input.
+22:26:55.060 [INFO]  [Validating][main][c.d.d.b.a] > Using 8 worker leases.
+22:26:55.060 [INFO]  [Validating][main][c.d.d.b.a] > Now considering [C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI] as hierarchies to watch
+22:26:55.060 [INFO]  [Validating][main][c.d.d.b.a] > Watching the file system is configured to be enabled if available
+22:26:55.060 [INFO]  [Validating][main][c.d.d.b.a] > File system watching is active
+22:26:55.060 [INFO]  [Validating][main][c.d.d.b.a] > Starting Build
+22:26:55.060 [INFO]  [Validating][main][c.d.d.b.a] > Settings evaluated using settings file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\settings.gradle'.
+22:26:55.060 [INFO]  [Validating][main][c.d.d.b.a] > Projects loaded. Root project using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\build.gradle'.
+22:26:55.061 [INFO]  [Validating][main][c.d.d.b.a] > Included projects: [root project 'DemoCLI', project ':app', project ':common', project ':extra']
+22:26:55.061 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.061 [INFO]  [Validating][main][c.d.d.b.a] > > Configure project :
+22:26:55.061 [INFO]  [Validating][main][c.d.d.b.a] > Evaluating root project 'DemoCLI' using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\build.gradle'.
+22:26:55.061 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.061 [INFO]  [Validating][main][c.d.d.b.a] > > Configure project :app
+22:26:55.061 [INFO]  [Validating][main][c.d.d.b.a] > Evaluating project ':app' using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\app\build.gradle'.
+22:26:55.061 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.061 [INFO]  [Validating][main][c.d.d.b.a] > > Configure project :common
+22:26:55.061 [INFO]  [Validating][main][c.d.d.b.a] > Evaluating project ':common' using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\common\build.gradle'.
+22:26:55.061 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.061 [INFO]  [Validating][main][c.d.d.b.a] > > Configure project :extra
+22:26:55.061 [INFO]  [Validating][main][c.d.d.b.a] > Evaluating project ':extra' using build file 'C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build.gradle'.
+22:26:55.061 [INFO]  [Validating][main][c.d.d.b.a] > All projects evaluated.
+22:26:55.061 [INFO]  [Validating][main][c.d.d.b.a] > Task path ':extra:test' matched project ':extra'
+22:26:55.061 [INFO]  [Validating][main][c.d.d.b.a] > Task name matched 'test'
+22:26:55.061 [INFO]  [Validating][main][c.d.d.b.a] > Selected primary task 'test' from project :extra
+22:26:55.061 [INFO]  [Validating][main][c.d.d.b.a] > The configuration :extra:mainSourceElements is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+22:26:55.061 [INFO]  [Validating][main][c.d.d.b.a] > Tasks to be executed: [task ':extra:compileJava', task ':extra:processResources', task ':extra:classes', task ':extra:compileTestJava', task ':extra:processTestResources', task ':extra:testClasses', task ':extra:test']
+22:26:55.061 [INFO]  [Validating][main][c.d.d.b.a] > Tasks that were excluded: []
+22:26:55.061 [INFO]  [Validating][main][c.d.d.b.a] > Resolve mutations for :extra:compileJava (Thread[Execution worker,5,main]) started.
+22:26:55.061 [INFO]  [Validating][main][c.d.d.b.a] > :extra:compileJava (Thread[Execution worker,5,main]) started.
+22:26:55.061 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.062 [INFO]  [Validating][main][c.d.d.b.a] > > Task :extra:compileJava UP-TO-DATE
+22:26:55.062 [INFO]  [Validating][main][c.d.d.b.a] > Caching disabled for task ':extra:compileJava' because:
+22:26:55.062 [INFO]  [Validating][main][c.d.d.b.a] >   Build cache is disabled
+22:26:55.062 [INFO]  [Validating][main][c.d.d.b.a] > Skipping task ':extra:compileJava' as it is up-to-date.
+22:26:55.062 [INFO]  [Validating][main][c.d.d.b.a] > Resolve mutations for :extra:processResources (Thread[Execution worker,5,main]) started.
+22:26:55.062 [INFO]  [Validating][main][c.d.d.b.a] > :extra:processResources (Thread[Execution worker Thread 3,5,main]) started.
+22:26:55.062 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.062 [INFO]  [Validating][main][c.d.d.b.a] > > Task :extra:processResources NO-SOURCE
+22:26:55.062 [INFO]  [Validating][main][c.d.d.b.a] > Skipping task ':extra:processResources' as it has no source files and no previous output files.
+22:26:55.062 [INFO]  [Validating][main][c.d.d.b.a] > Resolve mutations for :extra:classes (Thread[Execution worker Thread 3,5,main]) started.
+22:26:55.062 [INFO]  [Validating][main][c.d.d.b.a] > :extra:classes (Thread[Execution worker Thread 3,5,main]) started.
+22:26:55.062 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.062 [INFO]  [Validating][main][c.d.d.b.a] > > Task :extra:classes UP-TO-DATE
+22:26:55.062 [INFO]  [Validating][main][c.d.d.b.a] > Skipping task ':extra:classes' as it has no actions.
+22:26:55.062 [INFO]  [Validating][main][c.d.d.b.a] > Resolve mutations for :extra:compileTestJava (Thread[Execution worker Thread 3,5,main]) started.
+22:26:55.062 [INFO]  [Validating][main][c.d.d.b.a] > :extra:compileTestJava (Thread[Execution worker Thread 3,5,main]) started.
+22:26:55.062 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.062 [INFO]  [Validating][main][c.d.d.b.a] > > Task :extra:compileTestJava
+22:26:55.062 [INFO]  [Validating][main][c.d.d.b.a] > Caching disabled for task ':extra:compileTestJava' because:
+22:26:55.062 [INFO]  [Validating][main][c.d.d.b.a] >   Build cache is disabled
+22:26:55.062 [INFO]  [Validating][main][c.d.d.b.a] > Task ':extra:compileTestJava' is not up-to-date because:
+22:26:55.062 [INFO]  [Validating][main][c.d.d.b.a] >   Input property 'stableSources' file C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\src\test\java\DummyJUnitJupiterLauncherDiffblueTest.java has been removed.
+22:26:55.062 [INFO]  [Validating][main][c.d.d.b.a] >   Input property 'stableSources' file C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\src\test\java\source\EDiffblueTest.java has changed.
+22:26:55.062 [INFO]  [Validating][main][c.d.d.b.a] > Created classpath snapshot for incremental compilation in 0.001 secs.
+22:26:55.063 [INFO]  [Validating][main][c.d.d.b.a] > Compiling with toolchain 'C:\Program Files\Java\jdk-17'.
+22:26:55.063 [INFO]  [Validating][main][c.d.d.b.a] > Compiling with JDK Java compiler API.
+22:26:55.063 [INFO]  [Validating][main][c.d.d.b.a] > Incremental compilation of 3 classes completed in 0.075 secs.
+22:26:55.063 [INFO]  [Validating][main][c.d.d.b.a] > Class dependency analysis for incremental compilation took 0.004 secs.
+22:26:55.063 [INFO]  [Validating][main][c.d.d.b.a] > Resolve mutations for :extra:processTestResources (Thread[Execution worker Thread 3,5,main]) started.
+22:26:55.063 [INFO]  [Validating][main][c.d.d.b.a] > :extra:processTestResources (Thread[Execution worker Thread 3,5,main]) started.
+22:26:55.063 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.063 [INFO]  [Validating][main][c.d.d.b.a] > > Task :extra:processTestResources NO-SOURCE
+22:26:55.063 [INFO]  [Validating][main][c.d.d.b.a] > Skipping task ':extra:processTestResources' as it has no source files and no previous output files.
+22:26:55.063 [INFO]  [Validating][main][c.d.d.b.a] > Resolve mutations for :extra:testClasses (Thread[Execution worker Thread 3,5,main]) started.
+22:26:55.063 [INFO]  [Validating][main][c.d.d.b.a] > :extra:testClasses (Thread[Execution worker Thread 3,5,main]) started.
+22:26:55.063 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.063 [INFO]  [Validating][main][c.d.d.b.a] > > Task :extra:testClasses
+22:26:55.063 [INFO]  [Validating][main][c.d.d.b.a] > Skipping task ':extra:testClasses' as it has no actions.
+22:26:55.063 [INFO]  [Validating][main][c.d.d.b.a] > Resolve mutations for :extra:test (Thread[Execution worker Thread 3,5,main]) started.
+22:26:55.063 [INFO]  [Validating][main][c.d.d.b.a] > :extra:test (Thread[Execution worker Thread 3,5,main]) started.
+22:26:55.063 [INFO]  [Validating][main][c.d.d.b.a] > Gradle Test Executor 21 started executing tests.
+22:26:55.063 [INFO]  [Validating][main][c.d.d.b.a] > Gradle Test Executor 21 finished executing tests.
+22:26:55.063 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.063 [INFO]  [Validating][main][c.d.d.b.a] > > Task :extra:test FAILED
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] > Caching disabled for task ':extra:test' because:
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] >   Build cache is disabled
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] > Task ':extra:test' is not up-to-date because:
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] >   Value of input property 'filter.failOnNoMatchingTests' has changed for task ':extra:test'
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] >   Value of input property 'filter.includePatterns' has changed for task ':extra:test'
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] > Starting process 'Gradle Test Executor 21'. Working directory: C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra Command: C:\Program Files\Java\jdk-17\bin\java.exe -Dorg.gradle.internal.worker.tmpdir=C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build\tmp\test\work -Dorg.gradle.native=false @C:\Users\cbontoiu\.gradle\.tmp\gradle-worker-classpath12725003416318647488txt -Xmx512m -Dfile.encoding=windows-1252 -Duser.country=GB -Duser.language=en -Duser.variant -ea worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 21'
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] > Successfully started process 'Gradle Test Executor 21'
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] > ADiffblueTest > testMethod() FAILED
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] >     org.opentest4j.AssertionFailedError: expected: <4> but was: <2>
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] >         at app//source.ADiffblueTest.testMethod(ADiffblueTest.java:13)
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] > ADiffblueTest > testConstructor() FAILED
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] >     org.opentest4j.AssertionFailedError: expected: <2> but was: <1>
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+22:26:55.064 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] >         at app//source.ADiffblueTest.testConstructor(ADiffblueTest.java:22)
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] > BDiffblueTest > testMethod() FAILED
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] >     org.opentest4j.AssertionFailedError: expected: <16> but was: <8>
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] >         at app//source.BDiffblueTest.testMethod(BDiffblueTest.java:13)
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] > BDiffblueTest > testConstructor() FAILED
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] >     org.opentest4j.AssertionFailedError: expected: <2> but was: <1>
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] >         at app//source.BDiffblueTest.testConstructor(BDiffblueTest.java:25)
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] > CDiffblueTest > testMethod() FAILED
+22:26:55.065 [INFO]  [Validating][main][c.d.d.b.a] >     org.opentest4j.AssertionFailedError: expected: <96> but was: <48>
+22:26:55.066 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+22:26:55.066 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+22:26:55.066 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+22:26:55.066 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+22:26:55.066 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+22:26:55.066 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
+22:26:55.066 [INFO]  [Validating][main][c.d.d.b.a] >         at app//source.CDiffblueTest.testMethod(CDiffblueTest.java:13)
+22:26:55.066 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.066 [INFO]  [Validating][main][c.d.d.b.a] > CDiffblueTest > testConstructor() FAILED
+22:26:55.066 [INFO]  [Validating][main][c.d.d.b.a] >     org.opentest4j.AssertionFailedError: expected: <2> but was: <1>
+22:26:55.066 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+22:26:55.066 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+22:26:55.066 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+22:26:55.066 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+22:26:55.066 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+22:26:55.066 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
+22:26:55.066 [INFO]  [Validating][main][c.d.d.b.a] >         at app//source.CDiffblueTest.testConstructor(CDiffblueTest.java:25)
+22:26:55.066 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.066 [INFO]  [Validating][main][c.d.d.b.a] > DDiffblueTest > testMethod() FAILED
+22:26:55.066 [INFO]  [Validating][main][c.d.d.b.a] >     org.opentest4j.AssertionFailedError: expected: <768> but was: <384>
+22:26:55.066 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+22:26:55.066 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+22:26:55.066 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] >         at app//source.DDiffblueTest.testMethod(DDiffblueTest.java:13)
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] > DDiffblueTest > testConstructor() FAILED
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] >     org.opentest4j.AssertionFailedError: expected: <2> but was: <1>
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] >         at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] >         at app//source.DDiffblueTest.testConstructor(DDiffblueTest.java:25)
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] > Finished generating test XML results (0.021 secs) into: C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build\test-results\test
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] > Generating HTML test report...
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] > Finished generating test html results (0.022 secs) into: C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build\reports\tests\test
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] > Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] > You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] > For more on this, please refer to https://docs.gradle.org/8.2/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] > 3 actionable tasks: 2 executed, 1 up-to-date
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] > Watched directory hierarchies: [C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI]
+22:26:55.067 [INFO]  [Validating][main][c.d.d.b.a] Standard error of build tool (gradle)
+22:26:55.068 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.068 [INFO]  [Validating][main][c.d.d.b.a] > 10 tests completed, 8 failed
+22:26:55.068 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.068 [INFO]  [Validating][main][c.d.d.b.a] > FAILURE: Build failed with an exception.
+22:26:55.068 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.068 [INFO]  [Validating][main][c.d.d.b.a] > * What went wrong:
+22:26:55.068 [INFO]  [Validating][main][c.d.d.b.a] > Execution failed for task ':extra:test'.
+22:26:55.068 [INFO]  [Validating][main][c.d.d.b.a] > > There were failing tests. See the report at: file:///C:/Users/cbontoiu/Desktop/DiffblueTutorials/DemoCLI/extra/build/reports/tests/test/index.html
+22:26:55.068 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.068 [INFO]  [Validating][main][c.d.d.b.a] > * Try:
+22:26:55.068 [INFO]  [Validating][main][c.d.d.b.a] > > Run with --scan to get full insights.
+22:26:55.068 [INFO]  [Validating][main][c.d.d.b.a] > 
+22:26:55.068 [INFO]  [Validating][main][c.d.d.b.a] > BUILD FAILED in 1s
+22:26:55.071 [DEBUG] [Validating][main][c.d.cover.k.c.f] Parsing test reports from default dir: C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build\test-results\test
+22:26:55.080 [INFO]  [Validating][main][c.d.cover.ui.a.j] All 2 created tests were successfully validated.
+22:26:55.081 [WARN]  [Validating][main][c.d.cover.ui.a.j] All resulting Diffblue tests are passing, but the validation command is still failing.
+22:26:55.085 [WARN]  [Validating][main][c.d.cover.ui.a.j] E032: Failing tests detected while validating
+During test validation there were some test failures. Please see the list below
+and the contents of the log file. Without addressing these failing tests,
+Diffblue Cover will be unable to properly validate the created tests.
+Failing tests:
+    source.ADiffblueTest.testMethod
+    source.ADiffblueTest.testConstructor
+    source.BDiffblueTest.testMethod
+    source.BDiffblueTest.testConstructor
+    source.CDiffblueTest.testMethod
+    source.CDiffblueTest.testConstructor
+    source.DDiffblueTest.testMethod
+    source.DDiffblueTest.testConstructor
+The output from running this command is available towards the end of the log
+file.
+22:26:55.160 [DEBUG] [Reporting][main][c.d.c.r.StructuredReportManager] Run metrics:
+Total time:                21.2s
+Environment detection:      0.7s ( 3.5%)
+Indexing:                   0.3s ( 1.5%)
+Entry points:               0.7s ( 3.3%)
+Test generation:            9.3s (43.7%)
+  - Index query:            3.2s (14.9%)
+Test verification:          1.3s ( 6.3%)
+Test validation:            1.2s ( 5.5%)
+Other:                      7.7s (36.2%)
+Time to first test:        18.7s (88.3%)
+Time to last test:         19.8s (93.3%)
+22:26:55.161 [INFO]  [Reporting][main][c.d.cover.ui.a.j] Writing JSON report to C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\.diffblue\reports\report.json
+22:26:55.196 [INFO]  [Reporting][main][c.d.cover.ui.a.j] 
+22:26:55.197 [WARN]  [Reporting][main][c.d.cover.ui.a.j] Cover completed with warnings
+  The following warnings should be addressed to ensure that
+  the highest quantity and quality of tests can be created:
+-----------------------------------------------------------
+22:26:55.081 [WARN]  [Validating][main][c.d.cover.ui.a.j] All resulting Diffblue tests are passing, but the validation command is still failing.
+22:26:55.085 [WARN]  [Validating][main][c.d.cover.ui.a.j] E032: Failing tests detected while validating
+During test validation there were some test failures. Please see the list below
+and the contents of the log file. Without addressing these failing tests,
+Diffblue Cover will be unable to properly validate the created tests.
+Failing tests:
+    source.ADiffblueTest.testMethod
+    source.ADiffblueTest.testConstructor
+    source.BDiffblueTest.testMethod
+    source.BDiffblueTest.testConstructor
+    source.CDiffblueTest.testMethod
+    source.CDiffblueTest.testConstructor
+    source.DDiffblueTest.testMethod
+    source.DDiffblueTest.testConstructor
+The output from running this command is available towards the end of the log
+file.
+22:26:55.199 [INFO]  [Reporting][main][c.d.cover.ui.a.b] Log file: C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\.diffblue\log\user-20230917T222633.log
+22:26:55.200 [INFO]  [Reporting][main][c.d.cover.ui.a.u] Finished in 21s
