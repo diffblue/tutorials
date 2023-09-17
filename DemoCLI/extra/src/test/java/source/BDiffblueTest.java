@@ -18,12 +18,9 @@ class BDiffblueTest {
   */
   @Test
   void testConstructor() {
-    // Arrange and Act
-    B actualB = new B();
-
-    // Assert
-    assertEquals(2, actualB.a);
-    assertEquals(4, actualB.b);
+    // Arrange, Act and Assert
+    assertEquals(2, A.a);
+    assertEquals(4, (new B()).b);
   }
 }
 

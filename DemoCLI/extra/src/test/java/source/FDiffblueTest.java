@@ -22,7 +22,7 @@ class FDiffblueTest {
     F actualF = new F();
 
     // Assert
-    assertEquals(2, actualF.a);
+    assertEquals(2, A.a);
     assertEquals(12, actualF.f);
     assertEquals(10, actualF.e);
     assertEquals(8, actualF.d);

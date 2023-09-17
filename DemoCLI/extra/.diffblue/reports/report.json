@@ -4,37 +4,40 @@
   },
   "run" : {
     "version" : "2023.09.01-9200f07-unrestricted",
-    "creationTimestamp" : "2023-09-17T22:34:30.1284535+01:00",
+    "creationTimestamp" : "2023-09-17T23:14:46.6434035+01:00",
     "command" : "dcover create --working-directory=extra source --keep-partial-tests",
-    "totalTime" : 29.45,
-    "environmentDetectionTime" : 0.811,
-    "indexingTime" : 0.336,
-    "entryPointsTime" : 0.793,
-    "generationTime" : 15.364,
-    "timeToFirstTest" : 21.332,
-    "timeToLastTest" : 27.765,
-    "indexQueryTime" : 3.513,
-    "verificationTime" : 3.108,
-    "validationTime" : 1.411
+    "totalTime" : 24.349,
+    "environmentDetectionTime" : 0.663,
+    "indexingTime" : 0.299,
+    "entryPointsTime" : 0.647,
+    "generationTime" : 12.023,
+    "timeToFirstTest" : 17.888,
+    "timeToLastTest" : 23.108,
+    "indexQueryTime" : 3.325,
+    "verificationTime" : 2.293,
+    "validationTime" : 1.003
   },
   "codes" : {
     "R000" : "Success",
     "T000" : "Method eligible for test creation",
     "T005" : "Trivial constructor",
+    "T012" : "Synthetic method",
     "V000" : "Validated successfully"
   },
   "summary" : {
     "classesCount" : 7,
-    "methodsCount" : 14,
+    "methodsCount" : 15,
     "completeTestCount" : 14,
     "incompleteTestCount" : 0,
     "skeletonTestCount" : 0,
     "perMethodTestability" : {
       "T000" : 7,
-      "T005" : 7
+      "T005" : 7,
+      "T012" : 1
     },
     "perMethodOutcome" : {
-      "R000" : 14
+      "R000" : 14,
+      "T012" : 1
     },
     "perTestOutcome" : {
       "R000" : 14
@@ -45,15 +48,17 @@
   },
   "classes" : {
     "source.A" : {
-      "methodsCount" : 2,
+      "methodsCount" : 3,
       "completeTestCount" : 2,
       "incompleteTestCount" : 0,
       "perMethodTestability" : {
         "T000" : 1,
-        "T005" : 1
+        "T005" : 1,
+        "T012" : 1
       },
       "perMethodOutcome" : {
-        "R000" : 2
+        "R000" : 2,
+        "T012" : 1
       },
       "perTestOutcome" : {
         "R000" : 2
@@ -151,6 +156,15 @@
     }
   },
   "methods" : {
+    "source.A.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        4
+      ]
+    },
     "source.A.<init>:()V" : {
       "completeTestCount" : 1,
       "incompleteTestCount" : 0,
@@ -160,8 +174,7 @@
         "R000" : 1
       },
       "lineNumbers" : [
-        3,
-        4
+        3
       ]
     },
     "source.A.method:(D)I" : {

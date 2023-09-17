@@ -22,7 +22,7 @@ class GDiffblueTest {
     G actualG = new G();
 
     // Assert
-    assertEquals(2, actualG.a);
+    assertEquals(2, A.a);
     assertEquals(14, actualG.g);
     assertEquals(12, actualG.f);
     assertEquals(10, actualG.e);

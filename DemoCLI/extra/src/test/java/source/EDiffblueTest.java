@@ -22,7 +22,7 @@ class EDiffblueTest {
     E actualE = new E();
 
     // Assert
-    assertEquals(2, actualE.a);
+    assertEquals(2, A.a);
     assertEquals(10, actualE.e);
     assertEquals(8, actualE.d);
     assertEquals(6, actualE.c);

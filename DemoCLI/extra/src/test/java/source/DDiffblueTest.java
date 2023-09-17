@@ -22,7 +22,7 @@ class DDiffblueTest {
     D actualD = new D();
 
     // Assert
-    assertEquals(2, actualD.a);
+    assertEquals(2, A.a);
     assertEquals(8, actualD.d);
     assertEquals(6, actualD.c);
     assertEquals(4, actualD.b);

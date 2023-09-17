@@ -18,8 +18,11 @@ class ADiffblueTest {
   */
   @Test
   void testConstructor() {
-    // Arrange, Act and Assert
-    assertEquals(2, (new A()).a);
+    // Arrange and Act
+    new A();
+
+    // Assert
+    assertEquals(2, A.a);
   }
 }
 
