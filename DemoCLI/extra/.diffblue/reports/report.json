@@ -4,61 +4,56 @@
   },
   "run" : {
     "version" : "2023.09.01-9200f07-unrestricted",
-    "creationTimestamp" : "2023-09-17T23:14:46.6434035+01:00",
+    "creationTimestamp" : "2023-09-18T17:39:19.1376998+01:00",
     "command" : "dcover create --working-directory=extra source --keep-partial-tests",
-    "totalTime" : 24.349,
-    "environmentDetectionTime" : 0.663,
-    "indexingTime" : 0.299,
-    "entryPointsTime" : 0.647,
-    "generationTime" : 12.023,
-    "timeToFirstTest" : 17.888,
-    "timeToLastTest" : 23.108,
-    "indexQueryTime" : 3.325,
-    "verificationTime" : 2.293,
-    "validationTime" : 1.003
+    "totalTime" : 30.445,
+    "environmentDetectionTime" : 0.704,
+    "indexingTime" : 0.325,
+    "entryPointsTime" : 0.684,
+    "generationTime" : 10.708,
+    "timeToFirstTest" : 25.882,
+    "timeToLastTest" : 28.947,
+    "indexQueryTime" : 3.4410000000000003,
+    "verificationTime" : 2.022,
+    "validationTime" : 1.272
   },
   "codes" : {
     "R000" : "Success",
     "T000" : "Method eligible for test creation",
     "T005" : "Trivial constructor",
-    "T012" : "Synthetic method",
     "V000" : "Validated successfully"
   },
   "summary" : {
-    "classesCount" : 7,
-    "methodsCount" : 15,
-    "completeTestCount" : 14,
+    "classesCount" : 6,
+    "methodsCount" : 9,
+    "completeTestCount" : 9,
     "incompleteTestCount" : 0,
     "skeletonTestCount" : 0,
     "perMethodTestability" : {
-      "T000" : 7,
-      "T005" : 7,
-      "T012" : 1
+      "T000" : 5,
+      "T005" : 4
     },
     "perMethodOutcome" : {
-      "R000" : 14,
-      "T012" : 1
+      "R000" : 9
     },
     "perTestOutcome" : {
-      "R000" : 14
+      "R000" : 9
     },
     "perTestValidation" : {
-      "V000" : 14
+      "V000" : 9
     }
   },
   "classes" : {
     "source.A" : {
-      "methodsCount" : 3,
+      "methodsCount" : 2,
       "completeTestCount" : 2,
       "incompleteTestCount" : 0,
       "perMethodTestability" : {
         "T000" : 1,
-        "T005" : 1,
-        "T012" : 1
+        "T005" : 1
       },
       "perMethodOutcome" : {
-        "R000" : 2,
-        "T012" : 1
+        "R000" : 2
       },
       "perTestOutcome" : {
         "R000" : 2
@@ -94,77 +89,50 @@
         "R000" : 2
       }
     },
-    "source.D" : {
-      "methodsCount" : 2,
-      "completeTestCount" : 2,
+    "source.M" : {
+      "methodsCount" : 1,
+      "completeTestCount" : 1,
       "incompleteTestCount" : 0,
       "perMethodTestability" : {
-        "T000" : 1,
         "T005" : 1
       },
       "perMethodOutcome" : {
-        "R000" : 2
+        "R000" : 1
       },
       "perTestOutcome" : {
-        "R000" : 2
+        "R000" : 1
       }
     },
-    "source.E" : {
-      "methodsCount" : 2,
-      "completeTestCount" : 2,
+    "source.N" : {
+      "methodsCount" : 1,
+      "completeTestCount" : 1,
       "incompleteTestCount" : 0,
       "perMethodTestability" : {
-        "T000" : 1,
-        "T005" : 1
+        "T000" : 1
       },
       "perMethodOutcome" : {
-        "R000" : 2
+        "R000" : 1
       },
       "perTestOutcome" : {
-        "R000" : 2
+        "R000" : 1
       }
     },
-    "source.F" : {
-      "methodsCount" : 2,
-      "completeTestCount" : 2,
+    "source.P" : {
+      "methodsCount" : 1,
+      "completeTestCount" : 1,
       "incompleteTestCount" : 0,
       "perMethodTestability" : {
-        "T000" : 1,
-        "T005" : 1
+        "T000" : 1
       },
       "perMethodOutcome" : {
-        "R000" : 2
+        "R000" : 1
       },
       "perTestOutcome" : {
-        "R000" : 2
-      }
-    },
-    "source.G" : {
-      "methodsCount" : 2,
-      "completeTestCount" : 2,
-      "incompleteTestCount" : 0,
-      "perMethodTestability" : {
-        "T000" : 1,
-        "T005" : 1
-      },
-      "perMethodOutcome" : {
-        "R000" : 2
-      },
-      "perTestOutcome" : {
-        "R000" : 2
+        "R000" : 1
       }
     }
   },
   "methods" : {
-    "source.A.<clinit>:()V" : {
-      "completeTestCount" : 0,
-      "incompleteTestCount" : 0,
-      "perMethodTestability" : "T012",
-      "perMethodOutcome" : "T012",
-      "lineNumbers" : [
-        4
-      ]
-    },
     "source.A.<init>:()V" : {
       "completeTestCount" : 1,
       "incompleteTestCount" : 0,
@@ -174,7 +142,8 @@
         "R000" : 1
       },
       "lineNumbers" : [
-        3
+        3,
+        4
       ]
     },
     "source.A.method:(D)I" : {
@@ -239,7 +208,7 @@
         7
       ]
     },
-    "source.D.<init>:()V" : {
+    "source.M.<init>:()V" : {
       "completeTestCount" : 1,
       "incompleteTestCount" : 0,
       "perMethodTestability" : "T005",
@@ -252,91 +221,32 @@
         4
       ]
     },
-    "source.D.method:(D)I" : {
+    "source.N.<init>:()V" : {
       "completeTestCount" : 1,
       "incompleteTestCount" : 0,
       "perMethodTestability" : "T000",
-      "perMethodOutcome" : "R000",
-      "perTestOutcome" : {
-        "R000" : 1
-      },
-      "lineNumbers" : [
-        6
-      ]
-    },
-    "source.E.<init>:()V" : {
-      "completeTestCount" : 1,
-      "incompleteTestCount" : 0,
-      "perMethodTestability" : "T005",
       "perMethodOutcome" : "R000",
       "perTestOutcome" : {
         "R000" : 1
       },
       "lineNumbers" : [
         3,
-        4
+        4,
+        5
       ]
     },
-    "source.E.method:(D)I" : {
+    "source.P.<init>:()V" : {
       "completeTestCount" : 1,
       "incompleteTestCount" : 0,
       "perMethodTestability" : "T000",
-      "perMethodOutcome" : "R000",
-      "perTestOutcome" : {
-        "R000" : 1
-      },
-      "lineNumbers" : [
-        6
-      ]
-    },
-    "source.F.<init>:()V" : {
-      "completeTestCount" : 1,
-      "incompleteTestCount" : 0,
-      "perMethodTestability" : "T005",
       "perMethodOutcome" : "R000",
       "perTestOutcome" : {
         "R000" : 1
       },
       "lineNumbers" : [
         3,
-        4
-      ]
-    },
-    "source.F.method:(D)I" : {
-      "completeTestCount" : 1,
-      "incompleteTestCount" : 0,
-      "perMethodTestability" : "T000",
-      "perMethodOutcome" : "R000",
-      "perTestOutcome" : {
-        "R000" : 1
-      },
-      "lineNumbers" : [
-        6
-      ]
-    },
-    "source.G.<init>:()V" : {
-      "completeTestCount" : 1,
-      "incompleteTestCount" : 0,
-      "perMethodTestability" : "T005",
-      "perMethodOutcome" : "R000",
-      "perTestOutcome" : {
-        "R000" : 1
-      },
-      "lineNumbers" : [
-        3,
-        4
-      ]
-    },
-    "source.G.method:(D)I" : {
-      "completeTestCount" : 1,
-      "incompleteTestCount" : 0,
-      "perMethodTestability" : "T000",
-      "perMethodOutcome" : "R000",
-      "perTestOutcome" : {
-        "R000" : 1
-      },
-      "lineNumbers" : [
-        6
+        4,
+        5
       ]
     }
   }

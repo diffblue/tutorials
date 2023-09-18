@@ -22,7 +22,7 @@ class CDiffblueTest {
     C actualC = new C();
 
     // Assert
-    assertEquals(2, A.a);
+    assertEquals(2, actualC.a);
     assertEquals(6, actualC.c);
     assertEquals(4, actualC.b);
   }
