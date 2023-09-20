@@ -1,0 +1,176 @@
+13:35:17.110 [INFO]  [Preparing] Diffblue Cover 2023.09.01-9200f07-unrestricted
+13:35:17.111 [INFO]  [Preparing] 
+13:35:17.112 [INFO]  [Preparing] Running: dcover create --working-directory=extra org.sandbox --keep-partial-tests
+13:35:19.135 [INFO]  [Checking] Detecting environment:
+13:35:19.137 [INFO]  [Checking] ----------------------
+13:35:19.211 [INFO]  [Checking] Detected Java version 17.0.6
+13:35:22.377 [INFO]  [Checking] Detected build system: Gradle 8.2
+13:35:22.381 [INFO]  [Checking] Operating System: Windows 11 amd64 10.0
+13:35:22.382 [INFO]  [Checking] Default charset: windows-1252
+13:35:22.382 [INFO]  [Checking] Default locale: en_GB
+13:35:22.382 [INFO]  [Checking] Default time zone: Europe/London
+13:35:22.383 [INFO]  [Checking] Selected build system: Gradle
+13:35:22.387 [INFO]  [Checking] Selected classpath from build system Gradle
+13:35:22.388 [INFO]  [Checking] Expanded classpath: 
+C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build\classes\java\main (code under test)
+C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build\resources\test
+C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\build\resources\main
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter\5.10.0\8fea1d9c58b2156f1b998f2f18da04bc9e087f74\junit-jupiter-5.10.0.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-params\5.10.0\9041c7365495a897a64782ea5a6fdb99dab1814e\junit-jupiter-params-5.10.0.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-engine\5.10.0\90587932d718fc51a48112d33045a18476c542ad\junit-jupiter-engine-5.10.0.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-api\5.10.0\2fe4ba3d31d5067878e468c96aa039005a9134d3\junit-jupiter-api-5.10.0.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.platform\junit-platform-engine\1.10.0\276c4edcf64fabb5a139fa7b4f99330d7a93b804\junit-platform-engine-1.10.0.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.junit.platform\junit-platform-commons\1.10.0\d533ff2c286eaf963566f92baf5f8a06628d2609\junit-platform-commons-1.10.0.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.mockito\mockito-core\5.4.0\30bcbe79f7bd51b53debfc4c6014d0bea4935e37\mockito-core-5.4.0.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy\1.14.5\28a424c0c4f362568e904d992c239c996cf7adc7\byte-buddy-1.14.5.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.5\20f4e9b9d0ffb953657bfa4b92c0cceb27907d58\byte-buddy-agent-1.14.5.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.objenesis\objenesis\3.3\1049c09f1de4331e8193e579448d0916d75b7631\objenesis-3.3.jar
+C:\Users\cbontoiu\.gradle\caches\modules-2\files-2.1\org.opentest4j\opentest4j\1.3.0\152ea56b3a72f655d4fd677fc0ef2596c3dd5e6e\opentest4j-1.3.0.jar
+13:35:22.517 [INFO]  [Checking] Detected test framework: JUnit Jupiter 5.10.0
+13:35:22.522 [INFO]  [Checking] Detected JUnit Jupiter version 5.10.0
+13:35:22.526 [INFO]  [Checking] Detected JUnit Jupiter Params version 5.10.0
+13:35:22.559 [INFO]  [Checking] Detected Mockito version 5.4.0
+13:35:23.020 [INFO]  [Checking] Indexing...
+13:35:23.334 [INFO]  [Checking] Selected test output directory: C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\src\test\java
+13:35:23.343 [INFO]  [Checking] Running: Using JAVA_HOME: C:\Program Files\Java\jdk-17 : in C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra : gradle test -i  DummyJupiterDiffblueTest
+13:35:25.146 [INFO]  [Checking] Selected test framework: JUnit Jupiter
+13:35:25.180 [INFO]  [Checking] Running: Using JAVA_HOME: C:\Program Files\Java\jdk-17 : in C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra : gradle test -i  DummyJUnitJupiterLauncherDiffblueTest
+13:35:26.320 [INFO]  [Checking] Detected JVM architecture: 64-Bit
+13:35:27.000 [INFO]  [Checking] Selected Java language compliance level: 17
+13:35:27.001 [INFO]  [Checking] Selected test validation: enabled
+13:35:27.005 [INFO]  [Checking] Prefixes for filtering classes/methods:
+13:35:27.007 [INFO]  [Checking] - org.sandbox
+13:35:27.008 [INFO]  [Checking] Gathering methods to test...
+13:35:27.868 [INFO]  [Reporting] 
+13:35:27.869 [INFO]  [Reporting] Environment summary:
+13:35:27.869 [INFO]  [Reporting] --------------------
+13:35:27.871 [INFO]  [Reporting] Java version                  17.0.6                        SUCCESS        
+13:35:27.871 [INFO]  [Reporting] Build system                  Gradle                        SUCCESS        
+13:35:27.871 [INFO]  [Reporting] Mocking Framework             Mockito 5.4.0                 SUCCESS        
+13:35:27.871 [INFO]  [Reporting] Testing framework             JUnit Jupiter 5               SUCCESS        
+13:35:27.871 [INFO]  [Reporting] Launcher                      JUnit Jupiter                 SUCCESS        
+13:35:27.871 [INFO]  [Reporting] Test validation               Enabled                       SUCCESS        
+13:35:27.871 [INFO]  [Reporting] 
+13:35:27.872 [INFO]  [Reporting] Environment check status: SUCCESS
+13:35:27.903 [INFO]  [Creating] Found 2 callable methods in 1 class
+13:35:27.904 [INFO]  [Creating] 
+13:35:27.905 [INFO]  [Creating] Creating tests:
+13:35:27.905 [INFO]  [Creating] ---------------
+13:35:27.924 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'org.sandbox.Security'
+================================================================================
+13:35:27.925 [INFO]  [Creating] Filtering out non-testable methods...
+13:35:30.240 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+13:35:30.242 [INFO]  [Creating] Attempting to get service client, retry 1.
+13:35:30.252 [INFO]  [Creating] Starting monitoring server.
+13:35:30.445 [INFO]  [Creating] Monitoring server listening on localhost/127.0.0.1:59146
+13:35:30.448 [INFO]  [Creating] Starting analyzer server process...
+13:35:30.448 [INFO]  [Creating] Server command-line: C:\Program Files\Java\jdk-17\bin\java.exe -XX:+IgnoreUnrecognizedVMOptions -Djdk.attach.allowAttachSelf=true -ea -javaagent:C:\DiffblueCoverProduct\launcher-shared-jar.jar -Dlogback.configurationFile=C:\Users\cbontoiu\AppData\Local\Temp\diffblue\config\logback-remote-service.xml -Dcom.diffblue.springIsolationJar=C:\DiffblueCoverProduct\cover-isolation-layer.jar -Dcover.jar.path=C:\DiffblueCoverProduct\cover-service-analyzer.jar -Dcom.diffblue.assertionSuggestionJar=C:\DiffblueCoverProduct\cover-service-analyzer.jar -Dcover.main.class=com.diffblue.cover.service.analyzer.Main -jar C:\DiffblueCoverProduct\launcher-shared-jar.jar --service-lifespan 120 --monitoring-service-port 59146 --index-service-port 59146 --debug-log
+13:35:30.457 [INFO]  [Creating] Server started. Waiting up to 300 seconds for a connection to be established...
+13:35:31.320 [INFO]  [Creating] Starting new remote monitor client
+13:35:32.147 [INFO]  [Creating] Attempting to start remote server.
+13:35:32.415 [INFO]  [Creating] Server started, listening on localhost/127.0.0.1:59148
+13:35:32.476 [INFO]  [Creating] Expect analyzer service to be listening on port 59148.
+13:35:33.234 [INFO]  [Creating] Started analyzer service and client retrieved.
+13:35:35.858 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'org.sandbox.Security.<init>:()V' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+13:35:38.903 [INFO]  [Creating]     [1/2] org.sandbox.Security.<init>
+13:35:38.903 [INFO]  [Creating]     [1/2]   Partial tests created: 1
+13:35:38.903 [INFO]  [Creating]     [1/2]   Reasons for partial tests:
+13:35:38.903 [INFO]  [Creating]     [1/2]   R002: Missing observers
+13:35:38.903 [INFO]  [Creating]     [1/2]     Diffblue Cover was unable to create an assertion.
+13:35:38.903 [INFO]  [Creating]     [1/2]     There are no fields that could be asserted on.
+13:35:38.906 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'org.sandbox.Security.getPageSize:()I' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+13:35:40.578 [INFO]  [Creating] Created 1 partial tests via 'SiM (!sp, fnm, df, !ris)', 1/2, here is the last one:
+13:35:41.038 [INFO]  [Creating] == begin partial test ==
+13:35:41.038 [INFO]  [Creating] Test:
+package org.sandbox;
+
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+
+class SecurityTest {
+  /**
+  * Method under test: {@link Security#getPageSize()}
+  */
+  @Test
+  @Disabled("TODO: Complete this test")
+  void testGetPageSize() throws Exception {
+    // TODO: Complete this test.
+    //   Reason: R011 Sandboxing policy violation.
+    //   Diffblue Cover ran code in your project that tried
+    //     to access 'sun.misc'.
+    //   Diffblue Cover's default sandboxing policy disallows this in order to prevent
+    //   your code from damaging your system environment.
+    //   See https://diff.blue/R011 to resolve this issue.
+
+    // Arrange and Act
+    (new Security()).getPageSize();
+  }
+}
+
+13:35:41.038 [INFO]  [Creating] == end partial test ==
+13:35:41.040 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'org.sandbox.Security.getPageSize:()I' using 'SiM (!sp, !fnm, df, !ris)'
+================================================================================
+13:35:41.098 [INFO]  [Creating] Created 1 partial tests via 'SiM (!sp, !fnm, df, !ris)', 2/2, here is the last one:
+13:35:41.113 [INFO]  [Creating] == begin partial test ==
+13:35:41.114 [INFO]  [Creating] Test:
+package org.sandbox;
+
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+
+class SecurityTest {
+  /**
+  * Method under test: {@link Security#getPageSize()}
+  */
+  @Test
+  @Disabled("TODO: Complete this test")
+  void testGetPageSize() throws Exception {
+    // TODO: Complete this test.
+    //   Reason: R011 Sandboxing policy violation.
+    //   Diffblue Cover ran code in your project that tried
+    //     to access 'sun.misc'.
+    //   Diffblue Cover's default sandboxing policy disallows this in order to prevent
+    //   your code from damaging your system environment.
+    //   See https://diff.blue/R011 to resolve this issue.
+
+    // Arrange and Act
+    (new Security()).getPageSize();
+  }
+}
+
+13:35:41.114 [INFO]  [Creating] == end partial test ==
+13:35:41.114 [INFO]  [Creating] All 2 subs either threw or created only partial tests; returning the 1 partial tests created by 'SiM (!sp, fnm, df, !ris)'
+13:35:41.277 [INFO]  [Creating]     [2/2] org.sandbox.Security.getPageSize
+13:35:41.278 [INFO]  [Creating]     [2/2]   Partial tests created: 1
+13:35:41.278 [INFO]  [Creating]     [2/2]   Reasons for partial tests:
+13:35:41.278 [INFO]  [Creating]     [2/2]   R011: Sandboxing policy violation
+13:35:41.278 [INFO]  [Creating]     [2/2]     Diffblue Cover ran code in your project that tried
+13:35:41.278 [INFO]  [Creating]     [2/2]       to access 'sun.misc'.
+13:35:41.278 [INFO]  [Creating]     [2/2]     Diffblue Cover's default sandboxing policy disallows this in order to prevent
+13:35:41.278 [INFO]  [Creating]     [2/2]     your code from damaging your system environment.
+13:35:41.278 [INFO]  [Creating]     [2/2]     See https://diff.blue/R011 to resolve this issue.
+13:35:41.285 [INFO]  [Creating] [1/1] org.sandbox.Security
+13:35:41.286 [INFO]  [Creating] [1/1]   Tests created: 0
+13:35:41.287 [INFO]  [Creating] [1/1]   Partial tests created: 2
+13:35:41.293 [INFO]  [Reporting] 
+13:35:41.293 [INFO]  [Reporting] Summary:
+13:35:41.294 [INFO]  [Reporting] --------
+13:35:41.294 [INFO]  [Reporting] Total:                                               2 methods
+13:35:41.295 [INFO]  [Reporting] 2 partial tests created for:                         2 methods
+13:35:41.295 [INFO]  [Reporting] 
+13:35:41.296 [INFO]  [Reporting] No tests created for:                                2 methods
+13:35:41.296 [INFO]  [Reporting]     1 R002: Missing observers
+13:35:41.297 [INFO]  [Reporting]     1 R011: Sandboxing policy violation
+13:35:41.514 [INFO]  [Reporting] Writing JSON report to C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\.diffblue\reports\report.json
+13:35:41.548 [INFO]  [Reporting] Log file: C:\Users\cbontoiu\Desktop\DiffblueTutorials\DemoCLI\extra\.diffblue\log\user-20230920T133516.log
+13:35:41.549 [INFO]  [Reporting] Finished in 24s

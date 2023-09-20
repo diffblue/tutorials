@@ -4,245 +4,243 @@
   },
   "run" : {
     "version" : "2023.09.01-9200f07-unrestricted",
-    "creationTimestamp" : "2023-09-18T17:39:19.1376998+01:00",
-    "command" : "dcover create --working-directory=extra source --keep-partial-tests",
-    "totalTime" : 30.445,
-    "environmentDetectionTime" : 0.704,
-    "indexingTime" : 0.325,
-    "entryPointsTime" : 0.684,
-    "generationTime" : 10.708,
-    "timeToFirstTest" : 25.882,
-    "timeToLastTest" : 28.947,
-    "indexQueryTime" : 3.4410000000000003,
-    "verificationTime" : 2.022,
-    "validationTime" : 1.272
+    "creationTimestamp" : "2023-09-20T13:35:17.3866854+01:00",
+    "command" : "dcover create --working-directory=extra org.sandbox --keep-partial-tests",
+    "totalTime" : 24.12,
+    "environmentDetectionTime" : 0.869,
+    "indexingTime" : 0.307,
+    "entryPointsTime" : 0.851,
+    "generationTime" : 12.024,
+    "timeToFirstTest" : 21.51,
+    "timeToLastTest" : 23.899,
+    "indexQueryTime" : 4.275,
+    "verificationTime" : 1.363,
+    "validationTime" : 0.0
   },
   "codes" : {
-    "R000" : "Success",
+    "R002" : "Missing observers",
+    "R011" : "Sandboxing policy violation",
     "T000" : "Method eligible for test creation",
     "T005" : "Trivial constructor",
-    "V000" : "Validated successfully"
+    "T033" : "Method excluded from test creation"
   },
   "summary" : {
-    "classesCount" : 6,
-    "methodsCount" : 9,
-    "completeTestCount" : 9,
-    "incompleteTestCount" : 0,
+    "classesCount" : 7,
+    "methodsCount" : 11,
+    "completeTestCount" : 0,
+    "incompleteTestCount" : 2,
     "skeletonTestCount" : 0,
     "perMethodTestability" : {
-      "T000" : 5,
-      "T005" : 4
+      "T000" : 1,
+      "T005" : 1,
+      "T033" : 9
     },
     "perMethodOutcome" : {
-      "R000" : 9
+      "R002" : 1,
+      "R011" : 1,
+      "T033" : 9
     },
     "perTestOutcome" : {
-      "R000" : 9
-    },
-    "perTestValidation" : {
-      "V000" : 9
+      "R002" : 1,
+      "R011" : 1
     }
   },
   "classes" : {
-    "source.A" : {
+    "org.sandbox.Security" : {
       "methodsCount" : 2,
-      "completeTestCount" : 2,
-      "incompleteTestCount" : 0,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 2,
       "perMethodTestability" : {
         "T000" : 1,
         "T005" : 1
       },
       "perMethodOutcome" : {
-        "R000" : 2
+        "R002" : 1,
+        "R011" : 1
       },
       "perTestOutcome" : {
-        "R000" : 2
+        "R002" : 1,
+        "R011" : 1
       }
     },
-    "source.B" : {
+    "org.source.A" : {
       "methodsCount" : 2,
-      "completeTestCount" : 2,
+      "completeTestCount" : 0,
       "incompleteTestCount" : 0,
       "perMethodTestability" : {
-        "T000" : 1,
-        "T005" : 1
+        "T033" : 2
       },
       "perMethodOutcome" : {
-        "R000" : 2
-      },
-      "perTestOutcome" : {
-        "R000" : 2
+        "T033" : 2
       }
     },
-    "source.C" : {
+    "org.source.B" : {
       "methodsCount" : 2,
-      "completeTestCount" : 2,
+      "completeTestCount" : 0,
       "incompleteTestCount" : 0,
       "perMethodTestability" : {
-        "T000" : 1,
-        "T005" : 1
+        "T033" : 2
       },
       "perMethodOutcome" : {
-        "R000" : 2
-      },
-      "perTestOutcome" : {
-        "R000" : 2
+        "T033" : 2
       }
     },
-    "source.M" : {
-      "methodsCount" : 1,
-      "completeTestCount" : 1,
+    "org.source.C" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
       "incompleteTestCount" : 0,
       "perMethodTestability" : {
-        "T005" : 1
+        "T033" : 2
       },
       "perMethodOutcome" : {
-        "R000" : 1
-      },
-      "perTestOutcome" : {
-        "R000" : 1
+        "T033" : 2
       }
     },
-    "source.N" : {
+    "org.source.M" : {
       "methodsCount" : 1,
-      "completeTestCount" : 1,
+      "completeTestCount" : 0,
       "incompleteTestCount" : 0,
       "perMethodTestability" : {
-        "T000" : 1
+        "T033" : 1
       },
       "perMethodOutcome" : {
-        "R000" : 1
-      },
-      "perTestOutcome" : {
-        "R000" : 1
+        "T033" : 1
       }
     },
-    "source.P" : {
+    "org.source.N" : {
       "methodsCount" : 1,
-      "completeTestCount" : 1,
+      "completeTestCount" : 0,
       "incompleteTestCount" : 0,
       "perMethodTestability" : {
-        "T000" : 1
+        "T033" : 1
       },
       "perMethodOutcome" : {
-        "R000" : 1
+        "T033" : 1
+      }
+    },
+    "org.source.P" : {
+      "methodsCount" : 1,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T033" : 1
       },
-      "perTestOutcome" : {
-        "R000" : 1
+      "perMethodOutcome" : {
+        "T033" : 1
       }
     }
   },
   "methods" : {
-    "source.A.<init>:()V" : {
-      "completeTestCount" : 1,
-      "incompleteTestCount" : 0,
+    "org.sandbox.Security.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 1,
       "perMethodTestability" : "T005",
-      "perMethodOutcome" : "R000",
+      "perMethodOutcome" : "R002",
       "perTestOutcome" : {
-        "R000" : 1
-      },
-      "lineNumbers" : [
-        3,
-        4
-      ]
-    },
-    "source.A.method:(D)I" : {
-      "completeTestCount" : 1,
-      "incompleteTestCount" : 0,
-      "perMethodTestability" : "T000",
-      "perMethodOutcome" : "R000",
-      "perTestOutcome" : {
-        "R000" : 1
+        "R002" : 1
       },
       "lineNumbers" : [
         6
       ]
     },
-    "source.B.<init>:()V" : {
-      "completeTestCount" : 1,
-      "incompleteTestCount" : 0,
-      "perMethodTestability" : "T005",
-      "perMethodOutcome" : "R000",
+    "org.sandbox.Security.getPageSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 1,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
       "perTestOutcome" : {
-        "R000" : 1
+        "R011" : 1
       },
+      "lineNumbers" : [
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "org.source.A.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T033",
+      "perMethodOutcome" : "T033",
       "lineNumbers" : [
         3,
         4
       ]
     },
-    "source.B.method:(D)I" : {
-      "completeTestCount" : 1,
+    "org.source.A.method:(D)I" : {
+      "completeTestCount" : 0,
       "incompleteTestCount" : 0,
-      "perMethodTestability" : "T000",
-      "perMethodOutcome" : "R000",
-      "perTestOutcome" : {
-        "R000" : 1
-      },
+      "perMethodTestability" : "T033",
+      "perMethodOutcome" : "T033",
+      "lineNumbers" : [
+        6
+      ]
+    },
+    "org.source.B.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T033",
+      "perMethodOutcome" : "T033",
+      "lineNumbers" : [
+        3,
+        4
+      ]
+    },
+    "org.source.B.method:(D)I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T033",
+      "perMethodOutcome" : "T033",
       "lineNumbers" : [
         7
       ]
     },
-    "source.C.<init>:()V" : {
-      "completeTestCount" : 1,
+    "org.source.C.<init>:()V" : {
+      "completeTestCount" : 0,
       "incompleteTestCount" : 0,
-      "perMethodTestability" : "T005",
-      "perMethodOutcome" : "R000",
-      "perTestOutcome" : {
-        "R000" : 1
-      },
+      "perMethodTestability" : "T033",
+      "perMethodOutcome" : "T033",
       "lineNumbers" : [
         3,
         4
       ]
     },
-    "source.C.method:(D)I" : {
-      "completeTestCount" : 1,
+    "org.source.C.method:(D)I" : {
+      "completeTestCount" : 0,
       "incompleteTestCount" : 0,
-      "perMethodTestability" : "T000",
-      "perMethodOutcome" : "R000",
-      "perTestOutcome" : {
-        "R000" : 1
-      },
+      "perMethodTestability" : "T033",
+      "perMethodOutcome" : "T033",
       "lineNumbers" : [
         7
       ]
     },
-    "source.M.<init>:()V" : {
-      "completeTestCount" : 1,
+    "org.source.M.<init>:()V" : {
+      "completeTestCount" : 0,
       "incompleteTestCount" : 0,
-      "perMethodTestability" : "T005",
-      "perMethodOutcome" : "R000",
-      "perTestOutcome" : {
-        "R000" : 1
-      },
+      "perMethodTestability" : "T033",
+      "perMethodOutcome" : "T033",
       "lineNumbers" : [
         3,
         4
       ]
     },
-    "source.N.<init>:()V" : {
-      "completeTestCount" : 1,
+    "org.source.N.<init>:()V" : {
+      "completeTestCount" : 0,
       "incompleteTestCount" : 0,
-      "perMethodTestability" : "T000",
-      "perMethodOutcome" : "R000",
-      "perTestOutcome" : {
-        "R000" : 1
-      },
+      "perMethodTestability" : "T033",
+      "perMethodOutcome" : "T033",
       "lineNumbers" : [
         3,
         4,
         5
       ]
     },
-    "source.P.<init>:()V" : {
-      "completeTestCount" : 1,
+    "org.source.P.<init>:()V" : {
+      "completeTestCount" : 0,
       "incompleteTestCount" : 0,
-      "perMethodTestability" : "T000",
-      "perMethodOutcome" : "R000",
-      "perTestOutcome" : {
-        "R000" : 1
-      },
+      "perMethodTestability" : "T033",
+      "perMethodOutcome" : "T033",
       "lineNumbers" : [
         3,
         4,
