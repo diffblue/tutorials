@@ -22,6 +22,11 @@ test {
     testLogging {
         events "PASSED", "SKIPPED", "FAILED"
     }
+
+    if (project.hasProperty('excludeTests')) {
+        exclude project.property('excludeTests')
+    }
+
 }
 
 //jacocoTestReport {

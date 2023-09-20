@@ -1,2 +1,4 @@
-package org.action;public class BDiffblueTest {
+package org.action;
+
+public class BDiffblueTest {
 }
