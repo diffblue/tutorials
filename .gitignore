@@ -1,8 +1,9 @@
 
-*/.diffblue/
-*/.idea/
-*/build/
-*/*/build/
-*/target/
-*/*/target/
-*/.gradle/
+**/.diffblue/
+**/.idea/
+**/build/
+**/*/build/
+**/target/
+**/*/target/
+**/.gradle/
+**/*.class

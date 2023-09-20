@@ -7,7 +7,6 @@ pipeline{
                 sh 'git status'
             }
         }
-
         stage('Get last commit author and bot name') {
             steps {
                 script {
@@ -19,22 +18,53 @@ pipeline{
                 '''
             }
         }
-
         stage('Use dcover create in Jenkins') {
             when { // Making sure not to run diffblue-cover-tool for new commit if last commit was from this pipeline
                 not { environment name: 'GIT_AUTHOR', value: "$env.DIFFBLUE_BOT_NAME" }
             }
-            steps {
-                script {
-                   build job: 'diffblue-cover-tool',
-                   parameters: [
-                   string(name: 'HEAD_BRANCH', value: "$CHANGE_BRANCH"),
-                   string(name: 'BASE_BRANCH', value: "$CHANGE_TARGET"),
-                   string(name: 'MODULES', value: "app common"),
-                   string(name: 'SPECIFY_PROJECT', value: "TwoModulesCI"),
-                   string(name: 'BUILD_TOOL', value: "gradle")]
+            parallel {
+                //stage('Run existing manual tests') { // 1
+                //    steps {
+                //        script {
+                //           build job: 'run-existing-manual-tests',
+                //           parameters: [
+                //           string(name: 'HEAD_BRANCH', value: "$CHANGE_BRANCH"),
+                //           string(name: 'BASE_BRANCH', value: "$CHANGE_TARGET"),
+                //           string(name: 'MODULES', value: "app common"),
+                //           string(name: 'SPECIFY_PROJECT', value: "TwoModulesCI"),
+                //           string(name: 'BUILD_TOOL', value: "gradle")]
+                //        }
+                //    }
+                //}
+                stage('Run existing Diffblue tests') { // 2
+                    steps {
+                        script {
+                           build job: 'run-existing-diffblue-tests',
+                           parameters: [
+                           string(name: 'HEAD_BRANCH', value: "$CHANGE_BRANCH"),
+                           string(name: 'BASE_BRANCH', value: "$CHANGE_TARGET"),
+                           string(name: 'MODULES', value: "app common"),
+                           string(name: 'SPECIFY_PROJECT', value: "TwoModulesCI"),
+                           string(name: 'BUILD_TOOL', value: "gradle")]
+                        }
+                    }
                 }
+                stage('Write Diffblue tests') { // 3
+                    steps {
+                        script {
+                           build job: 'diffblue-cover-tool',
+                           parameters: [
+                           string(name: 'HEAD_BRANCH', value: "$CHANGE_BRANCH"),
+                           string(name: 'BASE_BRANCH', value: "$CHANGE_TARGET"),
+                           string(name: 'MODULES', value: "app common"),
+                           string(name: 'SPECIFY_PROJECT', value: "TwoModulesCI"),
+                           string(name: 'BUILD_TOOL', value: "gradle")]
+                        }
+                    }
+                }
+
             }
+
         }
     }
 }
