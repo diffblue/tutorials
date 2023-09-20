@@ -23,20 +23,7 @@ pipeline{
                 not { environment name: 'GIT_AUTHOR', value: "$env.DIFFBLUE_BOT_NAME" }
             }
             parallel {
-                //stage('Run existing manual tests') { // 1
-                //    steps {
-                //        script {
-                //           build job: 'run-existing-manual-tests',
-                //           parameters: [
-                //           string(name: 'HEAD_BRANCH', value: "$CHANGE_BRANCH"),
-                //           string(name: 'BASE_BRANCH', value: "$CHANGE_TARGET"),
-                //           string(name: 'MODULES', value: "."),
-                //           string(name: 'SPECIFY_PROJECT', value: "OneModuleCI"),
-                //           string(name: 'BUILD_TOOL', value: "maven")]
-                //        }
-                //    }
-                //}
-                stage('Run existing Diffblue tests') { // 2
+                stage('Run existing Diffblue tests') { // pipeline 3
                     steps {
                         script {
                            build job: 'run-existing-diffblue-tests',
@@ -49,7 +36,7 @@ pipeline{
                         }
                     }
                 }
-                stage('Write Diffblue tests') { // 3
+                stage('Write Diffblue tests') { // pipeline 2
                     steps {
                         script {
                            build job: 'diffblue-cover-tool',
