@@ -1,6 +1,6 @@
 plugins {
+    id 'application'
     id 'java'
-    id 'jacoco'
 }
 
 group = 'org'
@@ -11,12 +11,19 @@ repositories {
 }
 
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
     testImplementation 'org.mockito:mockito-core:5.4.0'
+    implementation project(':common')
+}
+
+application {
+    mainClass = 'app.org.action.MainApp'
 }
 
 test {
     useJUnitPlatform()
-    testLogging { events "PASSED", "SKIPPED", "FAILED" }
+    testLogging {
+        events "PASSED", "SKIPPED", "FAILED"
+    }
 }

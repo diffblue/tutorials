@@ -1,6 +1,6 @@
-package features;
+package org.features;
 
-public sealed class Bear permits Koala {
+public sealed class Bear permits org.features.Koala {
     private int N;
 
     protected Bear(int n) {

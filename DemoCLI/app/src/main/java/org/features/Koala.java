@@ -1,4 +1,4 @@
-package features;
+package org.features;
 
 public final class Koala extends Bear {
     private int M;
