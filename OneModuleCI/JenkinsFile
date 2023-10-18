@@ -1,7 +1,13 @@
 pipeline{
     agent any
     stages {
-        stage('Initialization') {
+        stage('sanity checks') {
+            steps {
+                sh 'git branch'
+                sh 'git status'
+            }
+        }
+        stage('Get last commit author and bot name') {
             steps {
                 script {
                     env.GIT_AUTHOR = sh (script: 'git log --no-merges -1 --pretty=%cn', returnStdout: true).trim()
@@ -17,23 +23,10 @@ pipeline{
                 not { environment name: 'GIT_AUTHOR', value: "$env.DIFFBLUE_BOT_NAME" }
             }
             parallel {
-                //stage('Run existing manual tests') { // 1
-                //    steps {
-                //        script {
-                //           build job: 'run-existing-manual-tests',
-                //           parameters: [
-                //           string(name: 'HEAD_BRANCH', value: "$CHANGE_BRANCH"),
-                //           string(name: 'BASE_BRANCH', value: "$CHANGE_TARGET"),
-                //           string(name: 'MODULES', value: "."),
-                //           string(name: 'SPECIFY_PROJECT', value: "OneModuleCI"),
-                //           string(name: 'BUILD_TOOL', value: "maven")]
-                //        }
-                //    }
-                //}
-                stage('Run existing Diffblue tests') { // 2
+                stage('Run existing Diffblue tests') {
                     steps {
                         script {
-                           build job: 'run-existing-diffblue-tests',
+                           build job: 'run-diffblue-tests',
                            parameters: [
                            string(name: 'HEAD_BRANCH', value: "$CHANGE_BRANCH"),
                            string(name: 'BASE_BRANCH', value: "$CHANGE_TARGET"),
@@ -43,10 +36,10 @@ pipeline{
                         }
                     }
                 }
-                stage('Write Diffblue tests') { // 3
+                stage('Write Diffblue tests') {
                     steps {
                         script {
-                           build job: 'diffblue-cover-tool',
+                           build job: 'write-diffblue-tests',
                            parameters: [
                            string(name: 'HEAD_BRANCH', value: "$CHANGE_BRANCH"),
                            string(name: 'BASE_BRANCH', value: "$CHANGE_TARGET"),
