@@ -1,6 +1,7 @@
 plugins {
     id 'application'
     id 'java'
+    id 'jacoco'
 }
 
 group = 'org'
@@ -25,6 +26,9 @@ test {
     useJUnitPlatform()
     testLogging {
         events "PASSED", "SKIPPED", "FAILED"
+    }
+    filter {
+        setFailOnNoMatchingTests(false)
     }
 
     if (project.hasProperty('excludeTests')) {

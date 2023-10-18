@@ -22,7 +22,9 @@ test {
     testLogging {
         events "PASSED", "SKIPPED", "FAILED"
     }
-
+    filter {
+        setFailOnNoMatchingTests(false)
+    }
     if (project.hasProperty('excludeTests')) {
         exclude project.property('excludeTests')
     }

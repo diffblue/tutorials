@@ -23,10 +23,10 @@ pipeline{
                 not { environment name: 'GIT_AUTHOR', value: "$env.DIFFBLUE_BOT_NAME" }
             }
             parallel {
-                stage('Run existing Diffblue tests') { // pipeline 3
+                stage('Run existing Diffblue tests') {
                     steps {
                         script {
-                           build job: 'run-existing-diffblue-tests',
+                           build job: 'run-diffblue-tests',
                            parameters: [
                            string(name: 'HEAD_BRANCH', value: "$CHANGE_BRANCH"),
                            string(name: 'BASE_BRANCH', value: "$CHANGE_TARGET"),
@@ -36,10 +36,10 @@ pipeline{
                         }
                     }
                 }
-                stage('Write Diffblue tests') { // pipeline 2
+                stage('Write Diffblue tests') {
                     steps {
                         script {
-                           build job: 'diffblue-cover-tool',
+                           build job: 'write-diffblue-tests',
                            parameters: [
                            string(name: 'HEAD_BRANCH', value: "$CHANGE_BRANCH"),
                            string(name: 'BASE_BRANCH', value: "$CHANGE_TARGET"),
