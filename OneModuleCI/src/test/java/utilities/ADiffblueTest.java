@@ -10,7 +10,7 @@ class ADiffblueTest {
   @Test
   void testDoubleIt() {
     // Arrange, Act and Assert
-    assertEquals(2, (new A()).doubleIt(1).intValue());
+    assertEquals(4, (new A()).doubleIt(1).intValue());
   }
 }
 
