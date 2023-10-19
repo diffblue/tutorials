@@ -1,4 +1,4 @@
-package other;
+package other.mocking;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.mockito.Mockito;
